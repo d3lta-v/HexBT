@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface HexBTViewController : UIViewController
+{
+    IBOutlet UITextField *textToBinary;
+}
+
+@property (strong,nonatomic) IBOutlet UITextField *textToBinary;
+
+-(IBAction)dismissKeyboard:(id)sender;
 
 @end

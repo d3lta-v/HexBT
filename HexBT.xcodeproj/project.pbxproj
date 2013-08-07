@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22039F6617B2A23E00551E55 /* MNNSStringWithUnichar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22039F6517B2A23E00551E55 /* MNNSStringWithUnichar.m */; };
 		2297CC0B17AFD3A200F51E23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297CC0A17AFD3A200F51E23 /* UIKit.framework */; };
 		2297CC0D17AFD3A200F51E23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297CC0C17AFD3A200F51E23 /* Foundation.framework */; };
 		2297CC0F17AFD3A200F51E23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297CC0E17AFD3A200F51E23 /* CoreGraphics.framework */; };
@@ -19,9 +20,12 @@
 		2297CC2417AFD3A200F51E23 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2297CC2217AFD3A200F51E23 /* MainStoryboard.storyboard */; };
 		2297CC2717AFD3A200F51E23 /* HexBTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297CC2617AFD3A200F51E23 /* HexBTViewController.m */; };
 		2297CC4F17AFEC7D00F51E23 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2297CC4E17AFEC7D00F51E23 /* README.md */; };
+		22FF4BB917AFF1AA007DFCEA /* TextBinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF4BB817AFF1AA007DFCEA /* TextBinViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22039F6417B2A23E00551E55 /* MNNSStringWithUnichar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNNSStringWithUnichar.h; sourceTree = "<group>"; };
+		22039F6517B2A23E00551E55 /* MNNSStringWithUnichar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNNSStringWithUnichar.m; sourceTree = "<group>"; };
 		2297CC0717AFD3A200F51E23 /* HexBT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexBT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2297CC0A17AFD3A200F51E23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2297CC0C17AFD3A200F51E23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +43,8 @@
 		2297CC2517AFD3A200F51E23 /* HexBTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HexBTViewController.h; sourceTree = "<group>"; };
 		2297CC2617AFD3A200F51E23 /* HexBTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HexBTViewController.m; sourceTree = "<group>"; };
 		2297CC4E17AFEC7D00F51E23 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		22FF4BB717AFF1AA007DFCEA /* TextBinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBinViewController.h; sourceTree = "<group>"; };
+		22FF4BB817AFF1AA007DFCEA /* TextBinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextBinViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,10 @@
 				2297CC2217AFD3A200F51E23 /* MainStoryboard.storyboard */,
 				2297CC2517AFD3A200F51E23 /* HexBTViewController.h */,
 				2297CC2617AFD3A200F51E23 /* HexBTViewController.m */,
+				22FF4BB717AFF1AA007DFCEA /* TextBinViewController.h */,
+				22FF4BB817AFF1AA007DFCEA /* TextBinViewController.m */,
+				22039F6417B2A23E00551E55 /* MNNSStringWithUnichar.h */,
+				22039F6517B2A23E00551E55 /* MNNSStringWithUnichar.m */,
 				2297CC1117AFD3A200F51E23 /* Supporting Files */,
 			);
 			path = HexBT;
@@ -181,6 +191,8 @@
 				2297CC1717AFD3A200F51E23 /* main.m in Sources */,
 				2297CC1B17AFD3A200F51E23 /* HexBTAppDelegate.m in Sources */,
 				2297CC2717AFD3A200F51E23 /* HexBTViewController.m in Sources */,
+				22FF4BB917AFF1AA007DFCEA /* TextBinViewController.m in Sources */,
+				22039F6617B2A23E00551E55 /* MNNSStringWithUnichar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +315,7 @@
 				2297CC2C17AFD3A200F51E23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
