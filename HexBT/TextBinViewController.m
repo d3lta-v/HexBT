@@ -33,7 +33,7 @@
 
 -(NSString *)textToBin:(NSString *)text
 {
-    NSString *value;
+    NSString *value=[[NSString alloc]init]; //The alloc init is VERY IMPORTANT! It makes sure it's even properly present in the memory and not deallocated for no good reason
     NSString *strChar;
     bool blank=true;
     
@@ -48,7 +48,7 @@
             else if ([strChar isEqualToString:@"B"]) { //For B
                 value=[value stringByAppendingString:@"01000010"];
             }
-            else if ([strChar isEqualToString:@"B"]) { //For C
+            else if ([strChar isEqualToString:@"C"]) { //For C
                 value=[value stringByAppendingString:@"01000011"];
             }
             else
@@ -71,10 +71,9 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    NSString *test=@"AA";
-    for (int x=0; x<test.length; x++) {
-        NSLog(@"%@", [MNNSStringWithUnichar stringWithUnichar:[test characterAtIndex:x]]);
-    }
+    
+    //Test, comment to disable
+    NSLog(@"%@",[self textToBin:@"ABC"]);
 }
 
 - (void)didReceiveMemoryWarning
