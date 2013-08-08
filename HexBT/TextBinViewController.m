@@ -28,6 +28,9 @@
 
 -(void)textViewDidEndEditing:(UITextView *)textView
 {
+    //Conversion engine CSIMUX (Convertor, aScIi, Mutable Unified X-over Engine)
+    [self textToBin:textView.text];
+    
     [textView resignFirstResponder];
 }
 
@@ -99,6 +102,28 @@
             else if ([strChar isEqualToString:@"S"]) {
                 value=[value stringByAppendingString:@"01010011"];
             }
+            else if ([strChar isEqualToString:@"T"]) {
+                value=[value stringByAppendingString:@"01010100"];
+            }
+            else if ([strChar isEqualToString:@"U"]) {
+                value=[value stringByAppendingString:@"01010101"];
+            }
+            else if ([strChar isEqualToString:@"V"]) {
+                value=[value stringByAppendingString:@"01010110"];
+            }
+            else if ([strChar isEqualToString:@"W"]) {
+                value=[value stringByAppendingString:@"01010111"];
+            }
+            else if ([strChar isEqualToString:@"X"]) {
+                value=[value stringByAppendingString:@"01011000"];
+            }
+            else if ([strChar isEqualToString:@"Y"]) {
+                value=[value stringByAppendingString:@"01011001"];
+            }
+            else if ([strChar isEqualToString:@"Z"]) {
+                value=[value stringByAppendingString:@"01011010"];
+            }
+            
             else
             {
                 value=@"Invalid input";

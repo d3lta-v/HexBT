@@ -19,7 +19,6 @@
 		2297CC2117AFD3A200F51E23 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2297CC2017AFD3A200F51E23 /* Default-568h@2x.png */; };
 		2297CC2417AFD3A200F51E23 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2297CC2217AFD3A200F51E23 /* MainStoryboard.storyboard */; };
 		2297CC2717AFD3A200F51E23 /* HexBTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297CC2617AFD3A200F51E23 /* HexBTViewController.m */; };
-		2297CC4F17AFEC7D00F51E23 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2297CC4E17AFEC7D00F51E23 /* README.md */; };
 		22FF4BB917AFF1AA007DFCEA /* TextBinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF4BB817AFF1AA007DFCEA /* TextBinViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -177,7 +176,6 @@
 				2297CC1F17AFD3A200F51E23 /* Default@2x.png in Resources */,
 				2297CC2117AFD3A200F51E23 /* Default-568h@2x.png in Resources */,
 				2297CC2417AFD3A200F51E23 /* MainStoryboard.storyboard in Resources */,
-				2297CC4F17AFEC7D00F51E23 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
