@@ -72,6 +72,7 @@
         for (int x=0; x<text.length; x++)
         {
             strChar=[MNNSStringWithUnichar stringWithUnichar:[text characterAtIndex:x]];
+            //For caps
             if ([strChar isEqualToString:@"A"]) { //For A
                 value=[value stringByAppendingString:@"01000001"];
             }
@@ -149,6 +150,88 @@
             }
             else if ([strChar isEqualToString:@"Z"]) {
                 value=[value stringByAppendingString:@"01011010"];
+            }
+            //Now onto small case ones
+            else if ([strChar isEqualToString:@"a"]) {
+                value=[value stringByAppendingString:@"01100001"];
+            }
+            else if ([strChar isEqualToString:@"b"]) {
+                value=[value stringByAppendingString:@"01100010"];
+            }
+            else if ([strChar isEqualToString:@"c"]) {
+                value=[value stringByAppendingString:@"01100011"];
+            }
+            else if ([strChar isEqualToString:@"d"]) {
+                value=[value stringByAppendingString:@"01100100"];
+            }
+            else if ([strChar isEqualToString:@"e"]) {
+                value=[value stringByAppendingString:@"01100101"];
+            }
+            else if ([strChar isEqualToString:@"f"]) {
+                value=[value stringByAppendingString:@"01100110"];
+            }
+            else if ([strChar isEqualToString:@"g"]) {
+                value=[value stringByAppendingString:@"01100111"];
+            }
+            else if ([strChar isEqualToString:@"h"]) {
+                value=[value stringByAppendingString:@"01101000"];
+            }
+            else if ([strChar isEqualToString:@"i"]) {
+                value=[value stringByAppendingString:@"01101001"];
+            }
+            else if ([strChar isEqualToString:@"j"]) {
+                value=[value stringByAppendingString:@"01101010"];
+            }
+            else if ([strChar isEqualToString:@"k"]) {
+                value=[value stringByAppendingString:@"01101011"];
+            }
+            else if ([strChar isEqualToString:@"l"]) {
+                value=[value stringByAppendingString:@"01101100"];
+            }
+            else if ([strChar isEqualToString:@"m"]) {
+                value=[value stringByAppendingString:@"01101101"];
+            }
+            else if ([strChar isEqualToString:@"n"]) {
+                value=[value stringByAppendingString:@"01101110"];
+            }
+            else if ([strChar isEqualToString:@"o"]) {
+                value=[value stringByAppendingString:@"01101111"];
+            }
+            else if ([strChar isEqualToString:@"p"]) {
+                value=[value stringByAppendingString:@"01110000"];
+            }
+            else if ([strChar isEqualToString:@"q"]) {
+                value=[value stringByAppendingString:@"01110001"];
+            }
+            else if ([strChar isEqualToString:@"r"]) {
+                value=[value stringByAppendingString:@"01110010"];
+            }
+            else if ([strChar isEqualToString:@"s"]) {
+                value=[value stringByAppendingString:@"01110011"];
+            }
+            else if ([strChar isEqualToString:@"t"]) {
+                value=[value stringByAppendingString:@"01110100"];
+            }
+            else if ([strChar isEqualToString:@"u"]) {
+                value=[value stringByAppendingString:@"01110101"];
+            }
+            else if ([strChar isEqualToString:@"v"]) {
+                value=[value stringByAppendingString:@"01110110"];
+            }
+            else if ([strChar isEqualToString:@"w"]) {
+                value=[value stringByAppendingString:@"01110111"];
+            }
+            else if ([strChar isEqualToString:@"x"]) {
+                value=[value stringByAppendingString:@"01111000"];
+            }
+            else if ([strChar isEqualToString:@"y"]) {
+                value=[value stringByAppendingString:@"01111001"];
+            }
+            else if ([strChar isEqualToString:@"z"]) {
+                value=[value stringByAppendingString:@"01111010"];
+            }
+            else if ([strChar isEqualToString:@" "]) {
+                value=[value stringByAppendingString:@"00100000"];
             }
             else
             {
