@@ -233,6 +233,36 @@
             else if ([strChar isEqualToString:@" "]) {
                 value=[value stringByAppendingString:@"00100000"];
             }
+            else if ([strChar isEqualToString:@"1"]) {
+                value=[value stringByAppendingString:@"00110001"];
+            }
+            else if ([strChar isEqualToString:@"2"]) {
+                value=[value stringByAppendingString:@"00110010"];
+            }
+            else if ([strChar isEqualToString:@"3"]) {
+                value=[value stringByAppendingString:@"00110010"];
+            }
+            else if ([strChar isEqualToString:@"4"]) {
+                value=[value stringByAppendingString:@"00110100"];
+            }
+            else if ([strChar isEqualToString:@"5"]) {
+                value=[value stringByAppendingString:@"00110101"];
+            }
+            else if ([strChar isEqualToString:@"6"]) {
+                value=[value stringByAppendingString:@"00110110"];
+            }
+            else if ([strChar isEqualToString:@"7"]) {
+                value=[value stringByAppendingString:@"00110111"];
+            }
+            else if ([strChar isEqualToString:@"8"]) {
+                value=[value stringByAppendingString:@"00111000"];
+            }
+            else if ([strChar isEqualToString:@"9"]) {
+                value=[value stringByAppendingString:@"00111001"];
+            }
+            else if ([strChar isEqualToString:@"0"]) {
+                value=[value stringByAppendingString:@"00110000"];
+            }
             else
             {
                 value=@"Invalid input";
