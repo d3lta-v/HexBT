@@ -51,6 +51,54 @@
             else if ([strChar isEqualToString:@"C"]) { //For C
                 value=[value stringByAppendingString:@"01000011"];
             }
+            else if ([strChar isEqualToString:@"D"]) { 
+                value=[value stringByAppendingString:@"01000100"];
+            }
+            else if ([strChar isEqualToString:@"E"]) { 
+                value=[value stringByAppendingString:@"01000101"];
+            }
+            else if ([strChar isEqualToString:@"F"]) {
+                value=[value stringByAppendingString:@"01000110"];
+            }
+            else if ([strChar isEqualToString:@"G"]) {
+                value=[value stringByAppendingString:@"01000111"];
+            }
+            else if ([strChar isEqualToString:@"H"]) {
+                value=[value stringByAppendingString:@"01001000"];
+            }
+            else if ([strChar isEqualToString:@"I"]) {
+                value=[value stringByAppendingString:@"01001001"];
+            }
+            else if ([strChar isEqualToString:@"J"]) {
+                value=[value stringByAppendingString:@"01001010"];
+            }
+            else if ([strChar isEqualToString:@"K"]) {
+                value=[value stringByAppendingString:@"01001011"];
+            }
+            else if ([strChar isEqualToString:@"L"]) {
+                value=[value stringByAppendingString:@"01001100"];
+            }
+            else if ([strChar isEqualToString:@"M"]) {
+                value=[value stringByAppendingString:@"01001101"];
+            }
+            else if ([strChar isEqualToString:@"N"]) {
+                value=[value stringByAppendingString:@"01001110"];
+            }
+            else if ([strChar isEqualToString:@"O"]) {
+                value=[value stringByAppendingString:@"01001111"];
+            }
+            else if ([strChar isEqualToString:@"P"]) {
+                value=[value stringByAppendingString:@"01010000"];
+            }
+            else if ([strChar isEqualToString:@"Q"]) {
+                value=[value stringByAppendingString:@"01010001"];
+            }
+            else if ([strChar isEqualToString:@"R"]) {
+                value=[value stringByAppendingString:@"01010010"];
+            }
+            else if ([strChar isEqualToString:@"S"]) {
+                value=[value stringByAppendingString:@"01010011"];
+            }
             else
             {
                 value=@"Invalid input";
@@ -73,7 +121,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     //Test, comment to disable
-    NSLog(@"%@",[self textToBin:@"ABC"]);
+    //NSLog(@"%@",[self textToBin:@"ABCDEFGHIJKLMN"]);
 }
 
 - (void)didReceiveMemoryWarning
