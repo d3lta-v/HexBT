@@ -8,6 +8,7 @@
 
 #import "TextBinViewController.h"
 #import "MNNSStringWithUnichar.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface TextBinViewController ()
 
@@ -15,23 +16,49 @@
 
 @implementation TextBinViewController
 
-@synthesize textToBinary;
+@synthesize textToBinary, binaryDisp;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+
     }
     return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    //Test, comment to disable
+    //NSLog(@"%@",[self textToBin:@"ABCDEFGHIJKLMN"]);
+    
+    textToBinary.clipsToBounds=YES;
+    textToBinary.layer.cornerRadius=10.0f;
+    binaryDisp.clipsToBounds=YES;
+    binaryDisp.layer.cornerRadius=10.0f;
 }
 
 -(void)textViewDidEndEditing:(UITextView *)textView
 {
     //Conversion engine CSIMUX (Convertor, aScIi, Mutable Unified X-over Engine)
-    [self textToBin:textView.text];
-    
+    textView.delegate=self;
     [textView resignFirstResponder];
+}
+
+-(IBAction)convert:(id)sender
+{
+    NSString *converted=[self textToBin:textToBinary.text];
+    binaryDisp.text=converted;
+    [textToBinary resignFirstResponder];
 }
 
 -(NSString *)textToBin:(NSString *)text
@@ -123,7 +150,6 @@
             else if ([strChar isEqualToString:@"Z"]) {
                 value=[value stringByAppendingString:@"01011010"];
             }
-            
             else
             {
                 value=@"Invalid input";
@@ -133,20 +159,6 @@
         blank=false;
     }
     return value;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    //Test, comment to disable
-    //NSLog(@"%@",[self textToBin:@"ABCDEFGHIJKLMN"]);
 }
 
 - (void)didReceiveMemoryWarning

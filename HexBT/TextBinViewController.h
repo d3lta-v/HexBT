@@ -11,10 +11,14 @@
 @interface TextBinViewController : UITableViewController <UITextViewDelegate>
 {
     IBOutlet UITextView *textToBinary;
+    IBOutlet UITextView *binaryDisp;
 }
 
 @property (strong,nonatomic) IBOutlet UITextView *textToBinary;
+@property (strong,nonatomic) IBOutlet UITextView *binaryDisp;
 
 -(NSString *)textToBin:(NSString *)text;
+
+-(IBAction)convert:(id)sender;
 
 @end
