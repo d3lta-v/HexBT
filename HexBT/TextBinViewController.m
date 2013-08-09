@@ -299,6 +299,26 @@
             {
                 value=[value stringByAppendingString:@"00100010"];
             }
+            else if ([strChar isEqualToString:@"."])
+            {
+                value=[value stringByAppendingString:@"00101110"];
+            }
+            else if ([strChar isEqualToString:@","])
+            {
+                value=[value stringByAppendingString:@"00101100"];
+            }
+            else if ([strChar isEqualToString:@"?"])
+            {
+                value=[value stringByAppendingString:@"00111111"];
+            }
+            else if ([strChar isEqualToString:@"!"])
+            {
+                value=[value stringByAppendingString:@"00100001"];
+            }
+            else if ([strChar isEqualToString:@"'"])
+            {
+                value=[value stringByAppendingString:@"00100001"];
+            }
             else
             {
                 value=@"Invalid input, no accents are allowed";
