@@ -412,6 +412,10 @@
             {
                 value=[value stringByAppendingString:@"10000000"];
             }
+            else if ([strChar isEqualToString:@"\n"])
+            {
+                value=[value stringByAppendingString:@"00001010"];
+            }
             else
             {
                 value=@"Invalid input, no non-ASCII characters are allowed";

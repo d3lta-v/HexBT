@@ -71,7 +71,7 @@
                                                         <constraint firstAttribute="width" constant="300" id="pdN-0L-CYT"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="Convert">
+                                                    <state key="normal" title="Convert To Binary">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -216,7 +216,7 @@
                                                         <constraint firstAttribute="height" constant="35" id="zcs-UV-Kqf"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="Convert">
+                                                    <state key="normal" title="Convert To Hex">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
