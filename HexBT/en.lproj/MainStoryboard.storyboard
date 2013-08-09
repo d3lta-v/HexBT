@@ -136,10 +136,10 @@
             </objects>
             <point key="canvasLocation" x="405" y="-607"/>
         </scene>
-        <!--Table View Controller - TextToHex-->
+        <!--Text Hex View Controller - TextToHex-->
         <scene sceneID="Zhg-Zs-A0C">
             <objects>
-                <tableViewController id="RQq-Ie-ZN8" sceneMemberID="viewController">
+                <tableViewController id="RQq-Ie-ZN8" customClass="TextHexViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Rcm-5S-N5g">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,6 +191,9 @@
                                                     <state key="highlighted">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="convert:" destination="RQq-Ie-ZN8" eventType="touchUpInside" id="dGD-v2-x2t"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -233,6 +236,10 @@
                         </sections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="TextToHex" image="TextToHex.png" id="5M0-Ly-MAb"/>
+                    <connections>
+                        <outlet property="hexDisp" destination="Sy4-7D-0N5" id="Rds-Hi-8UC"/>
+                        <outlet property="textToHex" destination="fBg-bL-udB" id="MJ1-rN-WOz"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LDt-Pl-Al1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,19 +250,6 @@
         <image name="TextToBin.png" width="30" height="30"/>
         <image name="TextToHex.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="TextBinViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextBinViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="convert:"/>
-                <relationship kind="outlet" name="binaryDisp" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="textToBinary" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="405" y="-683"/>
         </scene>
-        <!--Table View Controller - TextToHex-->
+        <!--Text Hex View Controller - TextToHex-->
         <scene sceneID="Oie-Ov-BcG">
             <objects>
-                <tableViewController id="eGp-61-v5Y" sceneMemberID="viewController">
+                <tableViewController id="eGp-61-v5Y" customClass="TextHexViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="sFJ-gw-w0n">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,6 +189,9 @@
                                                     <state key="highlighted">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="convert:" destination="eGp-61-v5Y" eventType="touchUpInside" id="PSe-VW-vEw"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -231,6 +234,10 @@
                         </sections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="TextToHex" image="TextToHex.png" id="D1B-X6-DAP"/>
+                    <connections>
+                        <outlet property="hexDisp" destination="8y3-sk-UOH" id="1YT-D4-k5K"/>
+                        <outlet property="textToHex" destination="WHr-DD-Ngy" id="WJa-sE-jV0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RdI-T7-a7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -241,6 +248,27 @@
         <image name="TextToBin.png" width="30" height="30"/>
         <image name="TextToHex.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TextBinViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextBinViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="outlet" name="binaryDisp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textToBinary" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="TextHexViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextHexViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="outlet" name="hexDisp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textToHex" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
