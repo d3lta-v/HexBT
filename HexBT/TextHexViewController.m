@@ -140,11 +140,14 @@
 
 -(IBAction)convert:(id)sender
 {
-    NSString *converted=[self textToHex:textToHex.text];
-    hexDisp.text=converted;
-    [textToHex resignFirstResponder];
-    if (![hexDisp hasText]) {
-        hexDisp.text=@"Invalid input, no non-ASCII characters are allowed";
+    if (![hexDisp hasText]||![textToHex hasText]) {
+        hexDisp.text=@"[ERROR] Invalid or no input";
+    }
+    else
+    {
+        NSString *converted=[self textToHex:textToHex.text];
+        hexDisp.text=converted;
+        [textToHex resignFirstResponder];
     }
 }
 

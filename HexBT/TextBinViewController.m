@@ -425,7 +425,7 @@
             }
             else
             {
-                value=@"Invalid input, no non-ASCII characters are allowed";
+                value=@"[ERROR] Invalid input, no non-ASCII characters are allowed";
                 blank=false;
             }
         }
@@ -450,7 +450,7 @@
     }
     else
     {
-        value=@"Binary not 8-bit integers";
+        value=@"[ERROR] Invalid binary numbers";
     }
     
     bool blank=true;
@@ -540,29 +540,29 @@
                 value=[value stringByAppendingString:@"Z"];
             }
             //Now onto small case ones
-            else if ([strChar isEqualToString:@"a"]) {
-                value=[value stringByAppendingString:@"01100001"];
+            else if ([strChar isEqualToString:@"01100001"]) {
+                value=[value stringByAppendingString:@"a"];
             }
-            else if ([strChar isEqualToString:@"b"]) {
-                value=[value stringByAppendingString:@"01100010"];
+            else if ([strChar isEqualToString:@"01100010"]) {
+                value=[value stringByAppendingString:@"b"];
             }
-            else if ([strChar isEqualToString:@"c"]) {
-                value=[value stringByAppendingString:@"01100011"];
+            else if ([strChar isEqualToString:@"01100011"]) {
+                value=[value stringByAppendingString:@"c"];
             }
-            else if ([strChar isEqualToString:@"d"]) {
-                value=[value stringByAppendingString:@"01100100"];
+            else if ([strChar isEqualToString:@"01100100"]) {
+                value=[value stringByAppendingString:@"d"];
             }
-            else if ([strChar isEqualToString:@"e"]) {
-                value=[value stringByAppendingString:@"01100101"];
+            else if ([strChar isEqualToString:@"01100101"]) {
+                value=[value stringByAppendingString:@"e"];
             }
-            else if ([strChar isEqualToString:@"f"]) {
-                value=[value stringByAppendingString:@"01100110"];
+            else if ([strChar isEqualToString:@"01100110"]) {
+                value=[value stringByAppendingString:@"f"];
             }
-            else if ([strChar isEqualToString:@"g"]) {
-                value=[value stringByAppendingString:@"01100111"];
+            else if ([strChar isEqualToString:@"01100111"]) {
+                value=[value stringByAppendingString:@"g"];
             }
-            else if ([strChar isEqualToString:@"h"]) {
-                value=[value stringByAppendingString:@"01101000"];
+            else if ([strChar isEqualToString:@"01101000"]) {
+                value=[value stringByAppendingString:@"h"];
             }
             else if ([strChar isEqualToString:@"i"]) {
                 value=[value stringByAppendingString:@"01101001"];
@@ -793,7 +793,7 @@
             }
             else
             {
-                value=@"Invalid input, no non-ASCII characters are allowed";
+                value=@"[ERROR] Invalid input, no non-ASCII characters are allowed";
                 blank=false;
             }
         }
