@@ -18,8 +18,10 @@
 @property (strong,nonatomic) IBOutlet UITextView *binaryDisp;
 
 -(NSString *)textToBin:(NSString *)text;
+-(NSString *)binToText:(NSString *)text;
 
 -(IBAction)convert:(id)sender;
+-(IBAction)convertBack:(id)sender;
 -(IBAction)share:(id)sender;
 
 @end
