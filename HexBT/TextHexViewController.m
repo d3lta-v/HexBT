@@ -121,56 +121,6 @@
             hexR=[hexR stringByAppendingString:@"F"];
         }
     }
-    /*
-    if ([binSet isEqualToString:@"0000"]) {
-        hexR=[hexR stringByAppendingString:@"0"];
-    }
-    else if ([binSet isEqualToString:@"0001"]) {
-        hexR=[hexR stringByAppendingString:@"1"];
-    }
-    else if ([binSet isEqualToString:@"0010"]) {
-        hexR=[hexR stringByAppendingString:@"2"];
-    }
-    else if ([binSet isEqualToString:@"0011"]) {
-        hexR=[hexR stringByAppendingString:@"3"];
-    }
-    else if ([binSet isEqualToString:@"0100"]) {
-        hexR=[hexR stringByAppendingString:@"4"];
-    }
-    else if ([binSet isEqualToString:@"0101"]) {
-        hexR=[hexR stringByAppendingString:@"5"];
-    }
-    else if ([binSet isEqualToString:@"0110"]) {
-        hexR=[hexR stringByAppendingString:@"6"];
-    }
-    else if ([binSet isEqualToString:@"0111"]) {
-        hexR=[hexR stringByAppendingString:@"7"];
-    }
-    else if ([binSet isEqualToString:@"1000"]) {
-        hexR=[hexR stringByAppendingString:@"8"];
-    }
-    else if ([binSet isEqualToString:@"1001"]) {
-        hexR=[hexR stringByAppendingString:@"9"];
-    }
-    else if ([binSet isEqualToString:@"1010"]) {
-        hexR=[hexR stringByAppendingString:@"A"];
-    }
-    else if ([binSet isEqualToString:@"1011"]) {
-        hexR=[hexR stringByAppendingString:@"B"];
-    }
-    else if ([binSet isEqualToString:@"1100"]) {
-        hexR=[hexR stringByAppendingString:@"C"];
-    }
-    else if ([binSet isEqualToString:@"1101"]) {
-        hexR=[hexR stringByAppendingString:@"D"];
-    }
-    else if ([binSet isEqualToString:@"1110"]) {
-        hexR=[hexR stringByAppendingString:@"E"];
-    }
-    else if ([binSet isEqualToString:@"1111"]) {
-        hexR=[hexR stringByAppendingString:@"F"];
-    }*/
-    
     return hexR;
 }
 
