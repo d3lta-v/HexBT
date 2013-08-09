@@ -37,7 +37,8 @@
 
 -(NSString *)textToHex:(NSString *)text
 {
-    TextBinViewController *binVC=[[TextBinViewController alloc]init];
+    //The CSIMUX converter
+    TextBinViewController *binVC=[[TextBinViewController alloc]init]; //This requires the binary converter to be active
     NSString *toBeConverted=[binVC textToBin:text];
     
     int sets=toBeConverted.length/4;
@@ -129,6 +130,9 @@
     NSString *converted=[self textToHex:textToHex.text];
     hexDisp.text=converted;
     [textToHex resignFirstResponder];
+    if (![hexDisp hasText]) {
+        hexDisp.text=@"Invalid input";
+    }
 }
 
 - (void)viewDidLoad
