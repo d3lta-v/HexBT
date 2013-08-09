@@ -47,7 +47,7 @@
                                                         <constraint firstAttribute="height" constant="127" id="kIX-z8-OLl"/>
                                                         <constraint firstAttribute="width" constant="300" id="rc1-dY-HmF"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -107,7 +107,7 @@
                                                         <constraint firstAttribute="width" constant="300" id="1qL-JQ-bBd"/>
                                                         <constraint firstAttribute="height" constant="127" id="Klw-DE-cup"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -160,7 +160,7 @@
                                                         <constraint firstAttribute="width" constant="300" id="ggp-oG-zva"/>
                                                         <constraint firstAttribute="height" constant="127" id="yxk-72-mbO"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -220,7 +220,7 @@
                                                         <constraint firstAttribute="width" constant="300" id="7l7-q2-yuE"/>
                                                         <constraint firstAttribute="height" constant="127" id="o99-jG-ITV"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -250,6 +250,27 @@
         <image name="TextToBin.png" width="30" height="30"/>
         <image name="TextToHex.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TextBinViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextBinViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="outlet" name="binaryDisp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textToBinary" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="TextHexViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextHexViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="outlet" name="hexDisp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textToHex" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -263,9 +263,45 @@
             else if ([strChar isEqualToString:@"0"]) {
                 value=[value stringByAppendingString:@"00110000"];
             }
+            else if ([strChar isEqualToString:@"-"]) {
+                value=[value stringByAppendingString:@"00101101"];
+            }
+            else if ([strChar isEqualToString:@"/"]) {
+                value=[value stringByAppendingString:@"00101111"];
+            }
+            else if ([strChar isEqualToString:@":"]) {
+                value=[value stringByAppendingString:@"00111010"];
+            }
+            else if ([strChar isEqualToString:@";"]) {
+                value=[value stringByAppendingString:@"00111011"];
+            }
+            else if ([strChar isEqualToString:@"("])
+            {
+                value=[value stringByAppendingString:@"00101000"];
+            }
+            else if ([strChar isEqualToString:@")"])
+            {
+                value=[value stringByAppendingString:@"00101001"];
+            }
+            else if ([strChar isEqualToString:@"$"])
+            {
+                value=[value stringByAppendingString:@"00100100"];
+            }
+            else if ([strChar isEqualToString:@"&"])
+            {
+                value=[value stringByAppendingString:@"00100110"];
+            }
+            else if ([strChar isEqualToString:@"@"])
+            {
+                value=[value stringByAppendingString:@"01000000"];
+            }
+            else if ([strChar isEqualToString:@"\""]) //The " character needs escaping
+            {
+                value=[value stringByAppendingString:@"00100010"];
+            }
             else
             {
-                value=@"Invalid input";
+                value=@"Invalid input, no accents are allowed";
                 blank=false;
             }
         }

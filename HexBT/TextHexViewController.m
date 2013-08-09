@@ -120,10 +120,6 @@
         else if ([binArray[x] isEqualToString:@"1111"]) {
             hexR=[hexR stringByAppendingString:@"F"];
         }
-        else
-        {
-            hexR=@"Invalid input";
-        }
     }
     return hexR;
 }
