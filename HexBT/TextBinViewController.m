@@ -319,9 +319,89 @@
             {
                 value=[value stringByAppendingString:@"00100001"];
             }
+            else if ([strChar isEqualToString:@"["])
+            {
+                value=[value stringByAppendingString:@"01011011"];
+            }
+            else if ([strChar isEqualToString:@"]"])
+            {
+                value=[value stringByAppendingString:@"01011101"];
+            }
+            else if ([strChar isEqualToString:@"{"])
+            {
+                value=[value stringByAppendingString:@"01111011"];
+            }
+            else if ([strChar isEqualToString:@"}"])
+            {
+                value=[value stringByAppendingString:@"01111101"];
+            }
+            else if ([strChar isEqualToString:@"#"])
+            {
+                value=[value stringByAppendingString:@"00100011"];
+            }
+            else if ([strChar isEqualToString:@"\%"])
+            {
+                value=[value stringByAppendingString:@"00100101"];
+            }
+            else if ([strChar isEqualToString:@"^"])
+            {
+                value=[value stringByAppendingString:@"01011110"];
+            }
+            else if ([strChar isEqualToString:@"*"])
+            {
+                value=[value stringByAppendingString:@"00101010"];
+            }
+            else if ([strChar isEqualToString:@"+"])
+            {
+                value=[value stringByAppendingString:@"00101011"];
+            }
+            else if ([strChar isEqualToString:@"="])
+            {
+                value=[value stringByAppendingString:@"00111101"];
+            }
+            else if ([strChar isEqualToString:@"_"])
+            {
+                value=[value stringByAppendingString:@"01011111"];
+            }
+            else if ([strChar isEqualToString:@"\\"])
+            {
+                value=[value stringByAppendingString:@"01011100"];
+            }
+            else if ([strChar isEqualToString:@"|"])
+            {
+                value=[value stringByAppendingString:@"01111100"];
+            }
+            else if ([strChar isEqualToString:@"~"])
+            {
+                value=[value stringByAppendingString:@"01111110"];
+            }
+            else if ([strChar isEqualToString:@"<"])
+            {
+                value=[value stringByAppendingString:@"00111100"];
+            }
+            else if ([strChar isEqualToString:@">"])
+            {
+                value=[value stringByAppendingString:@"00111110"];
+            }
+            else if ([strChar isEqualToString:@"£"])
+            {
+                value=[value stringByAppendingString:@"10011100"];
+            }
+            else if ([strChar isEqualToString:@"¥"])
+            {
+                value=[value stringByAppendingString:@"10011101"];
+            }
+            else if ([strChar isEqualToString:@"•"])
+            {
+                value=[value stringByAppendingString:@"11111001"];
+            }
+            else if ([strChar isEqualToString:@"€"])
+            {
+                value=[value stringByAppendingString:@"10000000"];
+            }
             else
             {
-                value=@"Invalid input, no accents are allowed";
+                value=@"Invalid input, no non-ASCII characters are allowed";
                 blank=false;
             }
         }

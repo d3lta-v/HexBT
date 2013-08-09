@@ -131,7 +131,7 @@
     hexDisp.text=converted;
     [textToHex resignFirstResponder];
     if (![hexDisp hasText]) {
-        hexDisp.text=@"Invalid input";
+        hexDisp.text=@"Invalid input, no non-ASCII characters are allowed";
     }
 }
 
