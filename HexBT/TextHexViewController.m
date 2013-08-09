@@ -125,6 +125,19 @@
     return hexR;
 }
 
+-(IBAction)share:(id)sender
+{
+    if ([hexDisp hasText]) {
+        UIActivityViewController *actViewCtrl=[[UIActivityViewController alloc]initWithActivityItems:@[hexDisp.text] applicationActivities:nil];
+        [self presentViewController:actViewCtrl animated:YES completion:nil];
+    }
+    else
+    {
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+}
+
 -(IBAction)convert:(id)sender
 {
     NSString *converted=[self textToHex:textToHex.text];

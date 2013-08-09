@@ -20,5 +20,6 @@
 -(NSString *)textToHex:(NSString *)text;
 
 -(IBAction)convert:(id)sender;
+-(IBAction)share:(id)sender;
 
 @end

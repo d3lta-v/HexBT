@@ -61,6 +61,19 @@
     [textToBinary resignFirstResponder];
 }
 
+-(IBAction)share:(id)sender
+{
+    if ([binaryDisp hasText]) {
+        UIActivityViewController *actViewCtrl=[[UIActivityViewController alloc]initWithActivityItems:@[binaryDisp.text] applicationActivities:nil];
+        [self presentViewController:actViewCtrl animated:YES completion:nil];
+    }
+    else
+    {
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+}
+
 -(NSString *)textToBin:(NSString *)text
 {
     NSString *value=[[NSString alloc]init]; //The alloc init is VERY IMPORTANT! It makes sure it's even properly present in the memory and not deallocated for no good reason
