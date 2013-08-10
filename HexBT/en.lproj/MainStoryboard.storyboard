@@ -502,7 +502,7 @@
                             <outlet property="delegate" destination="ikN-ia-w9r" id="m0D-B3-edn"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Hash Generator" image="TextToHex.png" id="mEj-0Y-FeF"/>
+                    <tabBarItem key="tabBarItem" title="Hash Generator" image="Hash.png" id="mEj-0Y-FeF"/>
                     <connections>
                         <outlet property="md5Disp" destination="jxB-Mb-aNI" id="bL5-AL-Qy1"/>
                         <outlet property="sha1Disp" destination="ER1-4J-nSa" id="wlH-3C-Alh"/>
@@ -515,9 +515,45 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Hash.png" width="30" height="30"/>
         <image name="TextToBin.png" width="30" height="30"/>
         <image name="TextToHex.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="HashSumViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HashSumViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="md5Disp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="sha1Disp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textToHash" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TextBinViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextBinViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="action" name="convertBack:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="binaryDisp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textToBinary" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="TextHexViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextHexViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="action" name="convertBack:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="hexDisp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textToHex" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
