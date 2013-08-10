@@ -657,139 +657,139 @@
             else if ([strChar isEqualToString:@"00101111"]) {
                 value=[value stringByAppendingString:@"/"];
             }
-            else if ([strChar isEqualToString:@":"]) {
-                value=[value stringByAppendingString:@"00111010"];
+            else if ([strChar isEqualToString:@"00111010"]) {
+                value=[value stringByAppendingString:@":"];
             }
-            else if ([strChar isEqualToString:@";"]) {
-                value=[value stringByAppendingString:@"00111011"];
+            else if ([strChar isEqualToString:@"00111011"]) {
+                value=[value stringByAppendingString:@";"];
             }
-            else if ([strChar isEqualToString:@"("])
+            else if ([strChar isEqualToString:@"00101000"])
             {
-                value=[value stringByAppendingString:@"00101000"];
+                value=[value stringByAppendingString:@"("];
             }
-            else if ([strChar isEqualToString:@")"])
+            else if ([strChar isEqualToString:@"00101001"])
             {
-                value=[value stringByAppendingString:@"00101001"];
+                value=[value stringByAppendingString:@")"];
             }
-            else if ([strChar isEqualToString:@"$"])
+            else if ([strChar isEqualToString:@"00100100"])
             {
-                value=[value stringByAppendingString:@"00100100"];
+                value=[value stringByAppendingString:@"$"];
             }
-            else if ([strChar isEqualToString:@"&"])
+            else if ([strChar isEqualToString:@"00100110"])
             {
-                value=[value stringByAppendingString:@"00100110"];
+                value=[value stringByAppendingString:@"&"];
             }
-            else if ([strChar isEqualToString:@"@"])
+            else if ([strChar isEqualToString:@"01000000"])
             {
-                value=[value stringByAppendingString:@"01000000"];
+                value=[value stringByAppendingString:@"@"];
             }
-            else if ([strChar isEqualToString:@"\""]) //The " character needs escaping
+            else if ([strChar isEqualToString:@"00100010"]) //The " character needs escaping
             {
-                value=[value stringByAppendingString:@"00100010"];
+                value=[value stringByAppendingString:@"\""];
             }
-            else if ([strChar isEqualToString:@"."])
+            else if ([strChar isEqualToString:@"00101110"])
             {
-                value=[value stringByAppendingString:@"00101110"];
+                value=[value stringByAppendingString:@"."];
             }
-            else if ([strChar isEqualToString:@","])
+            else if ([strChar isEqualToString:@"00101100"])
             {
-                value=[value stringByAppendingString:@"00101100"];
+                value=[value stringByAppendingString:@","];
             }
-            else if ([strChar isEqualToString:@"?"])
+            else if ([strChar isEqualToString:@"00111111"])
             {
-                value=[value stringByAppendingString:@"00111111"];
+                value=[value stringByAppendingString:@"?"];
             }
-            else if ([strChar isEqualToString:@"!"])
+            else if ([strChar isEqualToString:@"00100001"])
             {
-                value=[value stringByAppendingString:@"00100001"];
+                value=[value stringByAppendingString:@"!"];
             }
-            else if ([strChar isEqualToString:@"'"])
+            else if ([strChar isEqualToString:@"00100001"])
             {
-                value=[value stringByAppendingString:@"00100001"];
+                value=[value stringByAppendingString:@"'"];
             }
-            else if ([strChar isEqualToString:@"["])
+            else if ([strChar isEqualToString:@"01011011"])
             {
-                value=[value stringByAppendingString:@"01011011"];
+                value=[value stringByAppendingString:@"["];
             }
-            else if ([strChar isEqualToString:@"]"])
+            else if ([strChar isEqualToString:@"01011101"])
             {
-                value=[value stringByAppendingString:@"01011101"];
+                value=[value stringByAppendingString:@"]"];
             }
-            else if ([strChar isEqualToString:@"{"])
+            else if ([strChar isEqualToString:@"01111011"])
             {
-                value=[value stringByAppendingString:@"01111011"];
+                value=[value stringByAppendingString:@"{"];
             }
-            else if ([strChar isEqualToString:@"}"])
+            else if ([strChar isEqualToString:@"01111101"])
             {
-                value=[value stringByAppendingString:@"01111101"];
+                value=[value stringByAppendingString:@"}"];
             }
-            else if ([strChar isEqualToString:@"#"])
+            else if ([strChar isEqualToString:@"00100011"])
             {
-                value=[value stringByAppendingString:@"00100011"];
+                value=[value stringByAppendingString:@"#"];
             }
-            else if ([strChar isEqualToString:@"\%"])
+            else if ([strChar isEqualToString:@"00100101"])
             {
-                value=[value stringByAppendingString:@"00100101"];
+                value=[value stringByAppendingString:@"\%"];
             }
-            else if ([strChar isEqualToString:@"^"])
+            else if ([strChar isEqualToString:@"01011110"])
             {
-                value=[value stringByAppendingString:@"01011110"];
+                value=[value stringByAppendingString:@"^"];
             }
-            else if ([strChar isEqualToString:@"*"])
+            else if ([strChar isEqualToString:@"00101010"])
             {
-                value=[value stringByAppendingString:@"00101010"];
+                value=[value stringByAppendingString:@"*"];
             }
-            else if ([strChar isEqualToString:@"+"])
+            else if ([strChar isEqualToString:@"00101011"])
             {
-                value=[value stringByAppendingString:@"00101011"];
+                value=[value stringByAppendingString:@"+"];
             }
-            else if ([strChar isEqualToString:@"="])
+            else if ([strChar isEqualToString:@"00111101"])
             {
-                value=[value stringByAppendingString:@"00111101"];
+                value=[value stringByAppendingString:@"="];
             }
-            else if ([strChar isEqualToString:@"_"])
+            else if ([strChar isEqualToString:@"01011111"])
             {
-                value=[value stringByAppendingString:@"01011111"];
+                value=[value stringByAppendingString:@"_"];
             }
-            else if ([strChar isEqualToString:@"\\"])
+            else if ([strChar isEqualToString:@"01011100"])
             {
-                value=[value stringByAppendingString:@"01011100"];
+                value=[value stringByAppendingString:@"\\"];
             }
-            else if ([strChar isEqualToString:@"|"])
+            else if ([strChar isEqualToString:@"01111100"])
             {
-                value=[value stringByAppendingString:@"01111100"];
+                value=[value stringByAppendingString:@"|"];
             }
-            else if ([strChar isEqualToString:@"~"])
+            else if ([strChar isEqualToString:@"01111110"])
             {
-                value=[value stringByAppendingString:@"01111110"];
+                value=[value stringByAppendingString:@"~"];
             }
-            else if ([strChar isEqualToString:@"<"])
+            else if ([strChar isEqualToString:@"00111100"])
             {
-                value=[value stringByAppendingString:@"00111100"];
+                value=[value stringByAppendingString:@"<"];
             }
-            else if ([strChar isEqualToString:@">"])
+            else if ([strChar isEqualToString:@"00111110"])
             {
-                value=[value stringByAppendingString:@"00111110"];
+                value=[value stringByAppendingString:@">"];
             }
-            else if ([strChar isEqualToString:@"£"])
+            else if ([strChar isEqualToString:@"10011100"])
             {
-                value=[value stringByAppendingString:@"10011100"];
+                value=[value stringByAppendingString:@"£"];
             }
-            else if ([strChar isEqualToString:@"¥"])
+            else if ([strChar isEqualToString:@"10011101"])
             {
-                value=[value stringByAppendingString:@"10011101"];
+                value=[value stringByAppendingString:@"¥"];
             }
-            else if ([strChar isEqualToString:@"•"])
+            else if ([strChar isEqualToString:@"11111001"])
             {
-                value=[value stringByAppendingString:@"11111001"];
+                value=[value stringByAppendingString:@"•"];
             }
-            else if ([strChar isEqualToString:@"€"])
+            else if ([strChar isEqualToString:@"10000000"])
             {
-                value=[value stringByAppendingString:@"10000000"];
+                value=[value stringByAppendingString:@"€"];
             }
-            else if ([strChar isEqualToString:@"\n"])
+            else if ([strChar isEqualToString:@"00001010"])
             {
-                value=[value stringByAppendingString:@"00001010"];
+                value=[value stringByAppendingString:@"\n"];
             }
             else
             {

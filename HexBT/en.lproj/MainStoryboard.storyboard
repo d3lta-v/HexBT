@@ -106,7 +106,7 @@
                                                         <constraint firstAttribute="width" constant="146" id="kMv-9U-wDW"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="Share">
+                                                    <state key="normal" title="Share/Copy">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -270,7 +270,7 @@
                                                         <constraint firstAttribute="width" constant="146" id="yFR-Bh-0rD"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="Share">
+                                                    <state key="normal" title="Share/Copy">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
