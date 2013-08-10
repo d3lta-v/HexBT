@@ -18,8 +18,10 @@
 @property (strong,nonatomic) IBOutlet UITextView *hexDisp;
 
 -(NSString *)textToHex:(NSString *)text;
+-(NSString *)hexToText:(NSString *)text;
 
 -(IBAction)convert:(id)sender;
+-(IBAction)convertBack:(id)sender;
 -(IBAction)share:(id)sender;
 
 @end

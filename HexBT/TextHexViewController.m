@@ -125,6 +125,73 @@
     return hexR;
 }
 
+-(NSString *)hexToText:(NSString *)text
+{
+    NSMutableArray *array=[[NSMutableArray alloc]init];
+    for (int i=0; i<text.length; i++) {
+        [array addObject:[MNNSStringWithUnichar stringWithUnichar:[text characterAtIndex:i]]];
+    }
+    NSString *binary=[[NSString alloc]init];
+    for (int x=0; x<[array count]; x++) {
+        if ([array[x] isEqualToString:@"0"]) {
+            binary=[binary stringByAppendingString:@"0000"];
+        }
+        else if ([array[x] isEqualToString:@"1"]) {
+            binary=[binary stringByAppendingString:@"0001"];
+        }
+        else if ([array[x] isEqualToString:@"2"]) {
+            binary=[binary stringByAppendingString:@"0010"];
+        }
+        else if ([array[x] isEqualToString:@"3"]) {
+            binary=[binary stringByAppendingString:@"0011"];
+        }
+        else if ([array[x] isEqualToString:@"4"]) {
+            binary=[binary stringByAppendingString:@"0100"];
+        }
+        else if ([array[x] isEqualToString:@"5"]) {
+            binary=[binary stringByAppendingString:@"0101"];
+        }
+        else if ([array[x] isEqualToString:@"6"]) {
+            binary=[binary stringByAppendingString:@"0110"];
+        }
+        else if ([array[x] isEqualToString:@"7"]) {
+            binary=[binary stringByAppendingString:@"0111"];
+        }
+        else if ([array[x] isEqualToString:@"8"]) {
+            binary=[binary stringByAppendingString:@"1000"];
+        }
+        else if ([array[x] isEqualToString:@"9"]) {
+            binary=[binary stringByAppendingString:@"1001"];
+        }
+        else if ([array[x] isEqualToString:@"A"]) {
+            binary=[binary stringByAppendingString:@"1010"];
+        }
+        else if ([array[x] isEqualToString:@"B"]) {
+            binary=[binary stringByAppendingString:@"1011"];
+        }
+        else if ([array[x] isEqualToString:@"C"]) {
+            binary=[binary stringByAppendingString:@"1100"];
+        }
+        else if ([array[x] isEqualToString:@"D"]) {
+            binary=[binary stringByAppendingString:@"1101"];
+        }
+        else if ([array[x] isEqualToString:@"E"]) {
+            binary=[binary stringByAppendingString:@"1110"];
+        }
+        else if ([array[x] isEqualToString:@"F"]) {
+            binary=[binary stringByAppendingString:@"1111"];
+        }
+    }
+    TextBinViewController *binVC=[[TextBinViewController alloc]init];
+    return [binVC binToText:binary];
+}
+
+-(IBAction)convertBack:(id)sender
+{
+    textToHex.text=[self hexToText:hexDisp.text];
+    [hexDisp resignFirstResponder];
+}
+
 -(IBAction)share:(id)sender
 {
     if ([hexDisp hasText]) {

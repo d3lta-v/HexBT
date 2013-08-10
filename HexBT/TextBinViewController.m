@@ -704,7 +704,7 @@
             {
                 value=[value stringByAppendingString:@"!"];
             }
-            else if ([strChar isEqualToString:@"00100001"])
+            else if ([strChar isEqualToString:@"00100111"])
             {
                 value=[value stringByAppendingString:@"'"];
             }
