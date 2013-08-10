@@ -158,9 +158,18 @@
     textToHex.layer.cornerRadius=10.0f;
     hexDisp.clipsToBounds=YES;
     hexDisp.layer.cornerRadius=10.0f;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 }
 
-
+-(void)dismissKeyboard {
+    [textToHex resignFirstResponder];
+    [hexDisp resignFirstResponder];
+}
 
 - (void)didReceiveMemoryWarning
 {

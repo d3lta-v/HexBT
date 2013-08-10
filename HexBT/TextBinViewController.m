@@ -32,19 +32,20 @@
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    //Test, comment to disable
-    //NSLog(@"%@",[self textToBin:@"ABCDEFGHIJKLMN"]);
-    
     textToBinary.clipsToBounds=YES;
     textToBinary.layer.cornerRadius=10.0f;
     binaryDisp.clipsToBounds=YES;
     binaryDisp.layer.cornerRadius=10.0f;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+}
+
+-(void)dismissKeyboard {
+    [textToBinary resignFirstResponder];
+    [binaryDisp resignFirstResponder];
 }
 
 -(void)textViewDidEndEditing:(UITextView *)textView
