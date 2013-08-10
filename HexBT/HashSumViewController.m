@@ -57,7 +57,19 @@
 
 -(IBAction)share:(id)sender
 {
-    
+    if ([sha1Disp hasText]&&[md5Disp hasText]) {
+        NSString *md5String=[@"MD5 Sum: " stringByAppendingString:md5Disp.text];
+        NSString *sha1String=[@"\nSHA1 Sum: " stringByAppendingString:sha1Disp.text];
+        NSString *combined=[md5String stringByAppendingString:sha1String];
+        
+        UIActivityViewController *actCtrl=[[UIActivityViewController alloc]initWithActivityItems:@[combined] applicationActivities:nil];
+        [self presentViewController:actCtrl animated:YES completion:nil];
+    }
+    else
+    {
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"You haven't generated a hash!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        [alert show];
+    }
 }
 
 -(NSString*)sha1:(NSString*)input

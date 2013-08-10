@@ -394,9 +394,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOd-IH-2Vf">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="TzW-vo-jFN"/>
-                                                        <constraint firstAttribute="width" constant="300" id="rRj-un-HiA"/>
+                                                        <constraint firstAttribute="width" constant="146" id="f8G-F1-UaH"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <state key="normal" title="Generate Hash Sum">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -408,12 +408,31 @@
                                                         <action selector="convert:" destination="ikN-ia-w9r" eventType="touchUpInside" id="w1Q-5i-h4k"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pd-DH-v2J">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="146" id="g1A-S7-I8G"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <state key="normal" title="Share/Copy Hash">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="share:" destination="ikN-ia-w9r" eventType="touchUpInside" id="OvP-4x-DZB"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="mOd-IH-2Vf" firstAttribute="centerX" secondItem="G2U-ql-Sbm" secondAttribute="centerX" type="default" id="A40-EH-jex"/>
-                                            <constraint firstItem="mOd-IH-2Vf" firstAttribute="centerY" secondItem="G2U-ql-Sbm" secondAttribute="centerY" type="default" id="wdc-Im-Io2"/>
+                                            <constraint firstItem="2pd-DH-v2J" firstAttribute="bottom" secondItem="mOd-IH-2Vf" secondAttribute="bottom" type="default" id="Bbu-sU-vDc"/>
+                                            <constraint firstAttribute="trailing" secondItem="2pd-DH-v2J" secondAttribute="trailing" constant="10" id="Efz-66-HQ6"/>
+                                            <constraint firstItem="2pd-DH-v2J" firstAttribute="top" secondItem="mOd-IH-2Vf" secondAttribute="top" type="default" id="JfV-rZ-hs8"/>
+                                            <constraint firstItem="2pd-DH-v2J" firstAttribute="centerY" secondItem="G2U-ql-Sbm" secondAttribute="centerY" type="default" id="Vqo-FO-CxP"/>
+                                            <constraint firstItem="2pd-DH-v2J" firstAttribute="leading" secondItem="mOd-IH-2Vf" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="z3T-2C-13n"/>
                                         </constraints>
                                     </tableViewCell>
                                 </cells>
