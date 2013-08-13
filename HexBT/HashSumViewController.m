@@ -53,6 +53,23 @@
     sha1Disp.text=[self sha1:textToHash.text];
     md5Disp.text=[self md5:textToHash.text];
     [textToHash resignFirstResponder];
+    
+    if ([textToHash hasText]) {
+        sha1Disp.text=[self sha1:textToHash.text];
+        md5Disp.text=[self md5:textToHash.text];
+        [textToHash resignFirstResponder];
+    }
+    else if (![textToHash hasText])
+    {
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        [alert show];
+        sha1Disp.text=@"";
+        md5Disp.text=@"";
+    }
+    else
+    {
+        [textToHash resignFirstResponder];
+    }
 }
 
 -(IBAction)share:(id)sender

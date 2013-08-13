@@ -57,9 +57,21 @@
 
 -(IBAction)convert:(id)sender
 {
-    NSString *converted=[self textToBin:textToBinary.text];
-    binaryDisp.text=converted;
-    [textToBinary resignFirstResponder];
+    if ([textToBinary hasText]) {
+        NSString *converted=[self textToBin:textToBinary.text];
+        binaryDisp.text=converted;
+        [textToBinary resignFirstResponder];
+    }
+    else if (![textToBinary hasText]||![binaryDisp hasText])
+    {
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        [alert show];
+        binaryDisp.text=@"";
+    }
+    else
+    {
+        [textToBinary resignFirstResponder];
+    }
 }
 
 -(IBAction)convertBack:(id)sender
@@ -426,6 +438,8 @@
             }
             else
             {
+                UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"[ERROR] Invalid input, no non-ASCII characters are allowed" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+                [alert show];
                 value=@"[ERROR] Invalid input, no non-ASCII characters are allowed";
                 blank=false;
             }

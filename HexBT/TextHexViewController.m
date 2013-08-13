@@ -207,13 +207,21 @@
 
 -(IBAction)convert:(id)sender
 {
-    if (![hexDisp hasText]||![textToHex hasText]) {
-        hexDisp.text=@"[ERROR] Invalid or no input";
+    if ([textToHex hasText]) {
+        NSString *converted=[self textToHex:textToHex.text];
+        hexDisp.text=converted;
+        [textToHex resignFirstResponder];
+        
+    }
+    else if (![hexDisp hasText]||![textToHex hasText])
+    {
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        [alert show];
+        hexDisp.text=@"";
+        [textToHex resignFirstResponder];
     }
     else
     {
-        NSString *converted=[self textToHex:textToHex.text];
-        hexDisp.text=converted;
         [textToHex resignFirstResponder];
     }
 }

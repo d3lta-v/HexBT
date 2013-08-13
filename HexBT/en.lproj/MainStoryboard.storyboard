@@ -71,7 +71,7 @@
                                                         <constraint firstAttribute="height" constant="35" id="3wp-hK-hTc"/>
                                                         <constraint firstAttribute="width" constant="300" id="pdN-0L-CYT"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <state key="normal" title="Convert To Binary">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -106,7 +106,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="146" id="kMv-9U-wDW"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <state key="normal" title="Share/Copy">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -123,7 +123,7 @@
                                                         <constraint firstAttribute="width" constant="146" id="Asy-QM-u9Q"/>
                                                         <constraint firstAttribute="height" constant="44" id="RLA-gb-63a"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <state key="normal" title="Convert To Text">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -135,13 +135,24 @@
                                                         <action selector="convertBack:" destination="Mf9-5q-OL6" eventType="touchUpInside" id="D3j-rb-7Eo"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="|" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyH-wb-8iX">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="5" id="FJp-o7-CoL"/>
+                                                        <constraint firstAttribute="height" constant="21" id="rFf-pq-JPT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="M5W-ey-u88" firstAttribute="top" secondItem="ef3-gw-eEN" secondAttribute="top" type="default" id="EfA-0B-7ae"/>
+                                            <constraint firstItem="uyH-wb-8iX" firstAttribute="centerX" secondItem="P9o-ZP-xgk" secondAttribute="centerX" type="default" id="cba-jg-gBW"/>
                                             <constraint firstItem="ef3-gw-eEN" firstAttribute="leading" secondItem="M5W-ey-u88" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="tqx-J5-26j"/>
                                             <constraint firstItem="M5W-ey-u88" firstAttribute="centerY" secondItem="P9o-ZP-xgk" secondAttribute="centerY" type="default" id="up3-cB-sgN"/>
+                                            <constraint firstItem="uyH-wb-8iX" firstAttribute="top" secondItem="P9o-ZP-xgk" secondAttribute="top" constant="9" id="vV4-v7-wjw"/>
                                             <constraint firstItem="M5W-ey-u88" firstAttribute="bottom" secondItem="ef3-gw-eEN" secondAttribute="bottom" type="default" id="vwu-7N-pkC"/>
                                             <constraint firstItem="M5W-ey-u88" firstAttribute="leading" secondItem="P9o-ZP-xgk" secondAttribute="leading" constant="10" id="ynA-Ll-Zab"/>
                                         </constraints>
@@ -235,7 +246,7 @@
                                                         <constraint firstAttribute="width" constant="300" id="AEW-va-eEJ"/>
                                                         <constraint firstAttribute="height" constant="35" id="W8U-iA-GIp"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <state key="normal" title="Convert To Hex">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -270,7 +281,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="146" id="yFR-Bh-0rD"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <state key="normal" title="Share/Copy">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -287,7 +298,7 @@
                                                         <constraint firstAttribute="width" constant="146" id="6iW-X3-rJ9"/>
                                                         <constraint firstAttribute="height" constant="44" id="FG8-Cv-nXy"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <state key="normal" title="Convert To Text">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -299,14 +310,25 @@
                                                         <action selector="convertBack:" destination="ylg-Nl-wV9" eventType="touchUpInside" id="GiO-HE-aQc"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="|" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mk0-RU-Hua">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="5" id="aJV-Sx-Yof"/>
+                                                        <constraint firstAttribute="height" constant="21" id="z5h-UR-dzF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="vRn-iP-ilO" firstAttribute="top" secondItem="OkH-ua-2fa" secondAttribute="top" type="default" id="6mc-tt-IZN"/>
                                             <constraint firstItem="vRn-iP-ilO" firstAttribute="bottom" secondItem="OkH-ua-2fa" secondAttribute="bottom" type="default" id="Mmg-0r-lcf"/>
-                                            <constraint firstItem="vRn-iP-ilO" firstAttribute="centerY" secondItem="EP5-kK-7LN" secondAttribute="centerY" type="default" id="Ubm-Yf-Q3m"/>
                                             <constraint firstItem="OkH-ua-2fa" firstAttribute="leading" secondItem="vRn-iP-ilO" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="hOF-XS-8Gw"/>
+                                            <constraint firstItem="Mk0-RU-Hua" firstAttribute="centerX" secondItem="EP5-kK-7LN" secondAttribute="centerX" type="default" id="jIU-iO-4eh"/>
+                                            <constraint firstItem="vRn-iP-ilO" firstAttribute="centerY" secondItem="EP5-kK-7LN" secondAttribute="centerY" type="default" id="vwK-Tp-cKm"/>
+                                            <constraint firstItem="Mk0-RU-Hua" firstAttribute="centerY" secondItem="OkH-ua-2fa" secondAttribute="centerY" type="default" id="zBn-K5-p2H"/>
                                             <constraint firstItem="vRn-iP-ilO" firstAttribute="leading" secondItem="EP5-kK-7LN" secondAttribute="leading" constant="10" id="zy8-c2-xtp"/>
                                         </constraints>
                                     </tableViewCell>
@@ -399,7 +421,7 @@
                                                         <constraint firstAttribute="height" constant="35" id="TzW-vo-jFN"/>
                                                         <constraint firstAttribute="width" constant="146" id="f8G-F1-UaH"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Generate Hash Sum">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -415,7 +437,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="146" id="g1A-S7-I8G"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="Share/Copy Hash">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -427,14 +449,25 @@
                                                         <action selector="share:" destination="ikN-ia-w9r" eventType="touchUpInside" id="OvP-4x-DZB"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="|" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aV2-Gn-vPL">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="EBb-jQ-4pd"/>
+                                                        <constraint firstAttribute="width" constant="5" id="Wyc-A2-lSC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="2pd-DH-v2J" firstAttribute="bottom" secondItem="mOd-IH-2Vf" secondAttribute="bottom" type="default" id="Bbu-sU-vDc"/>
-                                            <constraint firstAttribute="trailing" secondItem="2pd-DH-v2J" secondAttribute="trailing" constant="10" id="Efz-66-HQ6"/>
+                                            <constraint firstItem="2pd-DH-v2J" firstAttribute="bottom" secondItem="mOd-IH-2Vf" secondAttribute="bottom" type="default" id="3Xy-7U-GKv"/>
+                                            <constraint firstItem="mOd-IH-2Vf" firstAttribute="leading" secondItem="G2U-ql-Sbm" secondAttribute="leading" constant="10" id="8Ww-sC-V01"/>
+                                            <constraint firstItem="2pd-DH-v2J" firstAttribute="centerY" secondItem="G2U-ql-Sbm" secondAttribute="centerY" type="default" id="AUj-Xh-ibb"/>
                                             <constraint firstItem="2pd-DH-v2J" firstAttribute="top" secondItem="mOd-IH-2Vf" secondAttribute="top" type="default" id="JfV-rZ-hs8"/>
-                                            <constraint firstItem="2pd-DH-v2J" firstAttribute="centerY" secondItem="G2U-ql-Sbm" secondAttribute="centerY" type="default" id="Vqo-FO-CxP"/>
+                                            <constraint firstItem="aV2-Gn-vPL" firstAttribute="leading" secondItem="G2U-ql-Sbm" secondAttribute="leading" constant="159" id="ckK-rM-7Cf"/>
+                                            <constraint firstItem="aV2-Gn-vPL" firstAttribute="top" secondItem="G2U-ql-Sbm" secondAttribute="top" constant="8" id="qRD-Ty-c0m"/>
                                             <constraint firstItem="2pd-DH-v2J" firstAttribute="leading" secondItem="mOd-IH-2Vf" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="z3T-2C-13n"/>
                                         </constraints>
                                     </tableViewCell>
