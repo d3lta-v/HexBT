@@ -9,6 +9,7 @@
 #import "TextBase64ViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "NSData+Base64.h"
+#import "SVProgressHUD.h"
 
 @interface TextBase64ViewController ()
 
@@ -40,6 +41,17 @@
                                    action:@selector(dismissKeyboard)];
     
     [self.view addGestureRecognizer:tap];
+    
+    UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    
+    [swipeDown setDirection:(UISwipeGestureRecognizerDirectionDown)];
+    
+    [[self view] addGestureRecognizer:swipeDown];
+}
+-(void)dismissKeyboard
+{
+    [textToBase64 resignFirstResponder];
+    [base64Disp resignFirstResponder];
 }
 
 - (NSString *)base64Encode:(NSString *)plainText
@@ -70,8 +82,15 @@
 -(IBAction)share:(id)sender
 {
     if ([base64Disp hasText]) {
-        UIActivityViewController *actViewCtrl=[[UIActivityViewController alloc]initWithActivityItems:@[base64Disp.text] applicationActivities:nil];
-        [self presentViewController:actViewCtrl animated:YES completion:nil];
+        [SVProgressHUD showWithStatus:@"Loading..."];
+        double delayInSeconds = 0.1;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            UIActivityViewController *actViewCtrl=[[UIActivityViewController alloc]initWithActivityItems:@[base64Disp.text] applicationActivities:nil];
+            [self presentViewController:actViewCtrl animated:YES completion:^(void){
+                [SVProgressHUD dismiss];
+            }];
+        });
     }
     else
     {

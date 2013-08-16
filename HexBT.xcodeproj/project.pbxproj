@@ -15,6 +15,8 @@
 		22039F7517B3E13E00551E55 /* TextToBin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22039F7317B3E13E00551E55 /* TextToBin@2x.png */; };
 		22039F7617B3E13E00551E55 /* TextToHex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22039F7417B3E13E00551E55 /* TextToHex@2x.png */; };
 		22039F7917B4057000551E55 /* TextHexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22039F7817B4057000551E55 /* TextHexViewController.m */; };
+		224DBEA117BE4EFD00F12E0A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 224DBE9E17BE4EFD00F12E0A /* SVProgressHUD.bundle */; };
+		224DBEA217BE4EFD00F12E0A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 224DBEA017BE4EFD00F12E0A /* SVProgressHUD.m */; };
 		2290825A17B6671500CC8E1F /* HashSumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2290825917B6671500CC8E1F /* HashSumViewController.m */; };
 		2290826017B681CA00CC8E1F /* Hash.png in Resources */ = {isa = PBXBuildFile; fileRef = 2290825F17B681CA00CC8E1F /* Hash.png */; };
 		2297CC0B17AFD3A200F51E23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297CC0A17AFD3A200F51E23 /* UIKit.framework */; };
@@ -48,6 +50,9 @@
 		22039F7417B3E13E00551E55 /* TextToHex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TextToHex@2x.png"; sourceTree = "<group>"; };
 		22039F7717B4057000551E55 /* TextHexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextHexViewController.h; sourceTree = "<group>"; };
 		22039F7817B4057000551E55 /* TextHexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextHexViewController.m; sourceTree = "<group>"; };
+		224DBE9E17BE4EFD00F12E0A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		224DBE9F17BE4EFD00F12E0A /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		224DBEA017BE4EFD00F12E0A /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		2290825817B6671500CC8E1F /* HashSumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashSumViewController.h; sourceTree = "<group>"; };
 		2290825917B6671500CC8E1F /* HashSumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashSumViewController.m; sourceTree = "<group>"; };
 		2290825F17B681CA00CC8E1F /* Hash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hash.png; sourceTree = "<group>"; };
@@ -94,6 +99,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		224DBE9D17BE4EFD00F12E0A /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				224DBE9E17BE4EFD00F12E0A /* SVProgressHUD.bundle */,
+				224DBE9F17BE4EFD00F12E0A /* SVProgressHUD.h */,
+				224DBEA017BE4EFD00F12E0A /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		2297CBFE17AFD3A200F51E23 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +143,7 @@
 		2297CC1017AFD3A200F51E23 /* HexBT */ = {
 			isa = PBXGroup;
 			children = (
+				224DBE9D17BE4EFD00F12E0A /* SVProgressHUD */,
 				2297CC1917AFD3A200F51E23 /* HexBTAppDelegate.h */,
 				2297CC1A17AFD3A200F51E23 /* HexBTAppDelegate.m */,
 				2297CC2217AFD3A200F51E23 /* MainStoryboard.storyboard */,
@@ -239,6 +255,7 @@
 				22D813B217BA5EA50074E008 /* Icon@2x.png in Resources */,
 				22D813B417BA7E550074E008 /* iTunesArtwork@2x.png in Resources */,
 				22B31EDB17BD0C7C0040EEF8 /* TextToBase64.png in Resources */,
+				224DBEA117BE4EFD00F12E0A /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +274,7 @@
 				2290825A17B6671500CC8E1F /* HashSumViewController.m in Sources */,
 				22B31ED617BCFFD80040EEF8 /* NSData+Base64.m in Sources */,
 				22B31ED917BD00170040EEF8 /* TextBase64ViewController.m in Sources */,
+				224DBEA217BE4EFD00F12E0A /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

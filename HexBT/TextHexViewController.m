@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "MNNSStringWithUnichar.h"
 #import "TextBinViewController.h"
+#import "SVProgressHUD.h"
 
 @interface TextHexViewController ()
 
@@ -195,8 +196,15 @@
 -(IBAction)share:(id)sender
 {
     if ([hexDisp hasText]) {
-        UIActivityViewController *actViewCtrl=[[UIActivityViewController alloc]initWithActivityItems:@[hexDisp.text] applicationActivities:nil];
-        [self presentViewController:actViewCtrl animated:YES completion:nil];
+        [SVProgressHUD showWithStatus:@"Loading..."];
+        double delayInSeconds = 0.1;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            UIActivityViewController *actViewCtrl=[[UIActivityViewController alloc]initWithActivityItems:@[hexDisp.text] applicationActivities:nil];
+            [self presentViewController:actViewCtrl animated:YES completion:^(void){
+                [SVProgressHUD dismiss];
+            }];
+        });
     }
     else
     {
@@ -211,7 +219,6 @@
         NSString *converted=[self textToHex:textToHex.text];
         hexDisp.text=converted;
         [textToHex resignFirstResponder];
-        
     }
     else if (![hexDisp hasText]||![textToHex hasText])
     {
@@ -239,6 +246,12 @@
                                    action:@selector(dismissKeyboard)];
     
     [self.view addGestureRecognizer:tap];
+    
+    UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    
+    [swipeDown setDirection:(UISwipeGestureRecognizerDirectionDown)];
+    
+    [[self view] addGestureRecognizer:swipeDown];
 }
 
 -(void)dismissKeyboard {

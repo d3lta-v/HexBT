@@ -9,6 +9,7 @@
 #import "HashSumViewController.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <QuartzCore/QuartzCore.h>
+#import "SVProgressHUD.h"
 
 @interface HashSumViewController ()
 
@@ -42,6 +43,12 @@
                                    action:@selector(dismissKeyboard)];
     
     [self.view addGestureRecognizer:tap];
+    
+    UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    
+    [swipeDown setDirection:(UISwipeGestureRecognizerDirectionDown)];
+    
+    [[self view] addGestureRecognizer:swipeDown];
 }
 
 -(void)dismissKeyboard {
@@ -79,8 +86,15 @@
         NSString *sha1String=[@"\nSHA1 Sum: " stringByAppendingString:sha1Disp.text];
         NSString *combined=[md5String stringByAppendingString:sha1String];
         
-        UIActivityViewController *actCtrl=[[UIActivityViewController alloc]initWithActivityItems:@[combined] applicationActivities:nil];
-        [self presentViewController:actCtrl animated:YES completion:nil];
+        [SVProgressHUD showWithStatus:@"Loading..."];
+        double delayInSeconds = 0.1;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            UIActivityViewController *actViewCtrl=[[UIActivityViewController alloc]initWithActivityItems:@[combined] applicationActivities:nil];
+            [self presentViewController:actViewCtrl animated:YES completion:^(void){
+                [SVProgressHUD dismiss];
+            }];
+        });
     }
     else
     {
