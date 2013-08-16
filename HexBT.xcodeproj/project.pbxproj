@@ -27,6 +27,9 @@
 		2297CC1F17AFD3A200F51E23 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2297CC1E17AFD3A200F51E23 /* Default@2x.png */; };
 		2297CC2117AFD3A200F51E23 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2297CC2017AFD3A200F51E23 /* Default-568h@2x.png */; };
 		2297CC2417AFD3A200F51E23 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2297CC2217AFD3A200F51E23 /* MainStoryboard.storyboard */; };
+		22B31ED617BCFFD80040EEF8 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B31ED517BCFFD80040EEF8 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		22B31ED917BD00170040EEF8 /* TextBase64ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B31ED817BD00170040EEF8 /* TextBase64ViewController.m */; };
+		22B31EDB17BD0C7C0040EEF8 /* TextToBase64.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B31EDA17BD0C7C0040EEF8 /* TextToBase64.png */; };
 		22D813AE17BA5E970074E008 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813AD17BA5E970074E008 /* iTunesArtwork.png */; };
 		22D813B017BA5EA20074E008 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813AF17BA5EA20074E008 /* Icon.png */; };
 		22D813B217BA5EA50074E008 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813B117BA5EA50074E008 /* Icon@2x.png */; };
@@ -63,6 +66,11 @@
 		2297CC2017AFD3A200F51E23 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2297CC2317AFD3A200F51E23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		2297CC4E17AFEC7D00F51E23 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		22B31ED417BCFFD80040EEF8 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		22B31ED517BCFFD80040EEF8 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		22B31ED717BD00170040EEF8 /* TextBase64ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBase64ViewController.h; sourceTree = "<group>"; };
+		22B31ED817BD00170040EEF8 /* TextBase64ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextBase64ViewController.m; sourceTree = "<group>"; };
+		22B31EDA17BD0C7C0040EEF8 /* TextToBase64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToBase64.png; sourceTree = "<group>"; };
 		22D813AD17BA5E970074E008 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		22D813AF17BA5EA20074E008 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		22D813B117BA5EA50074E008 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -128,10 +136,14 @@
 				22FF4BB817AFF1AA007DFCEA /* TextBinViewController.m */,
 				22039F7717B4057000551E55 /* TextHexViewController.h */,
 				22039F7817B4057000551E55 /* TextHexViewController.m */,
+				22B31ED717BD00170040EEF8 /* TextBase64ViewController.h */,
+				22B31ED817BD00170040EEF8 /* TextBase64ViewController.m */,
 				2290825817B6671500CC8E1F /* HashSumViewController.h */,
 				2290825917B6671500CC8E1F /* HashSumViewController.m */,
 				22039F6417B2A23E00551E55 /* MNNSStringWithUnichar.h */,
 				22039F6517B2A23E00551E55 /* MNNSStringWithUnichar.m */,
+				22B31ED417BCFFD80040EEF8 /* NSData+Base64.h */,
+				22B31ED517BCFFD80040EEF8 /* NSData+Base64.m */,
 				2297CC1117AFD3A200F51E23 /* Supporting Files */,
 			);
 			path = HexBT;
@@ -140,6 +152,7 @@
 		2297CC1117AFD3A200F51E23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				22B31EDA17BD0C7C0040EEF8 /* TextToBase64.png */,
 				22D813B317BA7E550074E008 /* iTunesArtwork@2x.png */,
 				22D813AD17BA5E970074E008 /* iTunesArtwork.png */,
 				2290825F17B681CA00CC8E1F /* Hash.png */,
@@ -225,6 +238,7 @@
 				22D813B017BA5EA20074E008 /* Icon.png in Resources */,
 				22D813B217BA5EA50074E008 /* Icon@2x.png in Resources */,
 				22D813B417BA7E550074E008 /* iTunesArtwork@2x.png in Resources */,
+				22B31EDB17BD0C7C0040EEF8 /* TextToBase64.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +255,8 @@
 				22039F6617B2A23E00551E55 /* MNNSStringWithUnichar.m in Sources */,
 				22039F7917B4057000551E55 /* TextHexViewController.m in Sources */,
 				2290825A17B6671500CC8E1F /* HashSumViewController.m in Sources */,
+				22B31ED617BCFFD80040EEF8 /* NSData+Base64.m in Sources */,
+				22B31ED917BD00170040EEF8 /* TextBase64ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
