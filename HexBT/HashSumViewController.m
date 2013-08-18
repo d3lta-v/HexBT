@@ -10,6 +10,7 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <QuartzCore/QuartzCore.h>
 #import "SVProgressHUD.h"
+#import "WCAlertView.h"
 
 @interface HashSumViewController ()
 
@@ -37,6 +38,10 @@
     sha1Disp.layer.cornerRadius=10.0f;
     md5Disp.clipsToBounds=YES;
     md5Disp.layer.cornerRadius=10.0f;
+    
+    self.tableView.backgroundView = nil;
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor=[UIColor colorWithWhite:0.95 alpha:1];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
@@ -68,7 +73,7 @@
     }
     else if (![textToHash hasText])
     {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         sha1Disp.text=@"";
         md5Disp.text=@"";
@@ -98,7 +103,7 @@
     }
     else
     {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"You haven't generated a hash!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"You haven't generated a hash!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
         [alert show];
     }
 }

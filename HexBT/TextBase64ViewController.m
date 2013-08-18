@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "NSData+Base64.h"
 #import "SVProgressHUD.h"
+#import "WCAlertView.h"
 
 @interface TextBase64ViewController ()
 
@@ -35,6 +36,10 @@
     textToBase64.layer.cornerRadius=10.0f;
     base64Disp.clipsToBounds=YES;
     base64Disp.layer.cornerRadius=10.0f;
+    
+    self.tableView.backgroundView = nil;
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor=[UIColor colorWithWhite:0.95 alpha:1];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
@@ -66,7 +71,7 @@
     NSData *plainTextData = [NSData dataFromBase64String:base64String];
     NSString *plainText = [[NSString alloc] initWithData:plainTextData encoding:NSUTF8StringEncoding];
     if ([plainText length] == 0) {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         textToBase64.text=@"";
     }
@@ -94,7 +99,7 @@
     }
     else
     {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
         [alert show];
     }
 }
@@ -109,7 +114,7 @@
     }
     else if (![base64Disp hasText]||![textToBase64 hasText])
     {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         base64Disp.text=@"";
         [textToBase64 resignFirstResponder];

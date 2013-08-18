@@ -10,6 +10,7 @@
 #import "MNNSStringWithUnichar.h"
 #import <QuartzCore/QuartzCore.h>
 #import "SVProgressHUD.h"
+#import "WCAlertView.h"
 
 @interface TextBinViewController ()
 
@@ -33,21 +34,27 @@
 {
     [super viewDidLoad];
     
+    // Makes the text fields rounded
     textToBinary.clipsToBounds=YES;
     textToBinary.layer.cornerRadius=10.0f;
     binaryDisp.clipsToBounds=YES;
     binaryDisp.layer.cornerRadius=10.0f;
+    
+    // Sets the colors of the background
+    self.tableView.backgroundView = nil;
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor=[UIColor colorWithWhite:0.95 alpha:1];
+    
+    // Adds action to tap & dismiss keyboard
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
-    
     [self.view addGestureRecognizer:tap];
     
+    // Adds action to swipe down & dismiss keyboard
     UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
-    
     [swipeDown setDirection:(UISwipeGestureRecognizerDirectionDown)];
-    
-    [[self view] addGestureRecognizer:swipeDown];
+    [[self view] addGestureRecognizer:swipeDown];    
 }
 
 -(void)dismissKeyboard {
@@ -71,7 +78,7 @@
     }
     else if (![textToBinary hasText]||![binaryDisp hasText])
     {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         binaryDisp.text=@"";
     }
@@ -83,9 +90,21 @@
 
 -(IBAction)convertBack:(id)sender
 {
-    NSString *converted=[self binToText:binaryDisp.text];
-    textToBinary.text=converted;
-    [binaryDisp resignFirstResponder];
+    if ([binaryDisp hasText]) {
+        NSString *converted=[self binToText:binaryDisp.text];
+        textToBinary.text=converted;
+        [binaryDisp resignFirstResponder];
+    }
+    else if (![textToBinary hasText]||![binaryDisp hasText])
+    {
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        [alert show];
+        textToBinary.text=@"";
+    }
+    else
+    {
+        [binaryDisp resignFirstResponder];
+    }
 }
 
 -(IBAction)share:(id)sender
@@ -103,7 +122,7 @@
     }
     else
     {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
         [alert show];
     }
 }
@@ -452,7 +471,7 @@
             }
             else
             {
-                UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"[ERROR] Invalid input, no non-ASCII characters are allowed" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+                WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"[ERROR] Invalid input, no non-ASCII characters are allowed" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
                 [alert show];
                 value=@"[ERROR] Invalid input, no non-ASCII characters are allowed";
                 blank=false;

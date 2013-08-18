@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-69" y="60"/>
         </scene>
-        <!--Text Bin View Controller - Binary Converter-->
+        <!--Text Bin View Controller - Binary-->
         <scene sceneID="dqD-yS-ZfS">
             <objects>
                 <tableViewController id="Mf9-5q-OL6" customClass="TextBinViewController" sceneMemberID="viewController">
@@ -190,7 +190,7 @@
                             <outlet property="delegate" destination="Mf9-5q-OL6" id="9FY-Aa-SDn"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Binary Converter" image="TextToBin.png" id="8ze-In-Cwy"/>
+                    <tabBarItem key="tabBarItem" title="Binary" image="TextToBin.png" id="8ze-In-Cwy"/>
                     <connections>
                         <outlet property="binaryDisp" destination="2gt-1o-Nha" id="9mW-0r-4Cd"/>
                         <outlet property="textToBinary" destination="TdK-Wg-hj3" id="335-mY-8R3"/>
@@ -200,7 +200,7 @@
             </objects>
             <point key="canvasLocation" x="405" y="-607"/>
         </scene>
-        <!--Text Hex View Controller - Hex Converter-->
+        <!--Text Hex View Controller - Hex-->
         <scene sceneID="Hzw-yV-GEm">
             <objects>
                 <tableViewController id="ylg-Nl-wV9" customClass="TextHexViewController" sceneMemberID="viewController">
@@ -365,7 +365,7 @@
                             <outlet property="delegate" destination="ylg-Nl-wV9" id="aY6-9k-Oa3"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Hex Converter" image="TextToHex.png" id="rSF-gT-w3G"/>
+                    <tabBarItem key="tabBarItem" title="Hex" image="TextToHex.png" id="rSF-gT-w3G"/>
                     <connections>
                         <outlet property="hexDisp" destination="3b4-Zb-uSN" id="MYO-ct-ANd"/>
                         <outlet property="textToHex" destination="dzP-XU-DtL" id="NsX-nA-fA8"/>
@@ -375,7 +375,7 @@
             </objects>
             <point key="canvasLocation" x="405" y="-23"/>
         </scene>
-        <!--Hash Sum View Controller - Hash Generator-->
+        <!--Hash Sum View Controller - Hash-->
         <scene sceneID="PSe-em-p9d">
             <objects>
                 <tableViewController id="ikN-ia-w9r" customClass="HashSumViewController" sceneMemberID="viewController">
@@ -536,7 +536,7 @@
                             <outlet property="delegate" destination="ikN-ia-w9r" id="m0D-B3-edn"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Hash Generator" image="Hash.png" id="mEj-0Y-FeF"/>
+                    <tabBarItem key="tabBarItem" title="Hash" image="Hash.png" id="mEj-0Y-FeF"/>
                     <connections>
                         <outlet property="md5Disp" destination="jxB-Mb-aNI" id="bL5-AL-Qy1"/>
                         <outlet property="sha1Disp" destination="ER1-4J-nSa" id="wlH-3C-Alh"/>
@@ -547,7 +547,7 @@
             </objects>
             <point key="canvasLocation" x="405" y="561"/>
         </scene>
-        <!--Text Base64 View Controller - Base64 Converter-->
+        <!--Text Base64 View Controller - Base64-->
         <scene sceneID="gSP-AS-Nvy">
             <objects>
                 <tableViewController id="iWn-Ie-eRH" customClass="TextBase64ViewController" sceneMemberID="viewController">
@@ -712,7 +712,7 @@
                             <outlet property="delegate" destination="iWn-Ie-eRH" id="04R-gM-0dL"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Base64 Converter" image="TextToBase64.png" id="XUw-gC-wFk"/>
+                    <tabBarItem key="tabBarItem" title="Base64" image="TextToBase64.png" id="XUw-gC-wFk"/>
                     <connections>
                         <outlet property="base64Disp" destination="4Pk-jI-eIy" id="gFX-pT-nSX"/>
                         <outlet property="textToBase64" destination="uiz-YZ-1Xv" id="eKW-gy-Asx"/>

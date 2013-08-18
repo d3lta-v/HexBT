@@ -11,6 +11,7 @@
 #import "MNNSStringWithUnichar.h"
 #import "TextBinViewController.h"
 #import "SVProgressHUD.h"
+#import "WCAlertView.h"
 
 @interface TextHexViewController ()
 
@@ -189,8 +190,16 @@
 
 -(IBAction)convertBack:(id)sender
 {
-    textToHex.text=[self hexToText:hexDisp.text];
-    [hexDisp resignFirstResponder];
+    if ([hexDisp hasText]) {
+        textToHex.text=[self hexToText:hexDisp.text];
+        [hexDisp resignFirstResponder];
+    }
+    else
+    {
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        [alert show];
+        [hexDisp resignFirstResponder];
+    }
 }
 
 -(IBAction)share:(id)sender
@@ -208,7 +217,7 @@
     }
     else
     {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
         [alert show];
     }
 }
@@ -222,7 +231,7 @@
     }
     else if (![hexDisp hasText]||![textToHex hasText])
     {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         hexDisp.text=@"";
         [textToHex resignFirstResponder];
@@ -240,6 +249,10 @@
     textToHex.layer.cornerRadius=10.0f;
     hexDisp.clipsToBounds=YES;
     hexDisp.layer.cornerRadius=10.0f;
+    
+    self.tableView.backgroundView = nil;
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor=[UIColor colorWithWhite:0.95 alpha:1];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
