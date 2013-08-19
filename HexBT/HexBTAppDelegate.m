@@ -37,6 +37,18 @@
     [item3 setFinishedSelectedImage:[UIImage imageNamed:@"Hash_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"Hash_Deselected.png"]];
     
     [WCAlertView setDefaultStyle:WCAlertViewStyleWhite];
+    [WCAlertView setDefaultCustomiaztonBlock:^(WCAlertView *alertView){
+        alertView.labelTextColor=[UIColor darkTextColor];
+        /*UIColor *topGradient = [UIColor clearColor];
+        UIColor *middleGradient = [UIColor clearColor];
+        UIColor *bottomGradient = [UIColor clearColor];
+        alertView.gradientColors = @[topGradient,middleGradient,bottomGradient];*/
+        alertView.innerFrameStrokeColor = [UIColor clearColor];
+        alertView.outerFrameColor = [UIColor clearColor];
+        alertView.buttonTextColor=[UIColor darkTextColor];
+        alertView.buttonFont=[UIFont fontWithName:@"HelveticaNeue-Light" size:17];
+        alertView.titleFont=[UIFont fontWithName:@"HelveticaNeue-Light" size:18];
+    }];
     
     return YES;
 }
