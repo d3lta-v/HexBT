@@ -48,7 +48,7 @@
         alertView.buttonTextColor=[UIColor darkTextColor];
         alertView.buttonFont=[UIFont fontWithName:@"HelveticaNeue-Light" size:17];
         alertView.titleFont=[UIFont fontWithName:@"HelveticaNeue-Light" size:18];
-        alertView.cornerRadius=0.1f;
+        alertView.cornerRadius=7.0f;
     }];
     
     return YES;

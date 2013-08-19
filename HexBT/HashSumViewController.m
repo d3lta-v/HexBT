@@ -39,6 +39,22 @@
     md5Disp.clipsToBounds=YES;
     md5Disp.layer.cornerRadius=10.0f;
     
+    //Set navigation bar looks
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.alpha = 0.9f;
+    self.navigationController.navigationBar.translucent = YES;
+    
+    //Set title text attributes
+    CGRect frame = CGRectMake(0, 0, 400, 44);
+    UILabel *label = [[UILabel alloc] initWithFrame:frame];
+    label.backgroundColor = [UIColor clearColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor colorWithRed:49.0/255.0 green:79.0/255.0 blue:79.0/255.0 alpha:1.0];
+    label.text = @"Text-Hash Digest";
+    [label setShadowColor:[UIColor whiteColor]];
+    [label setShadowOffset:CGSizeMake(0, -0.5)];
+    self.navigationItem.titleView = label;
+    
     self.tableView.backgroundView = nil;
     self.tableView.backgroundColor = [UIColor clearColor];
     self.view.backgroundColor=[UIColor colorWithWhite:0.95 alpha:1];
@@ -73,7 +89,7 @@
     }
     else if (![textToHash hasText])
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         sha1Disp.text=@"";
         md5Disp.text=@"";

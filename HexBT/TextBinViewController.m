@@ -45,6 +45,22 @@
     self.tableView.backgroundColor = [UIColor clearColor];
     self.view.backgroundColor=[UIColor colorWithWhite:0.95 alpha:1];
     
+    //Set navigation bar looks
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.alpha = 0.9f;
+    self.navigationController.navigationBar.translucent = YES;
+    
+    //Set title text attributes
+    CGRect frame = CGRectMake(0, 0, 400, 44);
+    UILabel *label = [[UILabel alloc] initWithFrame:frame];
+    label.backgroundColor = [UIColor clearColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor colorWithRed:49.0/255.0 green:79.0/255.0 blue:79.0/255.0 alpha:1.0];
+    label.text = @"Text-Binary Converter";
+    [label setShadowColor:[UIColor whiteColor]];
+    [label setShadowOffset:CGSizeMake(0, -0.5)];
+    self.navigationItem.titleView = label;
+    
     // Adds action to tap & dismiss keyboard
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
@@ -78,7 +94,7 @@
     }
     else if (![textToBinary hasText]||![binaryDisp hasText])
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         binaryDisp.text=@"";
     }
@@ -97,7 +113,7 @@
     }
     else if (![textToBinary hasText]||![binaryDisp hasText])
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"[ERROR] Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         textToBinary.text=@"";
     }
@@ -471,9 +487,9 @@
             }
             else
             {
-                WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"[ERROR] Invalid input, no non-ASCII characters are allowed" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+                WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid input, no non-ASCII characters are allowed" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
                 [alert show];
-                value=@"[ERROR] Invalid input, no non-ASCII characters are allowed";
+                value=@"Error: Invalid input, no non-ASCII characters are allowed";
                 blank=false;
             }
         }
@@ -498,7 +514,7 @@
     }
     else
     {
-        value=@"[ERROR] Invalid binary numbers";
+        value=@"Error: Invalid binary numbers";
     }
     
     bool blank=true;
@@ -841,7 +857,7 @@
             }
             else
             {
-                value=@"[ERROR] Invalid input, no non-ASCII characters are allowed";
+                value=@"Error: Invalid input, no non-ASCII characters are allowed";
                 blank=false;
             }
         }

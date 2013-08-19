@@ -16,39 +16,39 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="e2h-Tv-lZQ" kind="relationship" relationship="viewControllers" id="8G7-fs-nDC"/>
-                        <segue destination="GcO-uV-k4T" kind="relationship" relationship="viewControllers" id="F7T-Us-nBY"/>
-                        <segue destination="RrJ-B3-nJG" kind="relationship" relationship="viewControllers" id="3Ib-oi-ZvI"/>
-                        <segue destination="iru-Ij-LIC" kind="relationship" relationship="viewControllers" id="63W-Qr-UrR"/>
+                        <segue destination="xie-5M-uOq" kind="relationship" relationship="viewControllers" id="8G7-fs-nDC"/>
+                        <segue destination="Rtc-sP-RLl" kind="relationship" relationship="viewControllers" id="F7T-Us-nBY"/>
+                        <segue destination="7nK-Ks-Zqi" kind="relationship" relationship="viewControllers" id="3Ib-oi-ZvI"/>
+                        <segue destination="Bad-cR-LUu" kind="relationship" relationship="viewControllers" id="63W-Qr-UrR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Tq-HF-j4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-148" y="1"/>
         </scene>
-        <!--Text Bin View Controller - Binary Converter-->
+        <!--Text Bin View Controller-->
         <scene sceneID="hEM-zJ-MNr">
             <objects>
                 <tableViewController id="e2h-Tv-lZQ" customClass="TextBinViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="EuB-bm-v41">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Text" id="XzN-dI-avc">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="224" id="iVP-PS-F0z">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="225"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="174" id="iVP-PS-F0z">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="175"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="223"/>
+                                            <rect key="frame" x="10" y="1" width="300" height="173"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AC2-fw-keq">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" constant="170" id="KWy-Ld-wwe"/>
                                                         <constraint firstAttribute="width" constant="300" id="ZUG-Hm-aJF"/>
-                                                        <constraint firstAttribute="height" constant="220" id="tEI-Mg-hWg"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -62,7 +62,7 @@
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" rowHeight="39" id="SUc-KG-qeN">
-                                        <rect key="frame" x="0.0" y="271" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="221" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="38"/>
@@ -98,7 +98,7 @@
                             <tableViewSection headerTitle="Binary" id="28h-SG-Sgd">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="39" id="gx4-Mv-EGP">
-                                        <rect key="frame" x="0.0" y="357" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="307" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="38"/>
@@ -149,7 +149,7 @@
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="7eO-XN-gxm">
-                                        <rect key="frame" x="0.0" y="397" width="320" height="72"/>
+                                        <rect key="frame" x="0.0" y="347" width="320" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="70"/>
@@ -180,7 +180,7 @@
                             <outlet property="delegate" destination="e2h-Tv-lZQ" id="Rwi-zM-hM1"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Binary Converter" image="TextToBin.png" id="PHn-NV-CDb"/>
+                    <navigationItem key="navigationItem" id="jgg-1A-UzB"/>
                     <connections>
                         <outlet property="binaryDisp" destination="PRd-vX-iwz" id="Nkd-Re-YJa"/>
                         <outlet property="textToBinary" destination="AC2-fw-keq" id="YNt-GC-DRQ"/>
@@ -188,31 +188,31 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDy-IB-7vG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="405" y="-669"/>
+            <point key="canvasLocation" x="931" y="-782"/>
         </scene>
-        <!--Text Hex View Controller - Hex Converter-->
+        <!--Text Hex View Controller-->
         <scene sceneID="ge2-Nl-d6f">
             <objects>
                 <tableViewController id="GcO-uV-k4T" customClass="TextHexViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="oDK-Qx-R8m">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Text" id="cAx-WE-elH">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="224" id="ivm-CA-i3K">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="225"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="174" id="ivm-CA-i3K">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="175"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="223"/>
+                                            <rect key="frame" x="10" y="1" width="300" height="173"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IxB-Kh-6BP">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" constant="170" id="emu-Pu-MXt"/>
                                                         <constraint firstAttribute="width" constant="300" id="rUd-OA-eFe"/>
-                                                        <constraint firstAttribute="height" constant="220" id="vYL-nZ-wou"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -226,7 +226,7 @@
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" rowHeight="39" id="mth-Sj-mJf">
-                                        <rect key="frame" x="0.0" y="271" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="221" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="38"/>
@@ -262,7 +262,7 @@
                             <tableViewSection headerTitle="Hex" id="FYm-ld-wbu">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="39" id="o84-1n-Kk4">
-                                        <rect key="frame" x="0.0" y="357" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="307" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="38"/>
@@ -313,7 +313,7 @@
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="dsn-vx-eF6">
-                                        <rect key="frame" x="0.0" y="397" width="320" height="72"/>
+                                        <rect key="frame" x="0.0" y="347" width="320" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="70"/>
@@ -344,7 +344,7 @@
                             <outlet property="delegate" destination="GcO-uV-k4T" id="cg4-jc-6nv"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Hex Converter" image="TextToHex.png" id="tag-u6-rM7"/>
+                    <navigationItem key="navigationItem" id="tKz-YR-IVr"/>
                     <connections>
                         <outlet property="hexDisp" destination="qsf-yL-5ik" id="T6a-uq-GBv"/>
                         <outlet property="textToHex" destination="IxB-Kh-6BP" id="JkE-OB-9B3"/>
@@ -352,30 +352,30 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ego-qc-Ixg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="405" y="-84"/>
+            <point key="canvasLocation" x="931" y="-84"/>
         </scene>
-        <!--Hash Sum View Controller - Hash Generator-->
+        <!--Hash Sum View Controller-->
         <scene sceneID="uce-ql-Qwc">
             <objects>
                 <tableViewController id="iru-Ij-LIC" customClass="HashSumViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ymF-sB-7C5">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Text" id="Nbg-kj-663">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="221" id="0Mw-0L-0mR">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="222"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="174" id="0Mw-0L-0mR">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="175"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="220"/>
+                                            <rect key="frame" x="10" y="1" width="300" height="173"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OP2-aF-WX7">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="217" id="0oX-ti-xFA"/>
+                                                        <constraint firstAttribute="height" constant="170" id="cFe-yD-X0b"/>
                                                         <constraint firstAttribute="width" constant="300" id="iWr-Ti-HPq"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
@@ -390,7 +390,7 @@
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" rowHeight="39" id="mmr-94-gEl">
-                                        <rect key="frame" x="0.0" y="268" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="221" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="38"/>
@@ -401,7 +401,7 @@
                                                         <constraint firstAttribute="width" constant="146" id="DKv-SR-Jnl"/>
                                                         <constraint firstAttribute="height" constant="35" id="pfV-ug-KDJ"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                     <state key="normal" title="Generate Hash Sum">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -417,7 +417,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="146" id="L34-3D-XF5"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                     <state key="normal" title="Share/Copy Hash">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -445,7 +445,7 @@
                             <tableViewSection headerTitle="MD5" id="zdg-xA-vf8">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="41" id="V7e-Nr-Ktt">
-                                        <rect key="frame" x="0.0" y="354" width="320" height="43"/>
+                                        <rect key="frame" x="0.0" y="307" width="320" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="40"/>
@@ -473,7 +473,7 @@
                             <tableViewSection headerTitle="SHA1" id="6zk-Xu-GXz">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="41" id="H6F-tG-y5C">
-                                        <rect key="frame" x="0.0" y="443" width="320" height="43"/>
+                                        <rect key="frame" x="0.0" y="396" width="320" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="40"/>
@@ -504,7 +504,7 @@
                             <outlet property="delegate" destination="iru-Ij-LIC" id="P1U-mq-ajy"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Hash Generator" image="Hash.png" id="88b-dG-CoX"/>
+                    <navigationItem key="navigationItem" id="r5d-Ij-e3T"/>
                     <connections>
                         <outlet property="md5Disp" destination="fXB-gg-y4l" id="9AQ-5D-1Zk"/>
                         <outlet property="sha1Disp" destination="cQx-yY-uTW" id="ePo-tg-7n6"/>
@@ -513,31 +513,31 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5kY-XM-90F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="405" y="561"/>
+            <point key="canvasLocation" x="931" y="561"/>
         </scene>
-        <!--Text Base64 View Controller - Base64 Converter-->
+        <!--Text Base64 View Controller-->
         <scene sceneID="IU2-Ut-VWf">
             <objects>
                 <tableViewController id="RrJ-B3-nJG" customClass="TextBase64ViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Ttb-qc-1Af">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Text" id="NgP-Fu-lq1">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="224" id="pQ9-NZ-aKD">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="225"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="174" id="pQ9-NZ-aKD">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="175"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="223"/>
+                                            <rect key="frame" x="10" y="1" width="300" height="173"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1l-8k-Yvu">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="300" id="2EK-9S-94E"/>
-                                                        <constraint firstAttribute="height" constant="220" id="AjH-fe-DRb"/>
+                                                        <constraint firstAttribute="height" constant="170" id="fri-rx-lqh"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -551,7 +551,7 @@
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" rowHeight="39" id="eBA-IS-8sR">
-                                        <rect key="frame" x="0.0" y="271" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="221" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="38"/>
@@ -562,7 +562,7 @@
                                                         <constraint firstAttribute="height" constant="35" id="Ym5-Ih-KZ9"/>
                                                         <constraint firstAttribute="width" constant="300" id="nfw-Ep-YLT"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Convert To Base64">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -584,7 +584,7 @@
                             <tableViewSection headerTitle="Base64" id="wEc-KQ-8V3">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="39" id="1gT-Tg-KRi">
-                                        <rect key="frame" x="0.0" y="357" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="307" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="38"/>
@@ -594,7 +594,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="146" id="Aui-YN-RIL"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Share/Copy">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -608,7 +608,7 @@
                                                         <constraint firstAttribute="width" constant="146" id="KPK-47-nzA"/>
                                                         <constraint firstAttribute="height" constant="44" id="sMP-Sz-3MA"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Convert To Text">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -629,7 +629,7 @@
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="QlG-Fg-bHz">
-                                        <rect key="frame" x="0.0" y="397" width="320" height="72"/>
+                                        <rect key="frame" x="0.0" y="347" width="320" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="70"/>
@@ -660,11 +660,87 @@
                             <outlet property="delegate" destination="RrJ-B3-nJG" id="BDE-R0-reh"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Base64 Converter" image="TextToBase64.png" id="zVO-S8-zwO"/>
+                    <navigationItem key="navigationItem" id="fyZ-31-BAw"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ld-OA-cGp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="788" y="-84"/>
+            <point key="canvasLocation" x="931" y="1217"/>
+        </scene>
+        <!--Navigation Controller - Binary Converter-->
+        <scene sceneID="Dm0-rG-wFd">
+            <objects>
+                <navigationController id="xie-5M-uOq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Binary Converter" image="TextToBin.png" id="PHn-NV-CDb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ShP-cC-Cfm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e2h-Tv-lZQ" kind="relationship" relationship="rootViewController" id="sKv-2q-6yL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4u-IO-l6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405" y="-782"/>
+        </scene>
+        <!--Navigation Controller - Hex Converter-->
+        <scene sceneID="4PP-uu-wzs">
+            <objects>
+                <navigationController id="Rtc-sP-RLl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hex Converter" image="TextToHex.png" id="tag-u6-rM7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b5o-PN-9t7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GcO-uV-k4T" kind="relationship" relationship="rootViewController" id="W1B-wt-alI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yaw-lL-eYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405" y="-84"/>
+        </scene>
+        <!--Navigation Controller - Hash Generator-->
+        <scene sceneID="lZC-Se-p6p">
+            <objects>
+                <navigationController id="Bad-cR-LUu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hash Generator" image="Hash.png" id="88b-dG-CoX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r5Q-Tf-od0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iru-Ij-LIC" kind="relationship" relationship="rootViewController" id="nSe-hX-h56"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yC-3a-raP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405" y="561"/>
+        </scene>
+        <!--Navigation Controller - Base64 Converter-->
+        <scene sceneID="7zk-ro-n3q">
+            <objects>
+                <navigationController id="7nK-Ks-Zqi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Base64 Converter" image="TextToBase64.png" id="zVO-S8-zwO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="phq-nh-JqT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RrJ-B3-nJG" kind="relationship" relationship="rootViewController" id="Fcc-Wl-N3h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wAW-8i-3de" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405" y="1217"/>
         </scene>
     </scenes>
     <resources>
