@@ -22,6 +22,7 @@
 		2205754417BE6EEE0021626B /* TextToBin_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205753C17BE6EEE0021626B /* TextToBin_Selected.png */; };
 		2205754517BE6EEE0021626B /* TextToBin_Deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205753D17BE6EEE0021626B /* TextToBin_Deselected.png */; };
 		2205754717BE723F0021626B /* tabBarPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205754617BE723F0021626B /* tabBarPic.png */; };
+		2235E04717C8AF2400299566 /* tabBarTut.png in Resources */ = {isa = PBXBuildFile; fileRef = 2235E04617C8AF2400299566 /* tabBarTut.png */; };
 		224DBEA117BE4EFD00F12E0A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 224DBE9E17BE4EFD00F12E0A /* SVProgressHUD.bundle */; };
 		224DBEA217BE4EFD00F12E0A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 224DBEA017BE4EFD00F12E0A /* SVProgressHUD.m */; };
 		2290825A17B6671500CC8E1F /* HashSumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2290825917B6671500CC8E1F /* HashSumViewController.m */; };
@@ -65,6 +66,7 @@
 		2205753C17BE6EEE0021626B /* TextToBin_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToBin_Selected.png; sourceTree = "<group>"; };
 		2205753D17BE6EEE0021626B /* TextToBin_Deselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToBin_Deselected.png; sourceTree = "<group>"; };
 		2205754617BE723F0021626B /* tabBarPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBarPic.png; sourceTree = "<group>"; };
+		2235E04617C8AF2400299566 /* tabBarTut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBarTut.png; sourceTree = "<group>"; };
 		224DBE9E17BE4EFD00F12E0A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		224DBE9F17BE4EFD00F12E0A /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		224DBEA017BE4EFD00F12E0A /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		2297CC1117AFD3A200F51E23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2235E04617C8AF2400299566 /* tabBarTut.png */,
 				2205754617BE723F0021626B /* tabBarPic.png */,
 				2205753617BE6EEE0021626B /* Hash_Deselected.png */,
 				2205753717BE6EEE0021626B /* Hash_Selected.png */,
@@ -297,6 +300,7 @@
 				2205754417BE6EEE0021626B /* TextToBin_Selected.png in Resources */,
 				2205754517BE6EEE0021626B /* TextToBin_Deselected.png in Resources */,
 				2205754717BE723F0021626B /* tabBarPic.png in Resources */,
+				2235E04717C8AF2400299566 /* tabBarTut.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
