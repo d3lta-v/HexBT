@@ -34,6 +34,34 @@
 {
     [super viewDidLoad];
     
+    //Set tab bar icons again, since the tutorial messes up the custom tab bars (for some reason)
+    UITabBar *tabBar = self.tabBarController.tabBar;
+    UITabBarItem *item0 = [tabBar.items objectAtIndex:0];
+    UITabBarItem *item1 = [tabBar.items objectAtIndex:1];
+    UITabBarItem *item2 = [tabBar.items objectAtIndex:2];
+    UITabBarItem *item3 = [tabBar.items objectAtIndex:3];
+    UITabBarItem *item4 = [tabBar.items objectAtIndex:4];
+    [item0 setFinishedSelectedImage:[UIImage imageNamed:@"TextToBin_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"TextToBin_Deselected"]];
+    [item1 setFinishedSelectedImage:[UIImage imageNamed:@"TextToHex_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"TextToHex_Deselected.png"]];
+    [item2 setFinishedSelectedImage:[UIImage imageNamed:@"TextToBase64_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"TextToBase64_Deselected.png"]];
+    [item3 setFinishedSelectedImage:[UIImage imageNamed:@"Hash_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"Hash_Deselected.png"]];
+    [item4 setFinishedSelectedImage:[UIImage imageNamed:@"Info_Button_Selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"Info_Button_Deselected"]];
+    
+    [WCAlertView setDefaultStyle:WCAlertViewStyleWhite];
+    [WCAlertView setDefaultCustomiaztonBlock:^(WCAlertView *alertView){
+        alertView.labelTextColor=[UIColor darkTextColor];
+        /*UIColor *topGradient = [UIColor clearColor];
+         UIColor *middleGradient = [UIColor clearColor];
+         UIColor *bottomGradient = [UIColor clearColor];
+         alertView.gradientColors = @[topGradient,middleGradient,bottomGradient];*/
+        alertView.innerFrameStrokeColor = [UIColor clearColor];
+        alertView.outerFrameColor = [UIColor clearColor];
+        alertView.buttonTextColor=[UIColor darkTextColor];
+        alertView.buttonFont=[UIFont fontWithName:@"HelveticaNeue-Light" size:17];
+        alertView.titleFont=[UIFont fontWithName:@"HelveticaNeue-Light" size:18];
+        alertView.cornerRadius=7.0f;
+    }];
+    
     // Makes the text fields rounded
     textToBinary.clipsToBounds=YES;
     textToBinary.layer.cornerRadius=10.0f;
@@ -71,7 +99,23 @@
     // Adds action to swipe down & dismiss keyboard
     UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [swipeDown setDirection:(UISwipeGestureRecognizerDirectionDown)];
-    [[self view] addGestureRecognizer:swipeDown];    
+    [[self view] addGestureRecognizer:swipeDown];
+    
+    //Checking if user is first run
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    if (! [defaults boolForKey:@"notFirstRun"]) {
+        
+        double delayInSeconds = 0.1;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            [self performSegueWithIdentifier:@"Tutorial" sender:self];
+        });
+        [defaults setBool:YES forKey:@"notFirstRun"];
+    }
+    else
+    {
+        return;
+    }
 }
 
 -(void)dismissKeyboard {

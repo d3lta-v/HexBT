@@ -19,6 +19,7 @@
                         <segue destination="sDn-zo-5xa" kind="relationship" relationship="viewControllers" id="rbH-do-JPR"/>
                         <segue destination="Uo9-BM-Kii" kind="relationship" relationship="viewControllers" id="GvF-Vo-Ig3"/>
                         <segue destination="YbR-H7-Ezn" kind="relationship" relationship="viewControllers" id="B12-bq-Q4k"/>
+                        <segue destination="c8O-Xa-oLv" kind="relationship" relationship="viewControllers" id="Adb-yH-6Hb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KN8-Jw-j74" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -194,45 +195,443 @@
                     <connections>
                         <outlet property="binaryDisp" destination="2gt-1o-Nha" id="9mW-0r-4Cd"/>
                         <outlet property="textToBinary" destination="TdK-Wg-hj3" id="335-mY-8R3"/>
-                        <segue destination="GA4-xf-n21" kind="modal" identifier="Tutorial" modalTransitionStyle="coverVertical" id="ICO-hF-Rmq"/>
+                        <segue destination="g0n-ZE-ye3" kind="modal" identifier="Tutorial" id="GeD-Zi-Qwq"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7r-h2-tsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="931" y="-650"/>
         </scene>
-        <!--View Controller-->
+        <!--Binary Tutorial View Controller - Tutorial-->
         <scene sceneID="dLm-El-mzm">
             <objects>
-                <viewController id="GA4-xf-n21" sceneMemberID="viewController">
+                <viewController id="GA4-xf-n21" customClass="BinaryTutorialViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8x7-Js-npL">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tabBarTut.png" translatesAutoresizingMaskIntoConstraints="NO" id="3aa-fG-gVr">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="K87-Hw-cQG"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Welcome to the HexBT app tutorial" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUh-3k-GrL">
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="This is a brief introduction of the app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddg-jk-LtA">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AN1-I9-1Vj">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0EC-92-hCt"/>
+                                    <constraint firstAttribute="height" constant="44" id="Xhb-GC-Ux7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.50980392159999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="U96-Yj-zlw" kind="push" id="Ul8-Tl-Z4r"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="The app has several converters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnR-So-T0q">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="to convert binary, hexadecimal," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b83-jh-j6L">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Base64 as well as encoding hash digests." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnW-EU-ojy">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Thank you for downloading this app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8E-Zf-v0v">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="We hope you enjoy it." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRg-t0-Z61">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TextToBin_Selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="6bk-0x-lAW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="BsR-5j-EXF"/>
+                                    <constraint firstAttribute="width" constant="65" id="vrr-79-XZi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TextToHex_Selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="dt7-yb-lm5">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="tb4-67-UF9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TextToBase64_Selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="kvX-Mf-M3b">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="m79-g5-jvy"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Hash_Selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bbd-9l-A2R">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="lKA-JQ-U5x"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.95000000000000007" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3aa-fG-gVr" firstAttribute="leading" secondItem="8x7-Js-npL" secondAttribute="leading" type="default" id="GMA-Fo-NBq"/>
-                            <constraint firstItem="bUh-3k-GrL" firstAttribute="centerX" secondItem="3aa-fG-gVr" secondAttribute="centerX" type="default" id="UFl-s2-c7b"/>
-                            <constraint firstItem="3aa-fG-gVr" firstAttribute="trailing" secondItem="8x7-Js-npL" secondAttribute="trailing" type="default" id="fb4-hA-P6X"/>
-                            <constraint firstItem="3aa-fG-gVr" firstAttribute="bottom" secondItem="8x7-Js-npL" secondAttribute="bottom" type="default" id="l0v-f7-DEM"/>
-                            <constraint firstItem="bUh-3k-GrL" firstAttribute="top" secondItem="8x7-Js-npL" secondAttribute="top" constant="55" id="nUr-xR-g2y"/>
+                            <constraint firstItem="v8E-Zf-v0v" firstAttribute="centerX" secondItem="fnW-EU-ojy" secondAttribute="centerX" type="default" id="1KK-hU-Hfv"/>
+                            <constraint firstItem="bUh-3k-GrL" firstAttribute="top" secondItem="8x7-Js-npL" secondAttribute="top" constant="121" id="2rx-04-lyZ"/>
+                            <constraint firstItem="AN1-I9-1Vj" firstAttribute="top" secondItem="GRg-t0-Z61" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="40n-Ys-j5w"/>
+                            <constraint firstAttribute="bottom" secondItem="AN1-I9-1Vj" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Cth-Jv-TPo"/>
+                            <constraint firstItem="Ddg-jk-LtA" firstAttribute="top" secondItem="bUh-3k-GrL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="DgK-TO-xP7"/>
+                            <constraint firstItem="GnR-So-T0q" firstAttribute="top" secondItem="8x7-Js-npL" secondAttribute="top" constant="208" id="Eof-iH-NLC"/>
+                            <constraint firstItem="GRg-t0-Z61" firstAttribute="centerX" secondItem="v8E-Zf-v0v" secondAttribute="centerX" type="default" id="G6v-Uv-K0w"/>
+                            <constraint firstItem="GRg-t0-Z61" firstAttribute="top" secondItem="v8E-Zf-v0v" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="GTt-hA-5O6"/>
+                            <constraint firstItem="Bbd-9l-A2R" firstAttribute="top" secondItem="kvX-Mf-M3b" secondAttribute="top" type="default" id="ISf-V2-dnr"/>
+                            <constraint firstItem="b83-jh-j6L" firstAttribute="leading" secondItem="GnR-So-T0q" secondAttribute="leading" type="default" id="Qpc-Db-Qu5"/>
+                            <constraint firstItem="Ddg-jk-LtA" firstAttribute="centerX" secondItem="bUh-3k-GrL" secondAttribute="centerX" type="default" id="TuL-em-Zkh"/>
+                            <constraint firstItem="6bk-0x-lAW" firstAttribute="leading" secondItem="8x7-Js-npL" secondAttribute="leading" constant="18" id="V6O-Xv-ry0"/>
+                            <constraint firstItem="GRg-t0-Z61" firstAttribute="centerX" secondItem="8x7-Js-npL" secondAttribute="centerX" type="default" id="Xus-Ik-6dB"/>
+                            <constraint firstItem="dt7-yb-lm5" firstAttribute="leading" secondItem="6bk-0x-lAW" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="dci-xS-Z0m"/>
+                            <constraint firstItem="dt7-yb-lm5" firstAttribute="top" secondItem="6bk-0x-lAW" secondAttribute="top" type="default" id="f6u-bx-7Db"/>
+                            <constraint firstItem="kvX-Mf-M3b" firstAttribute="bottom" secondItem="dt7-yb-lm5" secondAttribute="bottom" type="default" id="gBx-ns-Cc0"/>
+                            <constraint firstItem="Bbd-9l-A2R" firstAttribute="bottom" secondItem="kvX-Mf-M3b" secondAttribute="bottom" type="default" id="jC0-19-qQQ"/>
+                            <constraint firstItem="fnW-EU-ojy" firstAttribute="centerX" secondItem="b83-jh-j6L" secondAttribute="centerX" type="default" id="jKF-La-bKY"/>
+                            <constraint firstItem="AN1-I9-1Vj" firstAttribute="trailing" secondItem="fnW-EU-ojy" secondAttribute="trailing" type="default" id="r4d-Xp-Q0l"/>
+                            <constraint firstItem="fnW-EU-ojy" firstAttribute="top" secondItem="b83-jh-j6L" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="sZb-U2-bed"/>
+                            <constraint firstItem="6bk-0x-lAW" firstAttribute="top" secondItem="8x7-Js-npL" secondAttribute="top" constant="40" id="vMW-MB-F6e"/>
+                            <constraint firstItem="GnR-So-T0q" firstAttribute="centerX" secondItem="Ddg-jk-LtA" secondAttribute="centerX" type="default" id="vNX-Ih-gog"/>
+                            <constraint firstItem="b83-jh-j6L" firstAttribute="top" secondItem="GnR-So-T0q" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="vn8-Mz-yhn"/>
+                            <constraint firstItem="Bbd-9l-A2R" firstAttribute="leading" secondItem="kvX-Mf-M3b" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="wub-7p-Mkr"/>
+                            <constraint firstItem="kvX-Mf-M3b" firstAttribute="top" secondItem="dt7-yb-lm5" secondAttribute="top" type="default" id="xpP-SY-TPS"/>
+                            <constraint firstItem="kvX-Mf-M3b" firstAttribute="leading" secondItem="dt7-yb-lm5" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="yCt-6E-Hay"/>
+                            <constraint firstItem="dt7-yb-lm5" firstAttribute="bottom" secondItem="6bk-0x-lAW" secondAttribute="bottom" type="default" id="ygd-xE-h7p"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Tutorial" id="lGR-EG-05A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUg-jw-GzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1427" y="-650"/>
+            <point key="canvasLocation" x="2023" y="-650"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Oce-vG-j7G">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="U96-Yj-zlw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YaJ-Fl-BOt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="18E-Jc-b4Y">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XVp-sg-qLr" kind="relationship" relationship="viewControllers" id="q9V-yC-CEd"/>
+                        <segue destination="lee-hJ-fdA" kind="relationship" relationship="viewControllers" id="Tsl-LO-nBS"/>
+                        <segue destination="Bn0-1r-TSO" kind="relationship" relationship="viewControllers" id="kXu-uX-l4w"/>
+                        <segue destination="j5T-Fw-VVP" kind="relationship" relationship="viewControllers" id="RbA-Xk-dOP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBe-9a-V2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2634" y="-650"/>
+        </scene>
+        <!--Second Tutorial View Controller - Text-Hexadecimal-->
+        <scene sceneID="xtj-QP-dd4">
+            <objects>
+                <viewController id="AyS-4a-gHp" customClass="SecondTutorialViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gF0-rj-0mY">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="This page is for the Hex converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuw-Bx-2vv">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hex uses a Base-16 system" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xg3-CW-JpJ">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="which comprises of 0 to 9, A to F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WE6-z4-snO">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="It is a substitute for binary in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhF-nL-WH2">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="6MO-O4-ko0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="softwares to group 4 binary digits to 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQK-4B-lUa">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="hex digit for the machine to read easily" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06T-WB-3B0">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TextToHex_Selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="K1L-0z-AOP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="6Vf-gt-Vsi"/>
+                                    <constraint firstAttribute="height" constant="65" id="A8N-Tj-ApR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.95000000000000007" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RQK-4B-lUa" firstAttribute="centerX" secondItem="IhF-nL-WH2" secondAttribute="centerX" type="default" id="45i-gK-1Ee"/>
+                            <constraint firstItem="WE6-z4-snO" firstAttribute="top" secondItem="Xg3-CW-JpJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="55A-1a-ZzG"/>
+                            <constraint firstItem="RQK-4B-lUa" firstAttribute="top" secondItem="IhF-nL-WH2" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Fa8-CO-jI1"/>
+                            <constraint firstItem="Xg3-CW-JpJ" firstAttribute="centerX" secondItem="Uuw-Bx-2vv" secondAttribute="centerX" type="default" id="FyL-D1-ZQs"/>
+                            <constraint firstItem="Xg3-CW-JpJ" firstAttribute="top" secondItem="gF0-rj-0mY" secondAttribute="top" constant="125" id="H1U-DP-RND"/>
+                            <constraint firstItem="IhF-nL-WH2" firstAttribute="centerX" secondItem="gF0-rj-0mY" secondAttribute="centerX" type="default" id="I6I-Cb-sX9"/>
+                            <constraint firstItem="IhF-nL-WH2" firstAttribute="centerX" secondItem="WE6-z4-snO" secondAttribute="centerX" type="default" id="MaZ-5z-XCv"/>
+                            <constraint firstItem="Uuw-Bx-2vv" firstAttribute="top" secondItem="gF0-rj-0mY" secondAttribute="top" constant="69" id="QK4-O9-VPG"/>
+                            <constraint firstItem="K1L-0z-AOP" firstAttribute="centerX" secondItem="06T-WB-3B0" secondAttribute="centerX" type="default" id="R24-Bm-1Fh"/>
+                            <constraint firstItem="WE6-z4-snO" firstAttribute="centerX" secondItem="Xg3-CW-JpJ" secondAttribute="centerX" type="default" id="XGM-Tx-iSI"/>
+                            <constraint firstItem="06T-WB-3B0" firstAttribute="top" secondItem="RQK-4B-lUa" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Xpe-1B-7MC"/>
+                            <constraint firstItem="06T-WB-3B0" firstAttribute="centerX" secondItem="RQK-4B-lUa" secondAttribute="centerX" type="default" id="bdT-u0-upv"/>
+                            <constraint firstAttribute="bottom" secondItem="06T-WB-3B0" secondAttribute="bottom" constant="95" id="f6q-3O-PzO"/>
+                            <constraint firstAttribute="bottom" secondItem="K1L-0z-AOP" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="kFK-Dj-3it"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Text-Hexadecimal" id="hhe-rz-4y5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbY-Zw-mkd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3707" y="-888"/>
+        </scene>
+        <!--Third Tutorial View Controller - Text-Base64-->
+        <scene sceneID="22D-ZM-TnV">
+            <objects>
+                <viewController id="ERc-gI-w81" customClass="ThirdTutorialViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l3u-OF-oxq">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="This page is for the Base64 converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQ1-6Z-ojr">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Base64 has multiple purposes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Per-FB-2Rs">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="such as encoding standard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-6u-4nG">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="letters and numbers into a form" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SO-ew-l1x">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="that is better for transmission" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xro-PB-C6X">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TextToBase64_Selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="CZM-R4-agf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="48y-lZ-g1h"/>
+                                    <constraint firstAttribute="height" constant="65" id="RqL-f5-10f"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.95000000000000007" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Ke-6u-4nG" firstAttribute="top" secondItem="Per-FB-2Rs" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="2Ce-Se-NYt"/>
+                            <constraint firstItem="Per-FB-2Rs" firstAttribute="top" secondItem="l3u-OF-oxq" secondAttribute="top" constant="131" id="4eW-6f-TwG"/>
+                            <constraint firstItem="xro-PB-C6X" firstAttribute="centerX" secondItem="1SO-ew-l1x" secondAttribute="centerX" type="default" id="5cS-Qs-yW2"/>
+                            <constraint firstItem="TQ1-6Z-ojr" firstAttribute="centerX" secondItem="Per-FB-2Rs" secondAttribute="centerX" type="default" id="6Vm-ar-YJh"/>
+                            <constraint firstItem="xro-PB-C6X" firstAttribute="top" secondItem="1SO-ew-l1x" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Dyh-ul-5VG"/>
+                            <constraint firstItem="1SO-ew-l1x" firstAttribute="centerX" secondItem="4Ke-6u-4nG" secondAttribute="centerX" type="default" id="HNE-lI-2CZ"/>
+                            <constraint firstItem="TQ1-6Z-ojr" firstAttribute="top" secondItem="l3u-OF-oxq" secondAttribute="top" constant="76" id="PBa-9h-fJX"/>
+                            <constraint firstItem="Per-FB-2Rs" firstAttribute="centerX" secondItem="l3u-OF-oxq" secondAttribute="centerX" type="default" id="VPa-mR-sbN"/>
+                            <constraint firstItem="4Ke-6u-4nG" firstAttribute="centerX" secondItem="Per-FB-2Rs" secondAttribute="centerX" type="default" id="rVS-XD-0fx"/>
+                            <constraint firstItem="CZM-R4-agf" firstAttribute="centerX" secondItem="xro-PB-C6X" secondAttribute="centerX" type="default" id="xe8-oW-cUS"/>
+                            <constraint firstItem="1SO-ew-l1x" firstAttribute="top" secondItem="4Ke-6u-4nG" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="z4b-ht-2B3"/>
+                            <constraint firstAttribute="bottom" secondItem="CZM-R4-agf" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="zwU-C7-TC8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Text-Base64" id="lhJ-zy-WiV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fyu-br-oL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3707" y="-284"/>
+        </scene>
+        <!--Forth Tutorial View Controller - Text-Hash Digest-->
+        <scene sceneID="h1H-9U-muy">
+            <objects>
+                <viewController id="TiZ-Av-Ey1" customClass="ForthTutorialViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zzt-me-4jn">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhs-DI-S56">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ygg-y1-q8H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Exit Tutorial">
+                                    <color key="titleColor" red="0.0" green="0.50980392159999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YdL-80-W5q" kind="modal" id="e7J-JR-ob5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="This page is for the Hash converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VJ-DS-pU4">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hash digests (MD5 and SHA1)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcX-Qt-BQ5">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="are great ways to verify the" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6c-iS-80O">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="integrity (originality) of a file." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gc5-rZ-FY4">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Thank you for downloading this app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9r1-FE-6C6">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Proudly made by StatiX Industries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4HX-c3-6eX">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Hash_Selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="g4M-Gm-zfm">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="jXd-mF-fEH"/>
+                                    <constraint firstAttribute="height" constant="65" id="ugt-o2-n07"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.95000000000000007" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4HX-c3-6eX" firstAttribute="centerX" secondItem="9r1-FE-6C6" secondAttribute="centerX" type="default" id="08T-g6-6XG"/>
+                            <constraint firstItem="Gc5-rZ-FY4" firstAttribute="top" secondItem="f6c-iS-80O" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="0FU-vW-6vF"/>
+                            <constraint firstItem="EcX-Qt-BQ5" firstAttribute="centerX" secondItem="5VJ-DS-pU4" secondAttribute="centerX" type="default" id="1gs-6z-vlI"/>
+                            <constraint firstItem="Gc5-rZ-FY4" firstAttribute="centerY" secondItem="Zzt-me-4jn" secondAttribute="centerY" type="default" id="3Zi-0b-M3p"/>
+                            <constraint firstItem="9r1-FE-6C6" firstAttribute="centerX" secondItem="Gc5-rZ-FY4" secondAttribute="centerX" type="default" id="3ty-tf-47l"/>
+                            <constraint firstItem="4HX-c3-6eX" firstAttribute="centerX" secondItem="Zzt-me-4jn" secondAttribute="centerX" type="default" id="FZ2-bI-hI3"/>
+                            <constraint firstItem="Gc5-rZ-FY4" firstAttribute="centerX" secondItem="f6c-iS-80O" secondAttribute="centerX" type="default" id="Hch-2m-Rvy"/>
+                            <constraint firstItem="5VJ-DS-pU4" firstAttribute="top" secondItem="Zzt-me-4jn" secondAttribute="top" constant="59" id="P8E-qZ-dSX"/>
+                            <constraint firstItem="g4M-Gm-zfm" firstAttribute="centerX" secondItem="4HX-c3-6eX" secondAttribute="centerX" type="default" id="XvR-Q3-dLT"/>
+                            <constraint firstAttribute="bottom" secondItem="fhs-DI-S56" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="aX0-HA-7h6"/>
+                            <constraint firstItem="4HX-c3-6eX" firstAttribute="top" secondItem="9r1-FE-6C6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="hQP-Hf-1Nr"/>
+                            <constraint firstItem="EcX-Qt-BQ5" firstAttribute="centerX" secondItem="f6c-iS-80O" secondAttribute="centerX" type="default" id="lm3-Ia-MQO"/>
+                            <constraint firstAttribute="bottom" secondItem="g4M-Gm-zfm" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="mnc-I5-lHq"/>
+                            <constraint firstAttribute="bottom" secondItem="4HX-c3-6eX" secondAttribute="bottom" constant="92" id="oMI-Ka-Ax3"/>
+                            <constraint firstAttribute="trailing" secondItem="fhs-DI-S56" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="omJ-3J-lkx"/>
+                            <constraint firstItem="f6c-iS-80O" firstAttribute="top" secondItem="EcX-Qt-BQ5" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wRv-uZ-tL0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Text-Hash Digest" id="qGz-Nb-8Pf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Bx-ns-fJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3707" y="286"/>
+        </scene>
+        <!--First Tutorial View Controller - Text-Binary-->
+        <scene sceneID="B3W-Ta-TBY">
+            <objects>
+                <viewController id="9E9-5H-noD" customClass="FirstTutorialViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ubj-8h-wy6">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="This page is for the Binary converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqf-Bl-64L">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Binary uses a Base-2 system" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bh-GU-hGX">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="which means it only has 0s and 1s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oon-LN-o9a">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="It is used as a very simple language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbT-ef-BiJ">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="for processors in our computers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvI-xj-SG0">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TextToBin_Selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="paC-nn-hXl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="OQ6-fX-NtS"/>
+                                    <constraint firstAttribute="width" constant="65" id="auG-WO-CMv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="To go to the next page, use the tabs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cto-hm-rk6">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.95000000000000007" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cto-hm-rk6" firstAttribute="centerX" secondItem="xvI-xj-SG0" secondAttribute="centerX" type="default" id="49j-b4-1wj"/>
+                            <constraint firstItem="Oon-LN-o9a" firstAttribute="top" secondItem="8bh-GU-hGX" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="FoL-WR-cba"/>
+                            <constraint firstAttribute="bottom" secondItem="xvI-xj-SG0" secondAttribute="bottom" constant="125" id="L6Z-aI-Yhz"/>
+                            <constraint firstItem="Oon-LN-o9a" firstAttribute="centerX" secondItem="GbT-ef-BiJ" secondAttribute="centerX" type="default" id="Rjv-ad-8uf"/>
+                            <constraint firstItem="xvI-xj-SG0" firstAttribute="centerX" secondItem="ubj-8h-wy6" secondAttribute="centerX" type="default" id="UmL-yc-9bt"/>
+                            <constraint firstAttribute="bottom" secondItem="paC-nn-hXl" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="X7s-pH-x0o"/>
+                            <constraint firstItem="paC-nn-hXl" firstAttribute="top" secondItem="cto-hm-rk6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ZRq-1B-eYw"/>
+                            <constraint firstItem="cto-hm-rk6" firstAttribute="centerX" secondItem="paC-nn-hXl" secondAttribute="centerX" type="default" id="bhr-2z-1no"/>
+                            <constraint firstItem="xvI-xj-SG0" firstAttribute="centerX" secondItem="GbT-ef-BiJ" secondAttribute="centerX" type="default" id="c3w-xS-u7m"/>
+                            <constraint firstItem="8bh-GU-hGX" firstAttribute="centerX" secondItem="Nqf-Bl-64L" secondAttribute="centerX" type="default" id="mha-Eg-h8r"/>
+                            <constraint firstItem="xvI-xj-SG0" firstAttribute="top" secondItem="GbT-ef-BiJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="s9x-XZ-78P"/>
+                            <constraint firstItem="Oon-LN-o9a" firstAttribute="centerX" secondItem="8bh-GU-hGX" secondAttribute="centerX" type="default" id="t75-Py-PbN"/>
+                            <constraint firstItem="Nqf-Bl-64L" firstAttribute="top" secondItem="ubj-8h-wy6" secondAttribute="top" constant="73" id="xqc-ve-Zma"/>
+                            <constraint firstItem="8bh-GU-hGX" firstAttribute="top" secondItem="ubj-8h-wy6" secondAttribute="top" constant="126" id="ynV-MT-kkV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Text-Binary" id="fcU-oE-DUj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XWT-N7-nPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3707" y="-1481"/>
         </scene>
         <!--Text Hex View Controller - Text-Hexadecimal-->
         <scene sceneID="Hzw-yV-GEm">
@@ -381,7 +780,7 @@
                                                         <constraint firstAttribute="height" constant="70" id="Tvn-Ia-WYt"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
                                                 </textView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -581,7 +980,7 @@
             </objects>
             <point key="canvasLocation" x="931" y="551"/>
         </scene>
-        <!--Text Base64 View Controller - Text-Hash Digest-->
+        <!--Text Base64 View Controller - Text-Base64-->
         <scene sceneID="gSP-AS-Nvy">
             <objects>
                 <tableViewController id="iWn-Ie-eRH" customClass="TextBase64ViewController" sceneMemberID="viewController">
@@ -728,7 +1127,7 @@
                                                         <constraint firstAttribute="width" constant="300" id="egc-jn-97o"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
                                                 </textView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -746,7 +1145,7 @@
                             <outlet property="delegate" destination="iWn-Ie-eRH" id="04R-gM-0dL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Text-Hash Digest" id="aRh-4I-364"/>
+                    <navigationItem key="navigationItem" title="Text-Base64" id="aRh-4I-364"/>
                     <connections>
                         <outlet property="base64Disp" destination="4Pk-jI-eIy" id="gFX-pT-nSX"/>
                         <outlet property="textToBase64" destination="uiz-YZ-1Xv" id="eKW-gy-Asx"/>
@@ -832,59 +1231,187 @@
             </objects>
             <point key="canvasLocation" x="405" y="1143"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X13-hr-4cZ">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="g0n-ZE-ye3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="363-Of-AAo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GA4-xf-n21" kind="relationship" relationship="rootViewController" id="X7e-5b-SeZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NlN-VH-z0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="-650"/>
+        </scene>
+        <!--Navigation Controller - Binary-->
+        <scene sceneID="G6z-Kb-ath">
+            <objects>
+                <navigationController id="XVp-sg-qLr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Binary" image="TextToBin.png" id="trr-ie-caQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wpb-eF-nk0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9E9-5H-noD" kind="relationship" relationship="rootViewController" id="Ct4-5t-fiU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2w-Rv-D7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3181" y="-1481"/>
+        </scene>
+        <!--Navigation Controller - Hex-->
+        <scene sceneID="Y3R-MC-SC1">
+            <objects>
+                <navigationController id="lee-hJ-fdA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hex" image="TextToHex.png" id="3EO-U6-s2H"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iUX-HH-urw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AyS-4a-gHp" kind="relationship" relationship="rootViewController" id="emr-Tl-AAo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTc-HQ-fgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3181" y="-888"/>
+        </scene>
+        <!--Navigation Controller - Base64-->
+        <scene sceneID="ulv-L3-XtM">
+            <objects>
+                <navigationController id="Bn0-1r-TSO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Base64" image="TextToBase64.png" id="QmT-yz-hza"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wit-fO-VcK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ERc-gI-w81" kind="relationship" relationship="rootViewController" id="tTw-ys-o8e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="91w-gv-HUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3181" y="-284"/>
+        </scene>
+        <!--Navigation Controller - Hash-->
+        <scene sceneID="dt4-S5-zfs">
+            <objects>
+                <navigationController id="j5T-Fw-VVP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hash" image="Hash.png" id="WJv-pc-OzI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FcX-5n-jA3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TiZ-Av-Ey1" kind="relationship" relationship="rootViewController" id="GpS-Ha-EPJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SpQ-8f-BIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3181" y="286"/>
+        </scene>
+        <!--Navigation Controller - About-->
+        <scene sceneID="Eo6-kn-mMa">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="c8O-Xa-oLv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="Info_Button_Selected.png" id="Ckn-Cd-bJm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gCm-Xq-6TX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wyf-al-OSo" kind="relationship" relationship="rootViewController" id="eRd-Ud-zff"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dKD-fX-7OV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="1724"/>
+        </scene>
+        <!--About View Controller - About-->
+        <scene sceneID="wmK-OB-Rma">
+            <objects>
+                <viewController id="Wyf-al-OSo" customClass="AboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pdh-4b-9c4">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Developed by StatiX Industries of" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ib7-Cp-GC4">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="xPa-HK-2KM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uses NSData+Base64 Base64 Converter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfs-W2-afk">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uses the CSIMUX Conversion Engine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0e-UK-tjx">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SST Inc." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryq-hx-7Zh">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="SSTINC.png" translatesAutoresizingMaskIntoConstraints="NO" id="6vR-m3-VoX">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="7OB-JH-TJt"/>
+                                    <constraint firstAttribute="height" constant="117" id="JrH-eW-bY0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.95000000000000007" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6vR-m3-VoX" firstAttribute="top" secondItem="pdh-4b-9c4" secondAttribute="top" constant="72" id="0de-fv-HBd"/>
+                            <constraint firstItem="F0e-UK-tjx" firstAttribute="centerX" secondItem="cfs-W2-afk" secondAttribute="centerX" type="default" id="CKE-i9-NCC"/>
+                            <constraint firstItem="ib7-Cp-GC4" firstAttribute="centerX" secondItem="Ryq-hx-7Zh" secondAttribute="centerX" type="default" id="CVx-Gu-isl"/>
+                            <constraint firstItem="cfs-W2-afk" firstAttribute="top" secondItem="F0e-UK-tjx" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="brA-ui-vzy"/>
+                            <constraint firstItem="Ryq-hx-7Zh" firstAttribute="top" secondItem="ib7-Cp-GC4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="htE-eF-yA5"/>
+                            <constraint firstItem="ib7-Cp-GC4" firstAttribute="centerX" secondItem="6vR-m3-VoX" secondAttribute="centerX" type="default" id="icX-U9-dZv"/>
+                            <constraint firstAttribute="bottom" secondItem="cfs-W2-afk" secondAttribute="bottom" constant="32" id="pps-QD-JXH"/>
+                            <constraint firstItem="Ryq-hx-7Zh" firstAttribute="centerX" secondItem="F0e-UK-tjx" secondAttribute="centerX" type="default" id="vXn-Tz-WwF"/>
+                            <constraint firstItem="ib7-Cp-GC4" firstAttribute="centerX" secondItem="pdh-4b-9c4" secondAttribute="centerX" type="default" id="weR-BW-NdY"/>
+                            <constraint firstItem="ib7-Cp-GC4" firstAttribute="top" secondItem="6vR-m3-VoX" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="zim-rw-MZs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="66y-QM-U6W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61d-YX-Am4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931" y="1724"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Hash.png" width="30" height="30"/>
+        <image name="Hash_Selected.png" width="30" height="30"/>
+        <image name="Info_Button_Selected.png" width="33" height="33"/>
+        <image name="SSTINC.png" width="477" height="282"/>
         <image name="TextToBase64.png" width="30" height="30"/>
+        <image name="TextToBase64_Selected.png" width="30" height="30"/>
         <image name="TextToBin.png" width="30" height="30"/>
+        <image name="TextToBin_Selected.png" width="30" height="30"/>
         <image name="TextToHex.png" width="30" height="30"/>
-        <image name="tabBarTut.png" width="640" height="102"/>
+        <image name="TextToHex_Selected.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="HashSumViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HashSumViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="convert:"/>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="outlet" name="md5Disp" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="sha1Disp" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="textToHash" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="TextBase64ViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextBase64ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="convert:"/>
-                <relationship kind="action" name="convertBack:"/>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="outlet" name="base64Disp" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="textToBase64" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="TextBinViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextBinViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="convert:"/>
-                <relationship kind="action" name="convertBack:"/>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="outlet" name="binaryDisp" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="textToBinary" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="TextHexViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextHexViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="convert:"/>
-                <relationship kind="action" name="convertBack:"/>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="outlet" name="hexDisp" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="textToHex" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
