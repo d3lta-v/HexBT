@@ -45,9 +45,9 @@
     self.navigationItem.titleView = label;
 }
 
--(IBAction)next:(id)sender
+-(IBAction)back:(id)sender
 {
-    self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:4];
+    self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:2];
 }
 
 - (void)didReceiveMemoryWarning

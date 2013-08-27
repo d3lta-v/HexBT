@@ -50,6 +50,11 @@
     self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:2];
 }
 
+-(IBAction)back:(id)sender
+{
+    self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:0];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

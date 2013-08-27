@@ -110,7 +110,7 @@
                                                         <constraint firstAttribute="width" constant="146" id="PEj-1J-UzP"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                    <state key="normal" title="Share/Copy">
+                                                    <state key="normal" title="Share/Copy Binary">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -286,7 +286,7 @@
                                                         <constraint firstAttribute="width" constant="146" id="IbL-Ld-ZOY"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                    <state key="normal" title="Share/Copy">
+                                                    <state key="normal" title="Share/Copy Hex">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -630,7 +630,7 @@
                                                         <constraint firstAttribute="width" constant="146" id="Aui-YN-RIL"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                    <state key="normal" title="Share/Copy">
+                                                    <state key="normal" title="Share/Copy Base64">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -944,7 +944,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dCH-MS-mNN" firstAttribute="leading" secondItem="No1-aI-sIV" secondAttribute="leading" constant="18" id="0Bq-jz-WAM"/>
                             <constraint firstItem="c96-p2-SND" firstAttribute="centerX" secondItem="myg-fD-LT8" secondAttribute="centerX" type="default" id="52y-9Y-pum"/>
@@ -986,7 +986,7 @@
             <objects>
                 <tabBarController definesPresentationContext="YES" id="XOd-Hj-CTS" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="uU2-ya-50w"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="n6S-ra-Okk">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -1046,14 +1046,12 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TextToHex_Selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="k6C-pc-OwU">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="9D0-GW-04g"/>
                                     <constraint firstAttribute="height" constant="65" id="i7X-9t-yHl"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxD-hy-zNA">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="49y-aF-jRe"/>
-                                    <constraint firstAttribute="height" constant="44" id="yjj-5Q-0G4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Next">
@@ -1067,8 +1065,25 @@
                                     <action selector="next:" destination="m2j-co-m5v" eventType="touchUpInside" id="Xbf-fj-kZZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bg-j0-Deq">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UHL-ib-fP0"/>
+                                    <constraint firstAttribute="width" constant="100" id="WRw-xW-ByE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.50980392159999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="m2j-co-m5v" eventType="touchUpInside" id="GQi-TJ-Gih"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="prt-ZG-iRF" firstAttribute="top" secondItem="fMi-DO-vhn" secondAttribute="top" constant="69" id="3bO-yv-kwp"/>
                             <constraint firstItem="k6C-pc-OwU" firstAttribute="centerX" secondItem="7Ci-f5-OHL" secondAttribute="centerX" type="default" id="7U0-hL-sIg"/>
@@ -1077,13 +1092,17 @@
                             <constraint firstItem="QZs-WY-QmD" firstAttribute="centerX" secondItem="prt-ZG-iRF" secondAttribute="centerX" type="default" id="DPJ-BL-LTi"/>
                             <constraint firstAttribute="bottom" secondItem="7Ci-f5-OHL" secondAttribute="bottom" constant="95" id="ETe-dj-2ck"/>
                             <constraint firstItem="QZs-WY-QmD" firstAttribute="top" secondItem="fMi-DO-vhn" secondAttribute="top" constant="125" id="Ef0-6n-pBU"/>
+                            <constraint firstAttribute="bottom" secondItem="5Bg-j0-Deq" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="IVb-BF-ngL"/>
                             <constraint firstItem="Sfw-yO-cFE" firstAttribute="top" secondItem="QZs-WY-QmD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="PNU-cp-3zI"/>
                             <constraint firstItem="Txc-Ef-UTG" firstAttribute="centerX" secondItem="OgS-C5-g2d" secondAttribute="centerX" type="default" id="TNZ-bi-bh9"/>
                             <constraint firstItem="Sfw-yO-cFE" firstAttribute="centerX" secondItem="QZs-WY-QmD" secondAttribute="centerX" type="default" id="Tlq-GW-wFW"/>
                             <constraint firstItem="7Ci-f5-OHL" firstAttribute="top" secondItem="Txc-Ef-UTG" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="WLO-zk-Zbu"/>
+                            <constraint firstItem="k6C-pc-OwU" firstAttribute="leading" secondItem="5Bg-j0-Deq" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Xon-VI-lBn"/>
                             <constraint firstItem="OgS-C5-g2d" firstAttribute="centerX" secondItem="Sfw-yO-cFE" secondAttribute="centerX" type="default" id="f3a-oG-Gfl"/>
-                            <constraint firstItem="OgS-C5-g2d" firstAttribute="centerX" secondItem="fMi-DO-vhn" secondAttribute="centerX" type="default" id="kcU-xJ-bcI"/>
+                            <constraint firstItem="5Bg-j0-Deq" firstAttribute="top" secondItem="jxD-hy-zNA" secondAttribute="top" type="default" id="jeu-SH-fMO"/>
                             <constraint firstAttribute="bottom" secondItem="k6C-pc-OwU" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="qQr-v6-ad8"/>
+                            <constraint firstItem="prt-ZG-iRF" firstAttribute="centerX" secondItem="fMi-DO-vhn" secondAttribute="centerX" type="default" id="ru0-V9-1Hz"/>
+                            <constraint firstItem="5Bg-j0-Deq" firstAttribute="leading" secondItem="fMi-DO-vhn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vUo-sK-v5d"/>
                             <constraint firstItem="Txc-Ef-UTG" firstAttribute="top" secondItem="OgS-C5-g2d" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wnb-zs-v4d"/>
                             <constraint firstAttribute="bottom" secondItem="jxD-hy-zNA" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="xXT-YY-TyK"/>
                         </constraints>
@@ -1136,7 +1155,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ab-WN-2Ap">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="8rr-Zy-UzJ"/>
-                                    <constraint firstAttribute="height" constant="44" id="Tho-un-JVo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Next">
@@ -1150,8 +1168,24 @@
                                     <action selector="next:" destination="X71-Wi-Pwt" eventType="touchUpInside" id="exN-7x-8rY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCW-x5-mBF">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Gwl-AZ-A49"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.50980392159999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="X71-Wi-Pwt" eventType="touchUpInside" id="hxA-rz-AC8"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="8Ab-WN-2Ap" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="1Dy-vf-clL"/>
                             <constraint firstAttribute="bottom" secondItem="8Ab-WN-2Ap" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="5zk-Xu-EhB"/>
@@ -1159,13 +1193,17 @@
                             <constraint firstItem="gEH-R4-1qB" firstAttribute="centerX" secondItem="cDm-vO-JaH" secondAttribute="centerX" type="default" id="BNy-K6-E3Y"/>
                             <constraint firstItem="gEH-R4-1qB" firstAttribute="top" secondItem="cDm-vO-JaH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="P3H-xs-vqz"/>
                             <constraint firstItem="bR1-SI-089" firstAttribute="centerX" secondItem="gEH-R4-1qB" secondAttribute="centerX" type="default" id="QrU-NB-mbf"/>
+                            <constraint firstItem="wCW-x5-mBF" firstAttribute="leading" secondItem="DDu-fA-hJL" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="R5p-Le-fPE"/>
                             <constraint firstItem="a6x-Bi-AE8" firstAttribute="top" secondItem="DDu-fA-hJL" secondAttribute="top" constant="76" id="VTJ-06-S6X"/>
                             <constraint firstItem="a6x-Bi-AE8" firstAttribute="centerX" secondItem="2Ev-Hr-gDo" secondAttribute="centerX" type="default" id="XUV-Od-rVa"/>
+                            <constraint firstItem="t9b-DP-FRT" firstAttribute="leading" secondItem="wCW-x5-mBF" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="ahf-hm-Jav"/>
                             <constraint firstAttribute="bottom" secondItem="t9b-DP-FRT" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="blq-JU-0YX"/>
                             <constraint firstItem="cDm-vO-JaH" firstAttribute="top" secondItem="2Ev-Hr-gDo" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ecc-ZK-oWb"/>
                             <constraint firstItem="2Ev-Hr-gDo" firstAttribute="top" secondItem="DDu-fA-hJL" secondAttribute="top" constant="131" id="h0W-NY-nGR"/>
                             <constraint firstItem="t9b-DP-FRT" firstAttribute="centerX" secondItem="bR1-SI-089" secondAttribute="centerX" type="default" id="iEm-yu-s0Y"/>
                             <constraint firstItem="cDm-vO-JaH" firstAttribute="centerX" secondItem="2Ev-Hr-gDo" secondAttribute="centerX" type="default" id="iTI-PZ-oze"/>
+                            <constraint firstAttribute="bottom" secondItem="wCW-x5-mBF" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="lQs-3i-vnA"/>
+                            <constraint firstItem="wCW-x5-mBF" firstAttribute="top" secondItem="8Ab-WN-2Ap" secondAttribute="top" type="default" id="vwf-Ff-kD9"/>
                             <constraint firstItem="bR1-SI-089" firstAttribute="top" secondItem="gEH-R4-1qB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wvx-I9-e5q"/>
                         </constraints>
                     </view>
@@ -1186,7 +1224,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlC-7r-ZAK">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="8Bu-Hv-38d"/>
-                                    <constraint firstAttribute="height" constant="44" id="nBg-bR-9sx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Exit">
@@ -1236,8 +1273,24 @@
                                     <constraint firstAttribute="width" constant="65" id="lpM-x9-48r"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njC-oX-GvX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SeE-e3-aaN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.50980392159999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="T2M-u0-6j3" eventType="touchUpInside" id="1pG-os-Xqf"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eoz-eA-nKh" firstAttribute="centerX" secondItem="Mbg-K3-GgL" secondAttribute="centerX" type="default" id="8Gy-IK-YYi"/>
                             <constraint firstAttribute="bottom" secondItem="eoz-eA-nKh" secondAttribute="bottom" constant="92" id="BHo-W8-bXI"/>
@@ -1247,13 +1300,17 @@
                             <constraint firstItem="eoz-eA-nKh" firstAttribute="centerX" secondItem="xRr-19-tJK" secondAttribute="centerX" type="default" id="OrT-LV-EwU"/>
                             <constraint firstItem="1uy-EW-PwV" firstAttribute="top" secondItem="xRr-19-tJK" secondAttribute="top" constant="59" id="T7B-q1-oKw"/>
                             <constraint firstItem="eoz-eA-nKh" firstAttribute="top" secondItem="Mbg-K3-GgL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="TJA-JQ-Xyf"/>
+                            <constraint firstItem="njC-oX-GvX" firstAttribute="top" secondItem="rlC-7r-ZAK" secondAttribute="top" type="default" id="Tqh-CZ-jMP"/>
+                            <constraint firstItem="njC-oX-GvX" firstAttribute="leading" secondItem="xRr-19-tJK" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="mHu-AX-fNM"/>
                             <constraint firstItem="rRa-J6-thZ" firstAttribute="top" secondItem="O3q-ws-6EB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="n34-LI-maS"/>
                             <constraint firstItem="O3q-ws-6EB" firstAttribute="top" secondItem="9QS-ih-cte" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="nNY-76-ZmN"/>
                             <constraint firstAttribute="bottom" secondItem="IMX-8o-dHW" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="nhM-xs-dK3"/>
                             <constraint firstItem="rRa-J6-thZ" firstAttribute="centerY" secondItem="xRr-19-tJK" secondAttribute="centerY" type="default" id="pFe-nw-kFd"/>
                             <constraint firstItem="rRa-J6-thZ" firstAttribute="centerX" secondItem="O3q-ws-6EB" secondAttribute="centerX" type="default" id="piD-Br-089"/>
                             <constraint firstItem="rlC-7r-ZAK" firstAttribute="trailing" secondItem="xRr-19-tJK" secondAttribute="trailing" type="default" id="qg9-Bf-xiQ"/>
+                            <constraint firstAttribute="bottom" secondItem="njC-oX-GvX" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="qlY-fc-5Ul"/>
                             <constraint firstAttribute="bottom" secondItem="rlC-7r-ZAK" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="urM-Ld-UXE"/>
+                            <constraint firstItem="IMX-8o-dHW" firstAttribute="leading" secondItem="njC-oX-GvX" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="wAN-K0-DEG"/>
                             <constraint firstItem="Mbg-K3-GgL" firstAttribute="centerX" secondItem="rRa-J6-thZ" secondAttribute="centerX" type="default" id="zcH-wt-x2Q"/>
                         </constraints>
                     </view>
@@ -1309,8 +1366,8 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSy-jm-UdL">
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LzA-m2-dLz"/>
                                     <constraint firstAttribute="width" constant="100" id="V4U-A4-ioL"/>
-                                    <constraint firstAttribute="height" constant="44" id="wsp-Te-2Bn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Next">
@@ -1325,7 +1382,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="FFQ-Bq-hRo" firstAttribute="centerX" secondItem="awc-CJ-7JQ" secondAttribute="centerX" type="default" id="1oL-gu-NDa"/>
                             <constraint firstItem="OnR-la-9BR" firstAttribute="centerX" secondItem="L3N-A4-o5k" secondAttribute="centerX" type="default" id="9Rf-Ge-QuO"/>
@@ -1349,7 +1406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29w-Eu-IkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3659" y="-1593"/>
+            <point key="canvasLocation" x="3659" y="-1650"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7wg-w9-HRd">
@@ -1458,6 +1515,83 @@
         <image name="TextToHex.png" width="30" height="30"/>
         <image name="TextToHex_Selected.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="AboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
+        </class>
+        <class className="BinaryTutorialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BinaryTutorialViewController.h"/>
+        </class>
+        <class className="FirstTutorialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstTutorialViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="next:"/>
+            </relationships>
+        </class>
+        <class className="ForthTutorialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ForthTutorialViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
+        <class className="HashSumViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HashSumViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="md5Disp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="sha1Disp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textToHash" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SecondTutorialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondTutorialViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="next:"/>
+            </relationships>
+        </class>
+        <class className="TextBase64ViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextBase64ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="action" name="convertBack:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="base64Disp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textToBase64" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="TextBinViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextBinViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="action" name="convertBack:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="binaryDisp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textToBinary" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="TextHexViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextHexViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="action" name="convertBack:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="hexDisp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textToHex" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="ThirdTutorialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdTutorialViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="next:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

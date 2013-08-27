@@ -131,62 +131,77 @@
 {
     NSMutableArray *array=[[NSMutableArray alloc]init];
     NSString *moreText=[text uppercaseString];
-    for (int i=0; i<moreText.length; i++) {
-        [array addObject:[MNNSStringWithUnichar stringWithUnichar:[moreText characterAtIndex:i]]];
+    NSString *result=[[NSString alloc]init];
+    
+    NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"1234567890ABCDEF"];
+    set = [set invertedSet];
+    NSRange range = [moreText rangeOfCharacterFromSet:set];
+    
+    if (range.location != NSNotFound) //Catch the error here, regarding bad input
+    {
+        WCAlertView *alert = [[WCAlertView alloc]initWithTitle:@"Error: Invalid hexadecimal characters" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        [alert show];
     }
-    NSString *binary=[[NSString alloc]init];
-    for (int x=0; x<[array count]; x++) {
-        if ([array[x] isEqualToString:@"0"]) {
-            binary=[binary stringByAppendingString:@"0000"];
+    else
+    {
+        for (int i=0; i<moreText.length; i++) {
+            [array addObject:[MNNSStringWithUnichar stringWithUnichar:[moreText characterAtIndex:i]]];
         }
-        else if ([array[x] isEqualToString:@"1"]) {
-            binary=[binary stringByAppendingString:@"0001"];
+        NSString *binary=[[NSString alloc]init];
+        for (int x=0; x<[array count]; x++) {
+            if ([array[x] isEqualToString:@"0"]) {
+                binary=[binary stringByAppendingString:@"0000"];
+            }
+            else if ([array[x] isEqualToString:@"1"]) {
+                binary=[binary stringByAppendingString:@"0001"];
+            }
+            else if ([array[x] isEqualToString:@"2"]) {
+                binary=[binary stringByAppendingString:@"0010"];
+            }
+            else if ([array[x] isEqualToString:@"3"]) {
+                binary=[binary stringByAppendingString:@"0011"];
+            }
+            else if ([array[x] isEqualToString:@"4"]) {
+                binary=[binary stringByAppendingString:@"0100"];
+            }
+            else if ([array[x] isEqualToString:@"5"]) {
+                binary=[binary stringByAppendingString:@"0101"];
+            }
+            else if ([array[x] isEqualToString:@"6"]) {
+                binary=[binary stringByAppendingString:@"0110"];
+            }
+            else if ([array[x] isEqualToString:@"7"]) {
+                binary=[binary stringByAppendingString:@"0111"];
+            }
+            else if ([array[x] isEqualToString:@"8"]) {
+                binary=[binary stringByAppendingString:@"1000"];
+            }
+            else if ([array[x] isEqualToString:@"9"]) {
+                binary=[binary stringByAppendingString:@"1001"];
+            }
+            else if ([array[x] isEqualToString:@"A"]) {
+                binary=[binary stringByAppendingString:@"1010"];
+            }
+            else if ([array[x] isEqualToString:@"B"]) {
+                binary=[binary stringByAppendingString:@"1011"];
+            }
+            else if ([array[x] isEqualToString:@"C"]) {
+                binary=[binary stringByAppendingString:@"1100"];
+            }
+            else if ([array[x] isEqualToString:@"D"]) {
+                binary=[binary stringByAppendingString:@"1101"];
+            }
+            else if ([array[x] isEqualToString:@"E"]) {
+                binary=[binary stringByAppendingString:@"1110"];
+            }
+            else if ([array[x] isEqualToString:@"F"]) {
+                binary=[binary stringByAppendingString:@"1111"];
+            }
         }
-        else if ([array[x] isEqualToString:@"2"]) {
-            binary=[binary stringByAppendingString:@"0010"];
-        }
-        else if ([array[x] isEqualToString:@"3"]) {
-            binary=[binary stringByAppendingString:@"0011"];
-        }
-        else if ([array[x] isEqualToString:@"4"]) {
-            binary=[binary stringByAppendingString:@"0100"];
-        }
-        else if ([array[x] isEqualToString:@"5"]) {
-            binary=[binary stringByAppendingString:@"0101"];
-        }
-        else if ([array[x] isEqualToString:@"6"]) {
-            binary=[binary stringByAppendingString:@"0110"];
-        }
-        else if ([array[x] isEqualToString:@"7"]) {
-            binary=[binary stringByAppendingString:@"0111"];
-        }
-        else if ([array[x] isEqualToString:@"8"]) {
-            binary=[binary stringByAppendingString:@"1000"];
-        }
-        else if ([array[x] isEqualToString:@"9"]) {
-            binary=[binary stringByAppendingString:@"1001"];
-        }
-        else if ([array[x] isEqualToString:@"A"]) {
-            binary=[binary stringByAppendingString:@"1010"];
-        }
-        else if ([array[x] isEqualToString:@"B"]) {
-            binary=[binary stringByAppendingString:@"1011"];
-        }
-        else if ([array[x] isEqualToString:@"C"]) {
-            binary=[binary stringByAppendingString:@"1100"];
-        }
-        else if ([array[x] isEqualToString:@"D"]) {
-            binary=[binary stringByAppendingString:@"1101"];
-        }
-        else if ([array[x] isEqualToString:@"E"]) {
-            binary=[binary stringByAppendingString:@"1110"];
-        }
-        else if ([array[x] isEqualToString:@"F"]) {
-            binary=[binary stringByAppendingString:@"1111"];
-        }
+        TextBinViewController *binVC=[[TextBinViewController alloc]init];
+        result= [binVC binToText:binary];
     }
-    TextBinViewController *binVC=[[TextBinViewController alloc]init];
-    return [binVC binToText:binary];
+    return result;
 }
 
 -(IBAction)convertBack:(id)sender

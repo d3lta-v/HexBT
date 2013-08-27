@@ -559,8 +559,8 @@
     }
     else
     {
-        value=@"Error: Invalid binary numbers";
-        WCAlertView *alert = [[WCAlertView alloc]initWithTitle:@"Error: Invalid binary numbers!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        value=@"";
+        WCAlertView *alert = [[WCAlertView alloc]initWithTitle:@"Error: Invalid input!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
     }
     
