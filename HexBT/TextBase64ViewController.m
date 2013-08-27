@@ -34,8 +34,10 @@
     [super viewDidLoad];
     textToBase64.clipsToBounds=YES;
     textToBase64.layer.cornerRadius=10.0f;
+    textToBase64.placeholder=@"Input text/Output text here";
     base64Disp.clipsToBounds=YES;
     base64Disp.layer.cornerRadius=10.0f;
+    base64Disp.placeholder=@"Output Base64/Input Base64 here";
     
     //Set navigation bar looks
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];

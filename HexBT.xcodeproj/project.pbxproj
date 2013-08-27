@@ -31,6 +31,7 @@
 		2243D1E717CB7E2A00CC5630 /* Info_Button_Deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2243D1E517CB7E2A00CC5630 /* Info_Button_Deselected.png */; };
 		2243D1E817CB7E2A00CC5630 /* Info_Button_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2243D1E617CB7E2A00CC5630 /* Info_Button_Selected.png */; };
 		2243D1EB17CB7F8300CC5630 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243D1EA17CB7F8300CC5630 /* AboutViewController.m */; };
+		2243D1EF17CC57BD00CC5630 /* GCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243D1EE17CC57BD00CC5630 /* GCPlaceholderTextView.m */; };
 		224DBEA117BE4EFD00F12E0A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 224DBE9E17BE4EFD00F12E0A /* SVProgressHUD.bundle */; };
 		224DBEA217BE4EFD00F12E0A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 224DBEA017BE4EFD00F12E0A /* SVProgressHUD.m */; };
 		2290825A17B6671500CC8E1F /* HashSumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2290825917B6671500CC8E1F /* HashSumViewController.m */; };
@@ -89,6 +90,8 @@
 		2243D1E617CB7E2A00CC5630 /* Info_Button_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info_Button_Selected.png; sourceTree = "<group>"; };
 		2243D1E917CB7F8300CC5630 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		2243D1EA17CB7F8300CC5630 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		2243D1ED17CC57BD00CC5630 /* GCPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCPlaceholderTextView.h; sourceTree = "<group>"; };
+		2243D1EE17CC57BD00CC5630 /* GCPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCPlaceholderTextView.m; sourceTree = "<group>"; };
 		224DBE9E17BE4EFD00F12E0A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		224DBE9F17BE4EFD00F12E0A /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		224DBEA017BE4EFD00F12E0A /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
@@ -157,6 +160,15 @@
 			name = "Tutorial VCs";
 			sourceTree = "<group>";
 		};
+		2243D1EC17CC57AF00CC5630 /* CustomTextView */ = {
+			isa = PBXGroup;
+			children = (
+				2243D1ED17CC57BD00CC5630 /* GCPlaceholderTextView.h */,
+				2243D1EE17CC57BD00CC5630 /* GCPlaceholderTextView.m */,
+			);
+			name = CustomTextView;
+			sourceTree = "<group>";
+		};
 		224DBE9D17BE4EFD00F12E0A /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +222,7 @@
 		2297CC1017AFD3A200F51E23 /* HexBT */ = {
 			isa = PBXGroup;
 			children = (
+				2243D1EC17CC57AF00CC5630 /* CustomTextView */,
 				2235E04817C8C4F000299566 /* Tutorial VCs */,
 				2291359A17C1076A004264C1 /* WCAlertView */,
 				224DBE9D17BE4EFD00F12E0A /* SVProgressHUD */,
@@ -373,6 +386,7 @@
 				2243D1DF17CB70D200CC5630 /* ThirdTutorialViewController.m in Sources */,
 				2243D1E217CB70DE00CC5630 /* ForthTutorialViewController.m in Sources */,
 				2243D1EB17CB7F8300CC5630 /* AboutViewController.m in Sources */,
+				2243D1EF17CC57BD00CC5630 /* GCPlaceholderTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

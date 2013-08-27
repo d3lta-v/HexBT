@@ -7,15 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GCPlaceholderTextView.h"
 
 @interface TextHexViewController : UITableViewController <UITextViewDelegate>
 {
-    IBOutlet UITextView *textToHex;
-    IBOutlet UITextView *hexDisp;
+    IBOutlet GCPlaceholderTextView *textToHex;
+    IBOutlet GCPlaceholderTextView *hexDisp;
 }
 
-@property (strong,nonatomic) IBOutlet UITextView *textToHex;
-@property (strong,nonatomic) IBOutlet UITextView *hexDisp;
+@property (strong,nonatomic) IBOutlet GCPlaceholderTextView *textToHex;
+@property (strong,nonatomic) IBOutlet GCPlaceholderTextView *hexDisp;
 
 -(NSString *)textToHex:(NSString *)text;
 -(NSString *)hexToText:(NSString *)text;

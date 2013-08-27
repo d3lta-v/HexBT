@@ -34,6 +34,7 @@
     [super viewDidLoad];
     textToHash.clipsToBounds=YES;
     textToHash.layer.cornerRadius=10.0f;
+    textToHash.placeholder=@"Input text here";
     sha1Disp.clipsToBounds=YES;
     sha1Disp.layer.cornerRadius=10.0f;
     md5Disp.clipsToBounds=YES;

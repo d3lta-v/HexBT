@@ -263,8 +263,10 @@
     [super viewDidLoad];
     textToHex.clipsToBounds=YES;
     textToHex.layer.cornerRadius=10.0f;
+    textToHex.placeholder=@"Input text/Output text here";
     hexDisp.clipsToBounds=YES;
     hexDisp.layer.cornerRadius=10.0f;
+    hexDisp.placeholder=@"Output hexadecimal/Input hexadecimal here";
     
     //Set navigation bar looks
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];

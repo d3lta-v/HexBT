@@ -50,10 +50,6 @@
     [WCAlertView setDefaultStyle:WCAlertViewStyleWhite];
     [WCAlertView setDefaultCustomiaztonBlock:^(WCAlertView *alertView){
         alertView.labelTextColor=[UIColor darkTextColor];
-        /*UIColor *topGradient = [UIColor clearColor];
-         UIColor *middleGradient = [UIColor clearColor];
-         UIColor *bottomGradient = [UIColor clearColor];
-         alertView.gradientColors = @[topGradient,middleGradient,bottomGradient];*/
         alertView.innerFrameStrokeColor = [UIColor clearColor];
         alertView.outerFrameColor = [UIColor clearColor];
         alertView.buttonTextColor=[UIColor darkTextColor];
@@ -65,8 +61,10 @@
     // Makes the text fields rounded
     textToBinary.clipsToBounds=YES;
     textToBinary.layer.cornerRadius=10.0f;
+    textToBinary.placeholder=@"Input text/Output text here";
     binaryDisp.clipsToBounds=YES;
     binaryDisp.layer.cornerRadius=10.0f;
+    binaryDisp.placeholder=@"Output binary/Input binary here";
     
     // Sets the colors of the background
     self.tableView.backgroundView = nil;

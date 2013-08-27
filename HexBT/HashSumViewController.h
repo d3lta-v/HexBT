@@ -7,15 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GCPlaceholderTextView.h"
 
 @interface HashSumViewController : UITableViewController <UITextViewDelegate>
 {
-    IBOutlet UITextView *textToHash;
+    IBOutlet GCPlaceholderTextView *textToHash;
     IBOutlet UITextView *md5Disp;
     IBOutlet UITextView *sha1Disp;
 }
 
-@property (strong,nonatomic) IBOutlet UITextView *textToHash;
+@property (strong,nonatomic) IBOutlet GCPlaceholderTextView *textToHash;
 @property (strong,nonatomic) IBOutlet UITextView *md5Disp;
 @property (strong,nonatomic) IBOutlet UITextView *sha1Disp;
 

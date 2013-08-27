@@ -7,15 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GCPlaceholderTextView.h"
 
 @interface TextBase64ViewController : UITableViewController <UITextViewDelegate>
 {
-    IBOutlet UITextView *textToBase64;
-    IBOutlet UITextView *base64Disp;
+    IBOutlet GCPlaceholderTextView *textToBase64;
+    IBOutlet GCPlaceholderTextView *base64Disp;
 }
 
-@property (strong,nonatomic) IBOutlet UITextView *textToBase64;
-@property (strong,nonatomic) IBOutlet UITextView *base64Disp;
+@property (strong,nonatomic) IBOutlet GCPlaceholderTextView *textToBase64;
+@property (strong,nonatomic) IBOutlet GCPlaceholderTextView *base64Disp;
 
 - (NSString *)base64Encode:(NSString *)plainText;
 - (NSString *)base64Decode:(NSString *)base64String;

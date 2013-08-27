@@ -44,7 +44,7 @@
                                             <rect key="frame" x="10" y="1" width="300" height="93"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdK-Wg-hj3">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdK-Wg-hj3" customClass="GCPlaceholderTextView">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="90" id="6u7-gn-paB"/>
@@ -166,7 +166,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gt-1o-Nha">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gt-1o-Nha" customClass="GCPlaceholderTextView">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="300" id="1qL-JQ-bBd"/>
@@ -445,7 +445,6 @@
                             <constraint firstItem="WE6-z4-snO" firstAttribute="centerX" secondItem="Xg3-CW-JpJ" secondAttribute="centerX" type="default" id="jXt-p5-Bt4"/>
                             <constraint firstItem="K1L-0z-AOP" firstAttribute="leading" secondItem="2Ry-FT-E3S" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="jbJ-Fo-P97"/>
                             <constraint firstAttribute="bottom" secondItem="K1L-0z-AOP" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="kFK-Dj-3it"/>
-                            <constraint firstItem="2Ry-FT-E3S" firstAttribute="baseline" secondItem="5qY-J7-4Js" secondAttribute="baseline" type="default" id="xfl-oK-HyV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Text-Hexadecimal" id="hhe-rz-4y5"/>
@@ -538,7 +537,6 @@
                             <constraint firstAttribute="bottom" secondItem="hnc-Ps-oWx" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="GgD-Xw-NRb"/>
                             <constraint firstItem="1SO-ew-l1x" firstAttribute="centerX" secondItem="4Ke-6u-4nG" secondAttribute="centerX" type="default" id="HNE-lI-2CZ"/>
                             <constraint firstAttribute="trailing" secondItem="sag-7y-rhX" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Ife-Ce-ocJ"/>
-                            <constraint firstItem="hnc-Ps-oWx" firstAttribute="baseline" secondItem="sag-7y-rhX" secondAttribute="baseline" type="default" id="LRU-Te-LqZ"/>
                             <constraint firstItem="TQ1-6Z-ojr" firstAttribute="top" secondItem="l3u-OF-oxq" secondAttribute="top" constant="76" id="PBa-9h-fJX"/>
                             <constraint firstAttribute="bottom" secondItem="sag-7y-rhX" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="eXE-Zm-02l"/>
                             <constraint firstItem="CZM-R4-agf" firstAttribute="leading" secondItem="hnc-Ps-oWx" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="qju-8s-mLD"/>
@@ -638,7 +636,6 @@
                         <constraints>
                             <constraint firstItem="4HX-c3-6eX" firstAttribute="centerX" secondItem="9r1-FE-6C6" secondAttribute="centerX" type="default" id="08T-g6-6XG"/>
                             <constraint firstItem="Gc5-rZ-FY4" firstAttribute="top" secondItem="f6c-iS-80O" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="0FU-vW-6vF"/>
-                            <constraint firstItem="qf9-zc-7T9" firstAttribute="baseline" secondItem="fhs-DI-S56" secondAttribute="baseline" type="default" id="2ne-2d-blA"/>
                             <constraint firstItem="Gc5-rZ-FY4" firstAttribute="centerY" secondItem="Zzt-me-4jn" secondAttribute="centerY" type="default" id="3Zi-0b-M3p"/>
                             <constraint firstAttribute="bottom" secondItem="qf9-zc-7T9" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="3sT-41-Ccc"/>
                             <constraint firstItem="9r1-FE-6C6" firstAttribute="centerX" secondItem="Gc5-rZ-FY4" secondAttribute="centerX" type="default" id="3ty-tf-47l"/>
@@ -764,7 +761,7 @@
                                             <rect key="frame" x="10" y="1" width="300" height="93"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzP-XU-DtL">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzP-XU-DtL" customClass="GCPlaceholderTextView">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="300" id="KhI-P7-LGD"/>
@@ -886,7 +883,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3b4-Zb-uSN">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3b4-Zb-uSN" customClass="GCPlaceholderTextView">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="300" id="LUP-ya-cbe"/>
@@ -939,7 +936,7 @@
                                             <rect key="frame" x="10" y="1" width="300" height="93"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hbp-yx-N6O">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hbp-yx-N6O" customClass="GCPlaceholderTextView">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="90" id="azu-Tg-cj4"/>
@@ -1111,7 +1108,7 @@
                                             <rect key="frame" x="10" y="1" width="300" height="93"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiz-YZ-1Xv">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiz-YZ-1Xv" customClass="GCPlaceholderTextView">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="90" id="3tZ-hq-Uqh"/>
@@ -1233,7 +1230,7 @@
                                             <rect key="frame" x="10" y="0.0" width="300" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Pk-jI-eIy">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Pk-jI-eIy" customClass="GCPlaceholderTextView">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="V28-Bo-5PJ"/>
@@ -1525,6 +1522,86 @@
         <image name="TextToHex.png" width="30" height="30"/>
         <image name="TextToHex_Selected.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="AboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
+        </class>
+        <class className="BinaryTutorialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BinaryTutorialViewController.h"/>
+        </class>
+        <class className="FirstTutorialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstTutorialViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="next:"/>
+            </relationships>
+        </class>
+        <class className="ForthTutorialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ForthTutorialViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
+        <class className="GCPlaceholderTextView" superclassName="UITextView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GCPlaceholderTextView.h"/>
+        </class>
+        <class className="HashSumViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HashSumViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="md5Disp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="sha1Disp" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textToHash" candidateClass="GCPlaceholderTextView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SecondTutorialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondTutorialViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="next:"/>
+            </relationships>
+        </class>
+        <class className="TextBase64ViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextBase64ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="action" name="convertBack:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="base64Disp" candidateClass="GCPlaceholderTextView"/>
+                <relationship kind="outlet" name="textToBase64" candidateClass="GCPlaceholderTextView"/>
+            </relationships>
+        </class>
+        <class className="TextBinViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextBinViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="action" name="convertBack:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="binaryDisp" candidateClass="GCPlaceholderTextView"/>
+                <relationship kind="outlet" name="textToBinary" candidateClass="GCPlaceholderTextView"/>
+            </relationships>
+        </class>
+        <class className="TextHexViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextHexViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="convert:"/>
+                <relationship kind="action" name="convertBack:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="hexDisp" candidateClass="GCPlaceholderTextView"/>
+                <relationship kind="outlet" name="textToHex" candidateClass="GCPlaceholderTextView"/>
+            </relationships>
+        </class>
+        <class className="ThirdTutorialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdTutorialViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="next:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

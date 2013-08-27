@@ -7,15 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GCPlaceholderTextView.h"
 
 @interface TextBinViewController : UITableViewController <UITextViewDelegate>
 {
-    IBOutlet UITextView *textToBinary;
-    IBOutlet UITextView *binaryDisp;
+    IBOutlet GCPlaceholderTextView *textToBinary;
+    IBOutlet GCPlaceholderTextView *binaryDisp;
 }
 
-@property (strong,nonatomic) IBOutlet UITextView *textToBinary;
-@property (strong,nonatomic) IBOutlet UITextView *binaryDisp;
+@property (strong,nonatomic) IBOutlet GCPlaceholderTextView *textToBinary;
+@property (strong,nonatomic) IBOutlet GCPlaceholderTextView *binaryDisp;
 
 -(NSString *)textToBin:(NSString *)text;
 -(NSString *)binToText:(NSString *)text;
