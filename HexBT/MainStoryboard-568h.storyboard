@@ -1050,11 +1050,29 @@
                                     <constraint firstAttribute="height" constant="65" id="i7X-9t-yHl"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxD-hy-zNA">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="49y-aF-jRe"/>
+                                    <constraint firstAttribute="height" constant="44" id="yjj-5Q-0G4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.50980392159999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="next:" destination="m2j-co-m5v" eventType="touchUpInside" id="Xbf-fj-kZZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="prt-ZG-iRF" firstAttribute="top" secondItem="fMi-DO-vhn" secondAttribute="top" constant="69" id="3bO-yv-kwp"/>
                             <constraint firstItem="k6C-pc-OwU" firstAttribute="centerX" secondItem="7Ci-f5-OHL" secondAttribute="centerX" type="default" id="7U0-hL-sIg"/>
+                            <constraint firstItem="jxD-hy-zNA" firstAttribute="trailing" secondItem="Txc-Ef-UTG" secondAttribute="trailing" type="default" id="7yt-98-tQf"/>
                             <constraint firstItem="7Ci-f5-OHL" firstAttribute="centerX" secondItem="Txc-Ef-UTG" secondAttribute="centerX" type="default" id="Apt-6Z-vjW"/>
                             <constraint firstItem="QZs-WY-QmD" firstAttribute="centerX" secondItem="prt-ZG-iRF" secondAttribute="centerX" type="default" id="DPJ-BL-LTi"/>
                             <constraint firstAttribute="bottom" secondItem="7Ci-f5-OHL" secondAttribute="bottom" constant="95" id="ETe-dj-2ck"/>
@@ -1067,6 +1085,7 @@
                             <constraint firstItem="OgS-C5-g2d" firstAttribute="centerX" secondItem="fMi-DO-vhn" secondAttribute="centerX" type="default" id="kcU-xJ-bcI"/>
                             <constraint firstAttribute="bottom" secondItem="k6C-pc-OwU" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="qQr-v6-ad8"/>
                             <constraint firstItem="Txc-Ef-UTG" firstAttribute="top" secondItem="OgS-C5-g2d" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wnb-zs-v4d"/>
+                            <constraint firstAttribute="bottom" secondItem="jxD-hy-zNA" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="xXT-YY-TyK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Text-Hexadecimal" id="6ur-AC-YpB"/>
@@ -1114,9 +1133,28 @@
                                     <constraint firstAttribute="width" constant="65" id="UIz-bF-wBT"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ab-WN-2Ap">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8rr-Zy-UzJ"/>
+                                    <constraint firstAttribute="height" constant="44" id="Tho-un-JVo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.50980392159999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="next:" destination="X71-Wi-Pwt" eventType="touchUpInside" id="exN-7x-8rY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8Ab-WN-2Ap" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="1Dy-vf-clL"/>
+                            <constraint firstAttribute="bottom" secondItem="8Ab-WN-2Ap" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="5zk-Xu-EhB"/>
                             <constraint firstItem="2Ev-Hr-gDo" firstAttribute="centerX" secondItem="DDu-fA-hJL" secondAttribute="centerX" type="default" id="6MS-nD-CkC"/>
                             <constraint firstItem="gEH-R4-1qB" firstAttribute="centerX" secondItem="cDm-vO-JaH" secondAttribute="centerX" type="default" id="BNy-K6-E3Y"/>
                             <constraint firstItem="gEH-R4-1qB" firstAttribute="top" secondItem="cDm-vO-JaH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="P3H-xs-vqz"/>
@@ -1147,11 +1185,12 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlC-7r-ZAK">
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8Bu-Hv-38d"/>
                                     <constraint firstAttribute="height" constant="44" id="nBg-bR-9sx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Exit Tutorial">
-                                    <color key="titleColor" red="0.0" green="0.50980392159999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -1208,12 +1247,12 @@
                             <constraint firstItem="eoz-eA-nKh" firstAttribute="centerX" secondItem="xRr-19-tJK" secondAttribute="centerX" type="default" id="OrT-LV-EwU"/>
                             <constraint firstItem="1uy-EW-PwV" firstAttribute="top" secondItem="xRr-19-tJK" secondAttribute="top" constant="59" id="T7B-q1-oKw"/>
                             <constraint firstItem="eoz-eA-nKh" firstAttribute="top" secondItem="Mbg-K3-GgL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="TJA-JQ-Xyf"/>
-                            <constraint firstAttribute="trailing" secondItem="rlC-7r-ZAK" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="fDy-gI-zL6"/>
                             <constraint firstItem="rRa-J6-thZ" firstAttribute="top" secondItem="O3q-ws-6EB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="n34-LI-maS"/>
                             <constraint firstItem="O3q-ws-6EB" firstAttribute="top" secondItem="9QS-ih-cte" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="nNY-76-ZmN"/>
                             <constraint firstAttribute="bottom" secondItem="IMX-8o-dHW" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="nhM-xs-dK3"/>
                             <constraint firstItem="rRa-J6-thZ" firstAttribute="centerY" secondItem="xRr-19-tJK" secondAttribute="centerY" type="default" id="pFe-nw-kFd"/>
                             <constraint firstItem="rRa-J6-thZ" firstAttribute="centerX" secondItem="O3q-ws-6EB" secondAttribute="centerX" type="default" id="piD-Br-089"/>
+                            <constraint firstItem="rlC-7r-ZAK" firstAttribute="trailing" secondItem="xRr-19-tJK" secondAttribute="trailing" type="default" id="qg9-Bf-xiQ"/>
                             <constraint firstAttribute="bottom" secondItem="rlC-7r-ZAK" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="urM-Ld-UXE"/>
                             <constraint firstItem="Mbg-K3-GgL" firstAttribute="centerX" secondItem="rRa-J6-thZ" secondAttribute="centerX" type="default" id="zcH-wt-x2Q"/>
                         </constraints>
@@ -1268,6 +1307,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSy-jm-UdL">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="V4U-A4-ioL"/>
+                                    <constraint firstAttribute="height" constant="44" id="wsp-Te-2Bn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.50980392159999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="next:" destination="6Wn-20-MDm" eventType="touchUpInside" id="uG0-se-DaB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1282,9 +1338,11 @@
                             <constraint firstItem="awc-CJ-7JQ" firstAttribute="top" secondItem="FFQ-Bq-hRo" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gM1-12-D30"/>
                             <constraint firstItem="oBF-gV-0ZV" firstAttribute="centerX" secondItem="mLG-kL-NHU" secondAttribute="centerX" type="default" id="gag-0a-BQD"/>
                             <constraint firstItem="mLG-kL-NHU" firstAttribute="top" secondItem="wLq-P9-3Fy" secondAttribute="top" constant="126" id="nMl-ls-UhO"/>
+                            <constraint firstAttribute="bottom" secondItem="HSy-jm-UdL" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="ng8-Td-EA6"/>
                             <constraint firstItem="OnR-la-9BR" firstAttribute="top" secondItem="L3N-A4-o5k" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="oaf-kl-3bX"/>
                             <constraint firstAttribute="bottom" secondItem="awc-CJ-7JQ" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="rH8-Ri-g9A"/>
                             <constraint firstItem="oBF-gV-0ZV" firstAttribute="top" secondItem="mLG-kL-NHU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="x4j-5z-Gee"/>
+                            <constraint firstItem="HSy-jm-UdL" firstAttribute="trailing" secondItem="FFQ-Bq-hRo" secondAttribute="trailing" type="default" id="z06-cy-ZBU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Text-Binary" id="3I3-Yo-340"/>
@@ -1400,69 +1458,6 @@
         <image name="TextToHex.png" width="30" height="30"/>
         <image name="TextToHex_Selected.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="AboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
-        </class>
-        <class className="BinaryTutorialViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BinaryTutorialViewController.h"/>
-        </class>
-        <class className="FirstTutorialViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstTutorialViewController.h"/>
-        </class>
-        <class className="ForthTutorialViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ForthTutorialViewController.h"/>
-        </class>
-        <class className="HashSumViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HashSumViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="convert:"/>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="outlet" name="md5Disp" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="sha1Disp" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="textToHash" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SecondTutorialViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondTutorialViewController.h"/>
-        </class>
-        <class className="TextBase64ViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextBase64ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="convert:"/>
-                <relationship kind="action" name="convertBack:"/>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="outlet" name="base64Disp" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="textToBase64" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="TextBinViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextBinViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="convert:"/>
-                <relationship kind="action" name="convertBack:"/>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="outlet" name="binaryDisp" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="textToBinary" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="TextHexViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextHexViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="convert:"/>
-                <relationship kind="action" name="convertBack:"/>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="outlet" name="hexDisp" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="textToHex" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="ThirdTutorialViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdTutorialViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

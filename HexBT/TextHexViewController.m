@@ -130,8 +130,9 @@
 -(NSString *)hexToText:(NSString *)text
 {
     NSMutableArray *array=[[NSMutableArray alloc]init];
-    for (int i=0; i<text.length; i++) {
-        [array addObject:[MNNSStringWithUnichar stringWithUnichar:[text characterAtIndex:i]]];
+    NSString *moreText=[text uppercaseString];
+    for (int i=0; i<moreText.length; i++) {
+        [array addObject:[MNNSStringWithUnichar stringWithUnichar:[moreText characterAtIndex:i]]];
     }
     NSString *binary=[[NSString alloc]init];
     for (int x=0; x<[array count]; x++) {

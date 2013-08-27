@@ -10,4 +10,6 @@
 
 @interface ForthTutorialViewController : UIViewController
 
+-(IBAction)next:(id)sender;
+
 @end

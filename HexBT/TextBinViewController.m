@@ -534,7 +534,7 @@
             {
                 WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid input, no non-ASCII characters are allowed" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
                 [alert show];
-                value=@"Error: Invalid input, no non-ASCII characters are allowed";
+                value=@"";
                 blank=false;
             }
         }
@@ -560,6 +560,8 @@
     else
     {
         value=@"Error: Invalid binary numbers";
+        WCAlertView *alert = [[WCAlertView alloc]initWithTitle:@"Error: Invalid binary numbers!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        [alert show];
     }
     
     bool blank=true;
@@ -902,7 +904,9 @@
             }
             else
             {
-                value=@"Error: Invalid input, no non-ASCII characters are allowed";
+                value=@"";
+                WCAlertView *alert = [[WCAlertView alloc]initWithTitle:@"Error: Invalid input!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+                [alert show];
                 blank=false;
             }
         }

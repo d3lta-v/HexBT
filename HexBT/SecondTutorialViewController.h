@@ -10,4 +10,6 @@
 
 @interface SecondTutorialViewController : UIViewController
 
+-(IBAction)next:(id)sender;
+
 @end

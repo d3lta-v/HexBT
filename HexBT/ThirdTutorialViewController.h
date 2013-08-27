@@ -10,4 +10,6 @@
 
 @interface ThirdTutorialViewController : UIViewController
 
+-(IBAction)next:(id)sender;
+
 @end
