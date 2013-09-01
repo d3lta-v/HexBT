@@ -645,14 +645,15 @@
                             <constraint firstItem="9r1-FE-6C6" firstAttribute="trailing" secondItem="5VJ-DS-pU4" secondAttribute="trailing" type="default" id="Qfb-Wp-Xca"/>
                             <constraint firstItem="9r1-FE-6C6" firstAttribute="centerX" secondItem="Zzt-me-4jn" secondAttribute="centerX" type="default" id="VQ3-13-5G4"/>
                             <constraint firstItem="qf9-zc-7T9" firstAttribute="top" secondItem="fhs-DI-S56" secondAttribute="top" type="default" id="VlI-5l-NKI"/>
+                            <constraint firstAttribute="trailing" secondItem="fhs-DI-S56" secondAttribute="trailing" constant="21" id="Vtu-dX-s0h"/>
                             <constraint firstItem="g4M-Gm-zfm" firstAttribute="centerX" secondItem="4HX-c3-6eX" secondAttribute="centerX" type="default" id="XvR-Q3-dLT"/>
                             <constraint firstAttribute="bottom" secondItem="fhs-DI-S56" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="aX0-HA-7h6"/>
-                            <constraint firstAttribute="trailing" secondItem="fhs-DI-S56" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bXA-pi-CH0"/>
                             <constraint firstItem="4HX-c3-6eX" firstAttribute="top" secondItem="9r1-FE-6C6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="hQP-Hf-1Nr"/>
                             <constraint firstItem="EcX-Qt-BQ5" firstAttribute="centerX" secondItem="f6c-iS-80O" secondAttribute="centerX" type="default" id="lm3-Ia-MQO"/>
                             <constraint firstAttribute="bottom" secondItem="g4M-Gm-zfm" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="mnc-I5-lHq"/>
                             <constraint firstAttribute="bottom" secondItem="4HX-c3-6eX" secondAttribute="bottom" constant="92" id="oMI-Ka-Ax3"/>
                             <constraint firstItem="qf9-zc-7T9" firstAttribute="leading" secondItem="Zzt-me-4jn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="u6S-ng-wuD"/>
+                            <constraint firstItem="fhs-DI-S56" firstAttribute="baseline" secondItem="qf9-zc-7T9" secondAttribute="baseline" type="default" id="uKL-or-1lE"/>
                             <constraint firstItem="f6c-iS-80O" firstAttribute="top" secondItem="EcX-Qt-BQ5" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wRv-uZ-tL0"/>
                         </constraints>
                     </view>
