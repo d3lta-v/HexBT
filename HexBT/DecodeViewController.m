@@ -170,12 +170,12 @@
 -(BOOL)isHexadecimal:(NSString *)input
 {
     NSString *moreText=[input uppercaseString];
-    
+    moreText=[[moreText componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsJoinedByString:@""];
     NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"1234567890ABCDEF"];
     set = [set invertedSet];
     NSRange range = [moreText rangeOfCharacterFromSet:set];
     
-    if (range.location == NSNotFound) //If you don't get any characters that are not in the hex set
+    if (range.location == NSNotFound&&moreText.length%2==0) //If you don't get any characters that are not in the hex set
     {
         return YES;
     }
@@ -187,11 +187,12 @@
 
 -(BOOL)isBinary:(NSString *)input
 {
+    input=[[input componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsJoinedByString:@""];
     NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"01"];
     set = [set invertedSet];
     NSRange range = [input rangeOfCharacterFromSet:set];
     
-    if (range.location == NSNotFound) {
+    if (range.location == NSNotFound&&input.length%8==0) {
         return YES;
     }
     else
