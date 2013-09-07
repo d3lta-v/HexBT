@@ -34,10 +34,10 @@
     [super viewDidLoad];
     textToBase64.clipsToBounds=YES;
     textToBase64.layer.cornerRadius=10.0f;
-    textToBase64.placeholder=@"Input text/Output text here";
+    textToBase64.placeholder=@"Input text here";
     base64Disp.clipsToBounds=YES;
     base64Disp.layer.cornerRadius=10.0f;
-    base64Disp.placeholder=@"Output Base64/Input Base64 here";
+    base64Disp.placeholder=@"Output Base64 here";
     
     //Set navigation bar looks
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
@@ -50,7 +50,7 @@
     label.backgroundColor = [UIColor clearColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.textColor = [UIColor colorWithRed:49.0/255.0 green:79.0/255.0 blue:79.0/255.0 alpha:1.0];
-    label.text = @"Text-Base64 Converter";
+    label.text = @"Text to Base64 Converter";
     label.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0f];
     [label setShadowColor:[UIColor whiteColor]];
     [label setShadowOffset:CGSizeMake(0, -0.5)];

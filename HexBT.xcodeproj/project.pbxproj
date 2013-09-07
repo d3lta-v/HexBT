@@ -13,6 +13,7 @@
 		22039F7017B3CE8300551E55 /* TextToHex.png in Resources */ = {isa = PBXBuildFile; fileRef = 22039F6E17B3CE8300551E55 /* TextToHex.png */; };
 		22039F7217B3D0F100551E55 /* MainStoryboard-568h.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22039F7117B3D0F100551E55 /* MainStoryboard-568h.storyboard */; };
 		22039F7917B4057000551E55 /* TextHexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22039F7817B4057000551E55 /* TextHexViewController.m */; };
+		2204D2E117DA21CD006D42DE /* DecodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204D2E017DA21CD006D42DE /* DecodeViewController.m */; };
 		2205753E17BE6EEE0021626B /* Hash_Deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205753617BE6EEE0021626B /* Hash_Deselected.png */; };
 		2205753F17BE6EEE0021626B /* Hash_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205753717BE6EEE0021626B /* Hash_Selected.png */; };
 		2205754017BE6EEE0021626B /* TextToBase64_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205753817BE6EEE0021626B /* TextToBase64_Selected.png */; };
@@ -66,6 +67,8 @@
 		22039F7117B3D0F100551E55 /* MainStoryboard-568h.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "MainStoryboard-568h.storyboard"; sourceTree = "<group>"; };
 		22039F7717B4057000551E55 /* TextHexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextHexViewController.h; sourceTree = "<group>"; };
 		22039F7817B4057000551E55 /* TextHexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextHexViewController.m; sourceTree = "<group>"; };
+		2204D2DF17DA21CD006D42DE /* DecodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecodeViewController.h; sourceTree = "<group>"; };
+		2204D2E017DA21CD006D42DE /* DecodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecodeViewController.m; sourceTree = "<group>"; };
 		2205753617BE6EEE0021626B /* Hash_Deselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hash_Deselected.png; sourceTree = "<group>"; };
 		2205753717BE6EEE0021626B /* Hash_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hash_Selected.png; sourceTree = "<group>"; };
 		2205753817BE6EEE0021626B /* TextToBase64_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToBase64_Selected.png; sourceTree = "<group>"; };
@@ -238,6 +241,8 @@
 				22B31ED817BD00170040EEF8 /* TextBase64ViewController.m */,
 				2290825817B6671500CC8E1F /* HashSumViewController.h */,
 				2290825917B6671500CC8E1F /* HashSumViewController.m */,
+				2204D2DF17DA21CD006D42DE /* DecodeViewController.h */,
+				2204D2E017DA21CD006D42DE /* DecodeViewController.m */,
 				2243D1E917CB7F8300CC5630 /* AboutViewController.h */,
 				2243D1EA17CB7F8300CC5630 /* AboutViewController.m */,
 				22039F6417B2A23E00551E55 /* MNNSStringWithUnichar.h */,
@@ -387,6 +392,7 @@
 				2243D1E217CB70DE00CC5630 /* ForthTutorialViewController.m in Sources */,
 				2243D1EB17CB7F8300CC5630 /* AboutViewController.m in Sources */,
 				2243D1EF17CC57BD00CC5630 /* GCPlaceholderTextView.m in Sources */,
+				2204D2E117DA21CD006D42DE /* DecodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

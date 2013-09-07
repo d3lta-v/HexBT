@@ -51,7 +51,7 @@
     label.backgroundColor = [UIColor clearColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.textColor = [UIColor colorWithRed:49.0/255.0 green:79.0/255.0 blue:79.0/255.0 alpha:1.0];
-    label.text = @"Text-Hash Digest";
+    label.text = @"Text to Hash Sum";
     label.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0f];
     [label setShadowColor:[UIColor whiteColor]];
     [label setShadowOffset:CGSizeMake(0, -0.5)];

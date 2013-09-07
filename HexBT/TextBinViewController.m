@@ -45,6 +45,7 @@
     [item1 setFinishedSelectedImage:[UIImage imageNamed:@"TextToHex_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"TextToHex_Deselected.png"]];
     [item2 setFinishedSelectedImage:[UIImage imageNamed:@"TextToBase64_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"TextToBase64_Deselected.png"]];
     [item3 setFinishedSelectedImage:[UIImage imageNamed:@"Hash_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"Hash_Deselected.png"]];
+#warning CHANGE THE IMAGES IN FINAL PRODUCT
     [item4 setFinishedSelectedImage:[UIImage imageNamed:@"Info_Button_Selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"Info_Button_Deselected"]];
     
     [WCAlertView setDefaultStyle:WCAlertViewStyleWhite];
@@ -61,10 +62,10 @@
     // Makes the text fields rounded
     textToBinary.clipsToBounds=YES;
     textToBinary.layer.cornerRadius=10.0f;
-    textToBinary.placeholder=@"Input text/Output text here";
+    textToBinary.placeholder=@"Input text here";
     binaryDisp.clipsToBounds=YES;
     binaryDisp.layer.cornerRadius=10.0f;
-    binaryDisp.placeholder=@"Output binary/Input binary here";
+    binaryDisp.placeholder=@"Output binary here";
     
     // Sets the colors of the background
     self.tableView.backgroundView = nil;
@@ -82,7 +83,7 @@
     label.backgroundColor = [UIColor clearColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.textColor = [UIColor colorWithRed:49.0/255.0 green:79.0/255.0 blue:79.0/255.0 alpha:1.0];
-    label.text = @"Text-Binary Converter";
+    label.text = @"Text to Binary Converter";
     label.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0f];
     [label setShadowColor:[UIColor whiteColor]];
     [label setShadowOffset:CGSizeMake(0, -0.5)];

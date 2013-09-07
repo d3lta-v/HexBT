@@ -240,12 +240,18 @@
 
 -(IBAction)convert:(id)sender
 {
-    if ([textToHex hasText]) {
+    if ([textToHex text].length<1) {
+        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: No text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        [alert show];
+        hexDisp.text=@"";
+        [textToHex resignFirstResponder];
+    }
+    else if ([textToHex hasText]) {
         NSString *converted=[self textToHex:textToHex.text];
         hexDisp.text=converted;
         [textToHex resignFirstResponder];
     }
-    else if (![hexDisp hasText]||![textToHex hasText])
+    else if ([hexDisp hasText]||![textToHex hasText])
     {
         WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
@@ -263,10 +269,10 @@
     [super viewDidLoad];
     textToHex.clipsToBounds=YES;
     textToHex.layer.cornerRadius=10.0f;
-    textToHex.placeholder=@"Input text/Output text here";
+    textToHex.placeholder=@"Input text here";
     hexDisp.clipsToBounds=YES;
     hexDisp.layer.cornerRadius=10.0f;
-    hexDisp.placeholder=@"Output hexadecimal/Input hexadecimal here";
+    hexDisp.placeholder=@"Output hexadecimal here";
     
     //Set navigation bar looks
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
@@ -279,7 +285,7 @@
     label.backgroundColor = [UIColor clearColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.textColor = [UIColor colorWithRed:49.0/255.0 green:79.0/255.0 blue:79.0/255.0 alpha:1.0];
-    label.text = @"Text-Hexadecimal Converter";
+    label.text = @"Text to Hexadecimal Converter";
     label.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0f];
     [label setShadowColor:[UIColor whiteColor]];
     [label setShadowOffset:CGSizeMake(0, -0.5)];

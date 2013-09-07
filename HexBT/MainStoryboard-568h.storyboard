@@ -20,7 +20,7 @@
                         <segue destination="Rtc-sP-RLl" kind="relationship" relationship="viewControllers" id="F7T-Us-nBY"/>
                         <segue destination="7nK-Ks-Zqi" kind="relationship" relationship="viewControllers" id="3Ib-oi-ZvI"/>
                         <segue destination="Bad-cR-LUu" kind="relationship" relationship="viewControllers" id="63W-Qr-UrR"/>
-                        <segue destination="aiW-tu-9Yv" kind="relationship" relationship="viewControllers" id="YGf-9k-pxB"/>
+                        <segue destination="C2V-YG-ldl" kind="relationship" relationship="viewControllers" id="2c1-Ve-DCM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Tq-HF-j4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -625,80 +625,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAW-8i-3de" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="405" y="1217"/>
-        </scene>
-        <!--Navigation Controller - About-->
-        <scene sceneID="wsE-j2-23b">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="aiW-tu-9Yv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About" image="Info_Button_Selected.png" id="4pf-yQ-Sfe"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WeD-JT-R02">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="bEc-cw-olq" kind="relationship" relationship="rootViewController" id="QaK-pp-9dy"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ohp-D8-s3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="405" y="1868"/>
-        </scene>
-        <!--About View Controller - About-->
-        <scene sceneID="IfS-Mq-Shr">
-            <objects>
-                <viewController id="bEc-cw-olq" customClass="AboutViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="B87-Ck-dop">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Developed by StatiX Industries of" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pg8-H1-6bn">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="246" id="kbC-a3-N1U"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uses NSData+Base64 Base64 Converter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sY-gb-UR7">
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uses the CSIMUX Conversion Engine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrI-uI-Heq">
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SST Inc." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujJ-Qp-WXD">
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="SSTINC.png" translatesAutoresizingMaskIntoConstraints="NO" id="xOf-QO-TRF">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="117" id="0Ya-zK-7o7"/>
-                                    <constraint firstAttribute="width" constant="180" id="pAv-L8-yF1"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Pg8-H1-6bn" firstAttribute="centerX" secondItem="xOf-QO-TRF" secondAttribute="centerX" type="default" id="0p1-rv-hyb"/>
-                            <constraint firstAttribute="bottom" secondItem="ujJ-Qp-WXD" secondAttribute="bottom" constant="170" id="17N-Dz-GO2"/>
-                            <constraint firstAttribute="bottom" secondItem="8sY-gb-UR7" secondAttribute="bottom" constant="54" id="1cu-x3-Quf"/>
-                            <constraint firstItem="ujJ-Qp-WXD" firstAttribute="centerX" secondItem="PrI-uI-Heq" secondAttribute="centerX" type="default" id="Auh-6J-SMw"/>
-                            <constraint firstItem="PrI-uI-Heq" firstAttribute="centerX" secondItem="8sY-gb-UR7" secondAttribute="centerX" type="default" id="DfM-se-Mrm"/>
-                            <constraint firstItem="Pg8-H1-6bn" firstAttribute="centerX" secondItem="ujJ-Qp-WXD" secondAttribute="centerX" type="default" id="GYI-HJ-SVR"/>
-                            <constraint firstItem="8sY-gb-UR7" firstAttribute="top" secondItem="PrI-uI-Heq" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="X2K-jy-Tw6"/>
-                            <constraint firstItem="ujJ-Qp-WXD" firstAttribute="centerX" secondItem="B87-Ck-dop" secondAttribute="centerX" type="default" id="jBZ-Ct-yFe"/>
-                            <constraint firstItem="xOf-QO-TRF" firstAttribute="top" secondItem="B87-Ck-dop" secondAttribute="top" constant="72" id="nQw-hR-LGg"/>
-                            <constraint firstItem="ujJ-Qp-WXD" firstAttribute="top" secondItem="Pg8-H1-6bn" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pRr-Cw-nVQ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="About" id="GJA-fx-iEP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cq9-Bj-J4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="924" y="1868"/>
         </scene>
         <!--Binary Tutorial View Controller - Tutorial-->
         <scene sceneID="r2K-ZB-ftQ">
@@ -1515,12 +1441,205 @@
             </objects>
             <point key="canvasLocation" x="858" y="1217"/>
         </scene>
+        <!--Navigation Controller - Decoder-->
+        <scene sceneID="y7q-s0-SRp">
+            <objects>
+                <navigationController id="C2V-YG-ldl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Decoder" image="TextToBin.png" id="tkP-F9-fW9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Atl-sJ-LBz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H5I-bO-V61" kind="relationship" relationship="rootViewController" id="dqR-uY-Or5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="59m-dX-l0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="-1478"/>
+        </scene>
+        <!--Decode View Controller - Decoder-->
+        <scene sceneID="Ekf-Gn-eph">
+            <objects>
+                <tableViewController id="H5I-bO-V61" customClass="DecodeViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="tzU-Gq-xxo">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Encoded Text" id="ptP-9m-5iC">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="179" id="bX1-eI-cZe">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="178"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4z-ay-lMY" customClass="GCPlaceholderTextView">
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="300" id="aeR-Yv-4z4"/>
+                                                        <constraint firstAttribute="height" constant="175" id="nGM-du-6Mh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" keyboardType="alphabet"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="w4z-ay-lMY" firstAttribute="top" secondItem="bX1-eI-cZe" secondAttribute="top" constant="4" id="Pgc-eu-FLq"/>
+                                            <constraint firstItem="w4z-ay-lMY" firstAttribute="centerX" secondItem="bX1-eI-cZe" secondAttribute="centerX" type="default" id="dLd-NZ-bFQ"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" rowHeight="39" id="zA1-xr-ntN">
+                                        <rect key="frame" x="0.0" y="226" width="320" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="38"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFi-Dg-neK">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="153" id="cu6-fc-OYS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                    <state key="normal" title="Decode">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="setType:" destination="H5I-bO-V61" eventType="touchUpInside" id="DWP-AA-rGH"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="|" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H84-Ra-4yq">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="4HA-2m-Zub"/>
+                                                        <constraint firstAttribute="width" constant="5" id="MKr-Z5-UgJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6g-HC-Ml0">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="QFS-Oo-vQM"/>
+                                                        <constraint firstAttribute="width" constant="153" id="wK2-tv-BG3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                    <state key="normal" title="Paste from clipboard">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="pasteToTextView:" destination="H5I-bO-V61" eventType="touchUpInside" id="S5y-g2-yng"/>
+                                                        <action selector="setType:" destination="H5I-bO-V61" eventType="touchUpInside" id="QVP-A3-TzD"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="H84-Ra-4yq" firstAttribute="centerX" secondItem="zA1-xr-ntN" secondAttribute="centerX" type="default" id="6ut-fg-IiW"/>
+                                            <constraint firstItem="w6g-HC-Ml0" firstAttribute="top" secondItem="dFi-Dg-neK" secondAttribute="top" type="default" id="Gzb-aW-HJb"/>
+                                            <constraint firstItem="H84-Ra-4yq" firstAttribute="centerY" secondItem="dFi-Dg-neK" secondAttribute="centerY" type="default" id="Jj1-Kc-Ryt"/>
+                                            <constraint firstItem="w6g-HC-Ml0" firstAttribute="bottom" secondItem="dFi-Dg-neK" secondAttribute="bottom" type="default" id="NyQ-H9-rW5"/>
+                                            <constraint firstItem="w6g-HC-Ml0" firstAttribute="centerY" secondItem="zA1-xr-ntN" secondAttribute="centerY" type="default" id="rnc-D4-BtR"/>
+                                            <constraint firstItem="H84-Ra-4yq" firstAttribute="trailing" secondItem="dFi-Dg-neK" secondAttribute="trailing" type="default" id="t4q-mB-L6s"/>
+                                            <constraint firstItem="w6g-HC-Ml0" firstAttribute="leading" secondItem="H84-Ra-4yq" secondAttribute="leading" type="default" id="tmk-6s-3Y8"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Decoded Text" id="Xn7-E9-Qcv">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="39" id="8Kz-sO-S5X">
+                                        <rect key="frame" x="0.0" y="312" width="320" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="38"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brb-w2-uuY">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="300" id="W6D-RV-taJ"/>
+                                                        <constraint firstAttribute="height" constant="44" id="byW-dI-uOO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                    <state key="normal" title="Share/Copy Decoded Text">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="share:" destination="H5I-bO-V61" eventType="touchUpInside" id="KUM-dt-VYV"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Brb-w2-uuY" firstAttribute="centerY" secondItem="8Kz-sO-S5X" secondAttribute="centerY" type="default" id="LqQ-87-5Pd"/>
+                                            <constraint firstItem="Brb-w2-uuY" firstAttribute="centerX" secondItem="8Kz-sO-S5X" secondAttribute="centerX" type="default" id="ZNl-5G-Q4w"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="Bid-Sm-oEt">
+                                        <rect key="frame" x="0.0" y="352" width="320" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1r3-0Z-Zeg" customClass="GCPlaceholderTextView">
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="9Rf-wb-u2b"/>
+                                                        <constraint firstAttribute="width" constant="300" id="cZj-WS-iJL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" keyboardType="numberPad"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="1r3-0Z-Zeg" firstAttribute="top" secondItem="Bid-Sm-oEt" secondAttribute="top" type="default" id="BMU-gI-zIH"/>
+                                            <constraint firstItem="1r3-0Z-Zeg" firstAttribute="centerX" secondItem="Bid-Sm-oEt" secondAttribute="centerX" type="default" id="dho-a4-71R"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="H5I-bO-V61" id="cX2-J6-8Zh"/>
+                            <outlet property="delegate" destination="H5I-bO-V61" id="JKs-Rn-4a0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Decoder" id="D6m-ws-eol"/>
+                    <connections>
+                        <outlet property="output" destination="1r3-0Z-Zeg" id="2Au-vr-FHA"/>
+                        <outlet property="userInput" destination="w4z-ay-lMY" id="8ZD-nG-NbZ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sOh-ZD-UwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="-1478"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Hash.png" width="30" height="30"/>
         <image name="Hash_Selected.png" width="30" height="30"/>
-        <image name="Info_Button_Selected.png" width="33" height="33"/>
-        <image name="SSTINC.png" width="477" height="282"/>
         <image name="TextToBase64.png" width="30" height="30"/>
         <image name="TextToBase64_Selected.png" width="30" height="30"/>
         <image name="TextToBin.png" width="30" height="30"/>
@@ -1529,11 +1648,18 @@
         <image name="TextToHex_Selected.png" width="30" height="30"/>
     </resources>
     <classes>
-        <class className="AboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
-        </class>
         <class className="BinaryTutorialViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BinaryTutorialViewController.h"/>
+        </class>
+        <class className="DecodeViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DecodeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pasteToTextView:"/>
+                <relationship kind="action" name="setType:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="output" candidateClass="GCPlaceholderTextView"/>
+                <relationship kind="outlet" name="userInput" candidateClass="GCPlaceholderTextView"/>
+            </relationships>
         </class>
         <class className="FirstTutorialViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstTutorialViewController.h"/>
