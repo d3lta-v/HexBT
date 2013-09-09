@@ -38,7 +38,7 @@
     // Makes the text fields rounded
     userInput.clipsToBounds=YES;
     userInput.layer.cornerRadius=10.0f;
-    userInput.placeholder=@"Input encoded message";
+    userInput.placeholder=@"Input encoded message (make sure there is only 1 type of encoding)";
     output.clipsToBounds=YES;
     output.layer.cornerRadius=10.0f;
     output.placeholder=@"Output decoded message here (note that MD5 and SHA1 cannot be decoded)";
@@ -81,6 +81,7 @@
     [userInput resignFirstResponder];
 }
 
+//This will convert according to the language detected
 -(IBAction)setType:(id)sender
 {
     NSInteger type = [self detectType:[self isBase64Data:userInput.text] hexadecimal:[self isHexadecimal:userInput.text] binary:[self isBinary:userInput.text]];
@@ -134,6 +135,7 @@
     userInput.text = [pb string];
 }
 
+//This is the method to return an NSInteger accordingly
 -(NSInteger)detectType:(BOOL)base64 hexadecimal:(BOOL)hex binary:(BOOL)binary
 {
     //Make sure the checking of characters are in this order!
@@ -151,6 +153,7 @@
     }
 }
 
+//Checking if an NSString is encoded in Base64
 -(BOOL)isBase64Data:(NSString *)input
 {
     input=[[input componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsJoinedByString:@""];
@@ -167,6 +170,7 @@
     return NO;
 }
 
+//Checking if an NSString is encoded in hexadecimal
 -(BOOL)isHexadecimal:(NSString *)input
 {
     NSString *moreText=[input uppercaseString];
@@ -185,6 +189,7 @@
     }
 }
 
+//Checking if an NSString is encoded in binary
 -(BOOL)isBinary:(NSString *)input
 {
     input=[[input componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsJoinedByString:@""];
