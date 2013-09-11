@@ -1,18 +1,18 @@
 //
-//  ForthTutorialViewController.m
+//  FifthViewController.m
 //  HexBT
 //
-//  Created by Pan Ziyue on 26/8/13.
+//  Created by Pan Ziyue on 9/9/13.
 //  Copyright (c) 2013 Pan Ziyue. All rights reserved.
 //
 
-#import "ForthTutorialViewController.h"
+#import "FifthViewController.h"
 
-@interface ForthTutorialViewController ()
+@interface FifthViewController ()
 
 @end
 
-@implementation ForthTutorialViewController
+@implementation FifthViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,7 +38,7 @@
     label.backgroundColor = [UIColor clearColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.textColor = [UIColor colorWithRed:49.0/255.0 green:79.0/255.0 blue:79.0/255.0 alpha:1.0];
-    label.text = @"Text-Hash Digest";
+    label.text = @"Decoder";
     label.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0f];
     [label setShadowColor:[UIColor whiteColor]];
     [label setShadowOffset:CGSizeMake(0, -0.5)];
@@ -47,12 +47,7 @@
 
 -(IBAction)back:(id)sender
 {
-    self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:2];
-}
-
--(IBAction)next:(id)sender
-{
-    self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:4];
+    self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:3];
 }
 
 - (void)didReceiveMemoryWarning

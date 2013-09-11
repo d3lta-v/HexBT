@@ -51,6 +51,7 @@
 		22B31ED617BCFFD80040EEF8 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B31ED517BCFFD80040EEF8 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		22B31ED917BD00170040EEF8 /* TextBase64ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B31ED817BD00170040EEF8 /* TextBase64ViewController.m */; };
 		22B31EDB17BD0C7C0040EEF8 /* TextToBase64.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B31EDA17BD0C7C0040EEF8 /* TextToBase64.png */; };
+		22BCFE1917DD987D004878F5 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BCFE1817DD987D004878F5 /* FifthViewController.m */; };
 		22D813AE17BA5E970074E008 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813AD17BA5E970074E008 /* iTunesArtwork.png */; };
 		22D813B017BA5EA20074E008 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813AF17BA5EA20074E008 /* Icon.png */; };
 		22D813B217BA5EA50074E008 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813B117BA5EA50074E008 /* Icon@2x.png */; };
@@ -123,6 +124,8 @@
 		22B31ED717BD00170040EEF8 /* TextBase64ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBase64ViewController.h; sourceTree = "<group>"; };
 		22B31ED817BD00170040EEF8 /* TextBase64ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextBase64ViewController.m; sourceTree = "<group>"; };
 		22B31EDA17BD0C7C0040EEF8 /* TextToBase64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToBase64.png; sourceTree = "<group>"; };
+		22BCFE1717DD987D004878F5 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
+		22BCFE1817DD987D004878F5 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
 		22D813AD17BA5E970074E008 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		22D813AF17BA5EA20074E008 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		22D813B117BA5EA50074E008 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				2243D1DE17CB70D200CC5630 /* ThirdTutorialViewController.m */,
 				2243D1E017CB70DE00CC5630 /* ForthTutorialViewController.h */,
 				2243D1E117CB70DE00CC5630 /* ForthTutorialViewController.m */,
+				22BCFE1717DD987D004878F5 /* FifthViewController.h */,
+				22BCFE1817DD987D004878F5 /* FifthViewController.m */,
 			);
 			name = "Tutorial VCs";
 			sourceTree = "<group>";
@@ -393,6 +398,7 @@
 				2243D1EB17CB7F8300CC5630 /* AboutViewController.m in Sources */,
 				2243D1EF17CC57BD00CC5630 /* GCPlaceholderTextView.m in Sources */,
 				2204D2E117DA21CD006D42DE /* DecodeViewController.m in Sources */,
+				22BCFE1917DD987D004878F5 /* FifthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
