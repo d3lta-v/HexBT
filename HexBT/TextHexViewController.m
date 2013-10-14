@@ -266,17 +266,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    textToHex.clipsToBounds=YES;
-    textToHex.layer.cornerRadius=10.0f;
     textToHex.placeholder=@"Input text here";
-    hexDisp.clipsToBounds=YES;
-    hexDisp.layer.cornerRadius=10.0f;
     hexDisp.placeholder=@"Output hexadecimal here";
     
-    //Set navigation bar looks
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.alpha = 0.9f;
-    self.navigationController.navigationBar.translucent = YES;
+    self.tableView.backgroundView = nil;
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor=[UIColor colorWithWhite:0.95 alpha:1];
     
     //Set title text attributes
     CGRect frame = CGRectMake(0, 0, 400, 44);
@@ -289,10 +284,6 @@
     [label setShadowColor:[UIColor whiteColor]];
     [label setShadowOffset:CGSizeMake(0, -0.5)];
     self.navigationItem.titleView = label;
-    
-    self.tableView.backgroundView = nil;
-    self.tableView.backgroundColor = [UIColor clearColor];
-    self.view.backgroundColor=[UIColor colorWithWhite:0.95 alpha:1];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self

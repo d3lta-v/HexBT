@@ -35,22 +35,13 @@
 {
     [super viewDidLoad];
     // Makes the text fields rounded
-    userInput.clipsToBounds=YES;
-    userInput.layer.cornerRadius=10.0f;
     userInput.placeholder=@"Input encoded message (make sure there is only 1 type of encoding)";
-    output.clipsToBounds=YES;
-    output.layer.cornerRadius=10.0f;
     output.placeholder=@"Output decoded message here (note that MD5 and SHA1 cannot be decoded)";
     
     // Sets the colors of the background
     self.tableView.backgroundView = nil;
     self.tableView.backgroundColor = [UIColor clearColor];
     self.view.backgroundColor=[UIColor colorWithWhite:0.95 alpha:1];
-    
-    //Set navigation bar looks
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.alpha = 0.9f;
-    self.navigationController.navigationBar.translucent = YES;
     
     //Set title text attributes
     CGRect frame = CGRectMake(0, 0, 400, 44);

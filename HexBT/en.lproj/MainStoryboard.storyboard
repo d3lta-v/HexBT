@@ -45,22 +45,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdK-Wg-hj3" customClass="GCPlaceholderTextView">
-                                                    <rect key="frame" x="10" y="4" width="300" height="90"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TdK-Wg-hj3" customClass="GCPlaceholderTextView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="90" id="6u7-gn-paB"/>
-                                                        <constraint firstAttribute="width" constant="300" id="rc1-dY-HmF"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" keyboardType="alphabet"/>
                                                 </textView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="TdK-Wg-hj3" firstAttribute="centerX" secondItem="lv0-Oh-SGb" secondAttribute="centerX" id="QF1-kg-hzf"/>
-                                            <constraint firstItem="TdK-Wg-hj3" firstAttribute="top" secondItem="lv0-Oh-SGb" secondAttribute="top" constant="4" id="yqf-h0-1F8"/>
-                                        </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" rowHeight="39" id="DCp-ZN-i68">
                                         <rect key="frame" x="0.0" y="213" width="320" height="39"/>
@@ -137,22 +129,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gt-1o-Nha" customClass="GCPlaceholderTextView">
-                                                    <rect key="frame" x="10" y="0.0" width="300" height="70"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gt-1o-Nha" customClass="GCPlaceholderTextView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="300" id="1qL-JQ-bBd"/>
-                                                        <constraint firstAttribute="height" constant="70" id="oH7-gT-vCW"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" keyboardType="numberPad"/>
                                                 </textView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="2gt-1o-Nha" firstAttribute="centerX" secondItem="GqH-8L-ikF" secondAttribute="centerX" id="YUP-bA-oQy"/>
-                                            <constraint firstItem="2gt-1o-Nha" firstAttribute="top" secondItem="GqH-8L-ikF" secondAttribute="top" id="cVR-Dq-tvi"/>
-                                        </constraints>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1262,22 +1246,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJz-IV-2fb" customClass="GCPlaceholderTextView">
-                                                    <rect key="frame" x="10" y="4" width="300" height="90"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sJz-IV-2fb" customClass="GCPlaceholderTextView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="300" id="4Tq-BF-a28"/>
-                                                        <constraint firstAttribute="height" constant="90" id="nrU-rH-eDC"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" keyboardType="alphabet"/>
                                                 </textView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="sJz-IV-2fb" firstAttribute="centerX" secondItem="ZvU-wV-wnN" secondAttribute="centerX" id="gew-oD-fDO"/>
-                                            <constraint firstItem="sJz-IV-2fb" firstAttribute="top" secondItem="ZvU-wV-wnN" secondAttribute="top" constant="4" id="yNt-F6-5eS"/>
-                                        </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" rowHeight="39" id="ZmK-ZE-y0Y">
                                         <rect key="frame" x="0.0" y="213" width="320" height="39"/>
@@ -1387,22 +1363,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxY-4X-Wfg" customClass="GCPlaceholderTextView">
-                                                    <rect key="frame" x="10" y="0.0" width="300" height="70"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxY-4X-Wfg" customClass="GCPlaceholderTextView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="70" id="5I0-fQ-r79"/>
-                                                        <constraint firstAttribute="width" constant="300" id="dmf-jo-hQa"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" keyboardType="numberPad"/>
                                                 </textView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="bxY-4X-Wfg" firstAttribute="centerX" secondItem="gcV-CR-lq9" secondAttribute="centerX" id="ig1-D6-0rI"/>
-                                            <constraint firstItem="bxY-4X-Wfg" firstAttribute="top" secondItem="gcV-CR-lq9" secondAttribute="top" id="sQF-Z3-GIK"/>
-                                        </constraints>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>

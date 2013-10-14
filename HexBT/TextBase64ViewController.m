@@ -31,17 +31,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    textToBase64.clipsToBounds=YES;
-    textToBase64.layer.cornerRadius=10.0f;
     textToBase64.placeholder=@"Input text here";
-    base64Disp.clipsToBounds=YES;
-    base64Disp.layer.cornerRadius=10.0f;
     base64Disp.placeholder=@"Output Base64 here";
-    
-    //Set navigation bar looks
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.alpha = 0.9f;
-    self.navigationController.navigationBar.translucent = YES;
     
     //Set title text attributes
     CGRect frame = CGRectMake(0, 0, 400, 44);

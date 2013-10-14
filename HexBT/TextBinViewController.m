@@ -34,7 +34,7 @@
     [super viewDidLoad];
     
     //Set tab bar icons again, since the tutorial messes up the custom tab bars (for some reason)
-    UITabBar *tabBar = self.tabBarController.tabBar;
+    /*UITabBar *tabBar = self.tabBarController.tabBar;
     UITabBarItem *item0 = [tabBar.items objectAtIndex:0];
     UITabBarItem *item1 = [tabBar.items objectAtIndex:1];
     UITabBarItem *item2 = [tabBar.items objectAtIndex:2];
@@ -44,26 +44,15 @@
     [item1 setFinishedSelectedImage:[UIImage imageNamed:@"TextToHex_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"TextToHex_Deselected.png"]];
     [item2 setFinishedSelectedImage:[UIImage imageNamed:@"TextToBase64_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"TextToBase64_Deselected.png"]];
     [item3 setFinishedSelectedImage:[UIImage imageNamed:@"Hash_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"Hash_Deselected.png"]];
-#warning CHANGE THE IMAGES IN FINAL PRODUCT
-    [item4 setFinishedSelectedImage:[UIImage imageNamed:@"Info_Button_Selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"Info_Button_Deselected"]];
+    [item4 setFinishedSelectedImage:[UIImage imageNamed:@"Info_Button_Selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"Info_Button_Deselected"]];*/
     
-    // Makes the text fields rounded
-    textToBinary.clipsToBounds=YES;
-    textToBinary.layer.cornerRadius=10.0f;
     textToBinary.placeholder=@"Input text here";
-    binaryDisp.clipsToBounds=YES;
-    binaryDisp.layer.cornerRadius=10.0f;
     binaryDisp.placeholder=@"Output binary here";
     
-    // Sets the colors of the background
-    self.tableView.backgroundView = nil;
-    self.tableView.backgroundColor = [UIColor clearColor];
-    self.view.backgroundColor=[UIColor colorWithWhite:0.95 alpha:1];
-    
     //Set navigation bar looks
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    /*self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.alpha = 0.9f;
-    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.navigationBar.translucent = YES;*/
     
     //Set title text attributes
     CGRect frame = CGRectMake(0, 0, 400, 44);
@@ -76,6 +65,10 @@
     [label setShadowColor:[UIColor whiteColor]];
     [label setShadowOffset:CGSizeMake(0, -0.5)];
     self.navigationItem.titleView = label;
+    
+    self.tableView.backgroundView = nil;
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor=[UIColor colorWithWhite:0.95 alpha:1];
     
     // Adds action to tap & dismiss keyboard
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]

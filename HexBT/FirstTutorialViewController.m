@@ -29,7 +29,7 @@
 	// Do any additional setup after loading the view.
     
     //Set tab bar styles
-    UITabBar *tabBar = self.tabBarController.tabBar;
+    /*UITabBar *tabBar = self.tabBarController.tabBar;
     UITabBarItem *item0 = [tabBar.items objectAtIndex:0];
     UITabBarItem *item1 = [tabBar.items objectAtIndex:1];
     UITabBarItem *item2 = [tabBar.items objectAtIndex:2];
@@ -42,7 +42,7 @@
     //Set navigation bar looks
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.alpha = 0.9f;
-    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.navigationBar.translucent = YES;*/
     
     //Set title text attributes
     CGRect frame = CGRectMake(0, 0, 400, 44);

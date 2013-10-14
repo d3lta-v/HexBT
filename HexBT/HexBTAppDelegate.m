@@ -17,14 +17,14 @@
     // Override point for customization after application launch.
     [self initializeStoryBoardBasedOnScreenSize];
     //Set tab bar looks
-    [[UITabBar appearance] setTintColor:[UIColor colorWithWhite:1.0 alpha:0.8]];
+    /*[[UITabBar appearance] setTintColor:[UIColor colorWithWhite:1.0 alpha:0.8]];
     [[UITabBarItem appearance] setTitleTextAttributes:@{ UITextAttributeTextColor : [UIColor colorWithRed:158.0/255.0 green:158.0/255.0 blue:158.0/255.0 alpha:1.0] }forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:@{ UITextAttributeTextColor : [UIColor colorWithRed:132.0/255.0 green:112.0/255.0 blue:255.0/255.0 alpha:1.0] }forState:UIControlStateSelected];
     [[UITabBar appearance] setSelectedImageTintColor:[UIColor colorWithRed:0.0/255.0 green:122.0/255.0 blue:255.0/255.0 alpha:1.0]];
-    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabBarPic.png"]];
+    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabBarPic.png"]];*/
     
     //Set tab bar icons
-    self.tabBarController = (UITabBarController*)self.window.rootViewController;
+    /*self.tabBarController = (UITabBarController*)self.window.rootViewController;
     UITabBar *tabBar = self.tabBarController.tabBar;
     UITabBarItem *item0 = [tabBar.items objectAtIndex:0];
     UITabBarItem *item1 = [tabBar.items objectAtIndex:1];
@@ -35,8 +35,7 @@
     [item1 setFinishedSelectedImage:[UIImage imageNamed:@"TextToHex_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"TextToHex_Deselected.png"]];
     [item2 setFinishedSelectedImage:[UIImage imageNamed:@"TextToBase64_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"TextToBase64_Deselected.png"]];
     [item3 setFinishedSelectedImage:[UIImage imageNamed:@"Hash_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"Hash_Deselected.png"]];
-#warning CHANGE THE IMAGES IN FINAL PRODUCT
-    [item4 setFinishedSelectedImage:[UIImage imageNamed:@"Info_Button_Selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"Info_Button_Deselected"]];
+    [item4 setFinishedSelectedImage:[UIImage imageNamed:@"Info_Button_Selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"Info_Button_Deselected"]];*/
     
     return YES;
 }
