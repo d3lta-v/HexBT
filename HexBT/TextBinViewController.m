@@ -10,7 +10,6 @@
 #import "MNNSStringWithUnichar.h"
 #import <QuartzCore/QuartzCore.h>
 #import "SVProgressHUD.h"
-#import "WCAlertView.h"
 
 @interface TextBinViewController ()
 
@@ -47,17 +46,6 @@
     [item3 setFinishedSelectedImage:[UIImage imageNamed:@"Hash_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"Hash_Deselected.png"]];
 #warning CHANGE THE IMAGES IN FINAL PRODUCT
     [item4 setFinishedSelectedImage:[UIImage imageNamed:@"Info_Button_Selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"Info_Button_Deselected"]];
-    
-    [WCAlertView setDefaultStyle:WCAlertViewStyleWhite];
-    [WCAlertView setDefaultCustomiaztonBlock:^(WCAlertView *alertView){
-        alertView.labelTextColor=[UIColor darkTextColor];
-        alertView.innerFrameStrokeColor = [UIColor clearColor];
-        alertView.outerFrameColor = [UIColor clearColor];
-        alertView.buttonTextColor=[UIColor darkTextColor];
-        alertView.buttonFont=[UIFont fontWithName:@"HelveticaNeue-Light" size:17];
-        alertView.titleFont=[UIFont fontWithName:@"HelveticaNeue-Light" size:18];
-        alertView.cornerRadius=7.0f;
-    }];
     
     // Makes the text fields rounded
     textToBinary.clipsToBounds=YES;
@@ -138,7 +126,7 @@
     }
     else if (![textToBinary hasText]||![binaryDisp hasText])
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         binaryDisp.text=@"";
     }
@@ -157,7 +145,7 @@
     }
     else if (![textToBinary hasText]||![binaryDisp hasText])
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         textToBinary.text=@"";
     }
@@ -182,7 +170,8 @@
     }
     else
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        UIAlertView
+        *alert=[[UIAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
         [alert show];
     }
 }
@@ -531,11 +520,12 @@
             }
             else
             {
-                WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid input, no non-ASCII characters are allowed" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: Invalid input, no non-ASCII characters are allowed" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
                 [alert show];
                 value=@"";
                 blank=false;
             }
+            
         }
         blank=false;
     }
@@ -559,7 +549,7 @@
     else
     {
         value=@"";
-        WCAlertView *alert = [[WCAlertView alloc]initWithTitle:@"Error: Invalid input!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error: Invalid input!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
     }
     
@@ -904,7 +894,7 @@
             else
             {
                 value=@"";
-                WCAlertView *alert = [[WCAlertView alloc]initWithTitle:@"Error: Invalid input!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error: Invalid input!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
                 [alert show];
                 blank=false;
             }

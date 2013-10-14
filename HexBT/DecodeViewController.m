@@ -8,7 +8,6 @@
 
 #import "DecodeViewController.h"
 #import <QuartzCore/QuartzCore.h>
-#import "WCAlertView.h"
 #import "SVProgressHUD.h"
 
 #import "TextBase64ViewController.h"
@@ -86,7 +85,7 @@
 {
     NSInteger type = [self detectType:[self isBase64Data:userInput.text] hexadecimal:[self isHexadecimal:userInput.text] binary:[self isBinary:userInput.text]];
     if ([userInput text].length<1) {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: No input!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: No input!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
     }
     else if (type==0) {
@@ -102,7 +101,7 @@
         output.text=[baseVC base64Decode:userInput.text];
     }
     else {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid input!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: Invalid input!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         output.text=@"";
     }    
@@ -124,7 +123,7 @@
     }
     else
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
         [alert show];
     }
 }

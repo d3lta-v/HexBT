@@ -10,7 +10,6 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <QuartzCore/QuartzCore.h>
 #import "SVProgressHUD.h"
-#import "WCAlertView.h"
 
 @interface HashSumViewController ()
 
@@ -91,7 +90,7 @@
     }
     else if (![textToHash hasText])
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         sha1Disp.text=@"";
         md5Disp.text=@"";
@@ -121,7 +120,7 @@
     }
     else
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"You haven't generated a hash!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"You haven't generated a hash!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
         [alert show];
     }
 }

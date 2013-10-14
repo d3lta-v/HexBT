@@ -10,7 +10,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import "NSData+Base64.h"
 #import "SVProgressHUD.h"
-#import "WCAlertView.h"
 
 @interface TextBase64ViewController ()
 
@@ -90,7 +89,7 @@
     NSData *plainTextData = [NSData dataFromBase64String:base64String];
     NSString *plainText = [[NSString alloc] initWithData:plainTextData encoding:NSUTF8StringEncoding];
     if ([plainText length] == 0) {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         textToBase64.text=@"";
     }
@@ -118,7 +117,7 @@
     }
     else
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
         [alert show];
     }
 }
@@ -133,7 +132,7 @@
     }
     else if (![base64Disp hasText]||![textToBase64 hasText])
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         base64Disp.text=@"";
         [textToBase64 resignFirstResponder];

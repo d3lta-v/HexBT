@@ -11,7 +11,6 @@
 #import "MNNSStringWithUnichar.h"
 #import "TextBinViewController.h"
 #import "SVProgressHUD.h"
-#import "WCAlertView.h"
 
 @interface TextHexViewController ()
 
@@ -139,7 +138,7 @@
     
     if (range.location != NSNotFound) //Catch the error here, regarding bad input
     {
-        WCAlertView *alert = [[WCAlertView alloc]initWithTitle:@"Error: Invalid hexadecimal characters" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error: Invalid hexadecimal characters" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
     }
     else
@@ -212,7 +211,7 @@
     }
     else
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         [hexDisp resignFirstResponder];
     }
@@ -233,7 +232,7 @@
     }
     else
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Nothing To Share!" message:nil delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
         [alert show];
     }
 }
@@ -241,7 +240,7 @@
 -(IBAction)convert:(id)sender
 {
     if ([textToHex text].length<1) {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: No text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: No text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         hexDisp.text=@"";
         [textToHex resignFirstResponder];
@@ -253,7 +252,7 @@
     }
     else if ([hexDisp hasText]||![textToHex hasText])
     {
-        WCAlertView *alert=[[WCAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
         [alert show];
         hexDisp.text=@"";
         [textToHex resignFirstResponder];

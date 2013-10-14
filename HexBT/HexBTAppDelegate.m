@@ -7,7 +7,6 @@
 //
 
 #import "HexBTAppDelegate.h"
-#import "WCAlertView.h"
 
 @implementation HexBTAppDelegate
 
@@ -38,21 +37,6 @@
     [item3 setFinishedSelectedImage:[UIImage imageNamed:@"Hash_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"Hash_Deselected.png"]];
 #warning CHANGE THE IMAGES IN FINAL PRODUCT
     [item4 setFinishedSelectedImage:[UIImage imageNamed:@"Info_Button_Selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"Info_Button_Deselected"]];
-    
-    [WCAlertView setDefaultStyle:WCAlertViewStyleWhite];
-    [WCAlertView setDefaultCustomiaztonBlock:^(WCAlertView *alertView){
-        alertView.labelTextColor=[UIColor darkTextColor];
-        /*UIColor *topGradient = [UIColor clearColor];
-        UIColor *middleGradient = [UIColor clearColor];
-        UIColor *bottomGradient = [UIColor clearColor];
-        alertView.gradientColors = @[topGradient,middleGradient,bottomGradient];*/
-        alertView.innerFrameStrokeColor = [UIColor clearColor];
-        alertView.outerFrameColor = [UIColor clearColor];
-        alertView.buttonTextColor=[UIColor darkTextColor];
-        alertView.buttonFont=[UIFont fontWithName:@"HelveticaNeue-Light" size:17];
-        alertView.titleFont=[UIFont fontWithName:@"HelveticaNeue-Light" size:18];
-        alertView.cornerRadius=7.0f;
-    }];
     
     return YES;
 }
