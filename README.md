@@ -1,10 +1,13 @@
 HexBT (a simple iOS based hex-text-binary convertor)
 ----------------------------------------------------
 
+DESCRIPTION:
+A simple hexadecimal, text and binary convertor for iOS, alongside with hashing capabilities.
+
 EXTERNAL LIBRARIES USED:
 * SVProgressHUD
 * NSData+Base64
-* WCAlertView
+* GCPlaceholderTextView
 
 AUTHOR(S):
 StatiX Industries:
