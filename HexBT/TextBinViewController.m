@@ -77,22 +77,6 @@
     UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [swipeDown setDirection:(UISwipeGestureRecognizerDirectionDown)];
     [[self view] addGestureRecognizer:swipeDown];
-    
-    //Checking if user is first run
-    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-    if (! [defaults boolForKey:@"notFirstRun"]) {
-        
-        double delayInSeconds = 0.1;
-        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-            [self performSegueWithIdentifier:@"Tutorial" sender:self];
-        });
-        [defaults setBool:YES forKey:@"notFirstRun"];
-    }
-    else
-    {
-        return;
-    }
 }
 
 -(void)dismissKeyboard {
