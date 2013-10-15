@@ -42,7 +42,7 @@
     TextBinViewController *binVC=[[TextBinViewController alloc]init]; //This requires the binary converter to be active
     NSString *toBeConverted=[binVC textToBin:text];
     
-    int sets=toBeConverted.length/4;
+    int sets=(int)toBeConverted.length/4;
     NSString *hexR=[[NSString alloc]init];
     bool blank=true;
     NSString *binSet=[[NSString alloc]init];
@@ -276,13 +276,10 @@
     //Set title text attributes
     CGRect frame = CGRectMake(0, 0, 400, 44);
     UILabel *label = [[UILabel alloc] initWithFrame:frame];
-    label.backgroundColor = [UIColor clearColor];
     label.textAlignment = NSTextAlignmentCenter;
-    label.textColor = [UIColor colorWithRed:49.0/255.0 green:79.0/255.0 blue:79.0/255.0 alpha:1.0];
+    label.textColor = [UIColor colorWithWhite:1.0 alpha:1.0];
     label.text = @"Text to Hexadecimal Converter";
     label.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0f];
-    [label setShadowColor:[UIColor whiteColor]];
-    [label setShadowOffset:CGSizeMake(0, -0.5)];
     self.navigationItem.titleView = label;
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]

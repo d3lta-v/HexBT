@@ -41,13 +41,10 @@
     //Set title text attributes
     CGRect frame = CGRectMake(0, 0, 400, 44);
     UILabel *label = [[UILabel alloc] initWithFrame:frame];
-    label.backgroundColor = [UIColor clearColor];
     label.textAlignment = NSTextAlignmentCenter;
-    label.textColor = [UIColor colorWithRed:49.0/255.0 green:79.0/255.0 blue:79.0/255.0 alpha:1.0];
+    label.textColor = [UIColor colorWithWhite:1.0 alpha:1.0];
     label.text = @"Text to Hash Sum";
     label.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0f];
-    [label setShadowColor:[UIColor whiteColor]];
-    [label setShadowOffset:CGSizeMake(0, -0.5)];
     self.navigationItem.titleView = label;
     
     self.tableView.backgroundView = nil;
@@ -126,7 +123,7 @@
     
     uint8_t digest[CC_SHA1_DIGEST_LENGTH];
     
-    CC_SHA1(data.bytes, data.length, digest);
+    CC_SHA1(data.bytes, (int)data.length, digest);
     
     NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
     
@@ -140,7 +137,7 @@
 {
     const char *cStr = [input UTF8String];
     unsigned char digest[16];
-    CC_MD5( cStr, strlen(cStr), digest ); // This is the md5 call
+    CC_MD5( cStr, (int)strlen(cStr), digest ); // This is the md5 call
     
     NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
     

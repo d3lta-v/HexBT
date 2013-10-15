@@ -14,6 +14,7 @@
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.78823529411764703" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="xie-5M-uOq" kind="relationship" relationship="viewControllers" id="8G7-fs-nDC"/>
@@ -504,11 +505,12 @@
         <scene sceneID="Dm0-rG-wFd">
             <objects>
                 <navigationController id="xie-5M-uOq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Binary" image="TextToBin.png" id="PHn-NV-CDb"/>
+                    <tabBarItem key="tabBarItem" title="Binary" image="TextToBin" id="PHn-NV-CDb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ShP-cC-Cfm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.6588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -523,11 +525,12 @@
         <scene sceneID="4PP-uu-wzs">
             <objects>
                 <navigationController id="Rtc-sP-RLl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Hex" image="TextToHex.png" id="tag-u6-rM7"/>
+                    <tabBarItem key="tabBarItem" title="Hex" image="TextToHex" id="tag-u6-rM7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b5o-PN-9t7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.6588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -542,11 +545,12 @@
         <scene sceneID="lZC-Se-p6p">
             <objects>
                 <navigationController id="Bad-cR-LUu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Hash" image="Hash.png" id="88b-dG-CoX"/>
+                    <tabBarItem key="tabBarItem" title="Hash" image="Hash" id="88b-dG-CoX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r5Q-Tf-od0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.6588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -561,11 +565,12 @@
         <scene sceneID="7zk-ro-n3q">
             <objects>
                 <navigationController id="7nK-Ks-Zqi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Base64" image="TextToBase64.png" id="zVO-S8-zwO"/>
+                    <tabBarItem key="tabBarItem" title="Base64" image="TextToBase64" id="zVO-S8-zwO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="phq-nh-JqT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.6588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1420,6 +1425,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Atl-sJ-LBz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.6588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1594,12 +1600,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Hash" width="30" height="30"/>
         <image name="Hash.png" width="30" height="30"/>
         <image name="Hash_Selected.png" width="30" height="30"/>
+        <image name="TextToBase64" width="30" height="30"/>
         <image name="TextToBase64.png" width="30" height="30"/>
         <image name="TextToBase64_Selected.png" width="30" height="30"/>
+        <image name="TextToBin" width="30" height="30"/>
         <image name="TextToBin.png" width="30" height="30"/>
         <image name="TextToBin_Selected.png" width="30" height="30"/>
+        <image name="TextToHex" width="30" height="30"/>
         <image name="TextToHex.png" width="30" height="30"/>
         <image name="TextToHex_Selected.png" width="30" height="30"/>
     </resources>
