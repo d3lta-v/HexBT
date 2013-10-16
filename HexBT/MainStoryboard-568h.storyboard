@@ -62,12 +62,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7w-7o-4VN">
-                                                    <rect key="frame" x="10" y="2" width="300" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="300" id="2Ps-Hl-G6z"/>
-                                                        <constraint firstAttribute="height" constant="35" id="QPp-WB-bgt"/>
-                                                    </constraints>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7w-7o-4VN">
+                                                    <rect key="frame" x="0.0" y="2" width="320" height="35"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Convert To Binary">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -82,10 +78,6 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="d7w-7o-4VN" firstAttribute="centerX" secondItem="SUc-KG-qeN" secondAttribute="centerX" id="Utl-eL-oxb"/>
-                                            <constraint firstItem="d7w-7o-4VN" firstAttribute="centerY" secondItem="SUc-KG-qeN" secondAttribute="centerY" id="YiS-cA-Xn9"/>
-                                        </constraints>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -98,11 +90,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7B-w8-eRT">
-                                                    <rect key="frame" x="164" y="-3" width="146" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="146" id="PEj-1J-UzP"/>
-                                                    </constraints>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7B-w8-eRT">
+                                                    <rect key="frame" x="0.0" y="-3" width="320" height="44"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Share/Copy Binary">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -115,45 +104,8 @@
                                                         <action selector="share:" destination="e2h-Tv-lZQ" eventType="touchUpInside" id="A8z-oI-fw2"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtw-xc-LiR">
-                                                    <rect key="frame" x="10" y="-3" width="146" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="LqV-vg-Lgq"/>
-                                                        <constraint firstAttribute="width" constant="146" id="om1-wX-EVr"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                    <state key="normal" title="Convert To Text">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <state key="highlighted">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="convertBack:" destination="e2h-Tv-lZQ" eventType="touchUpInside" id="Tea-H9-1z2"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="|" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkA-Mm-LHb">
-                                                    <rect key="frame" x="158" y="9" width="5" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="3Zw-R9-pNL"/>
-                                                        <constraint firstAttribute="width" constant="5" id="aGn-QN-84N"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="RkA-Mm-LHb" firstAttribute="top" secondItem="gx4-Mv-EGP" secondAttribute="top" constant="9" id="T63-Pd-OPS"/>
-                                            <constraint firstItem="Wtw-xc-LiR" firstAttribute="bottom" secondItem="K7B-w8-eRT" secondAttribute="bottom" id="cRD-Yu-B5K"/>
-                                            <constraint firstItem="Wtw-xc-LiR" firstAttribute="leading" secondItem="gx4-Mv-EGP" secondAttribute="leading" constant="10" id="dhK-dQ-GdN"/>
-                                            <constraint firstItem="RkA-Mm-LHb" firstAttribute="centerX" secondItem="gx4-Mv-EGP" secondAttribute="centerX" id="eB3-V5-BLO"/>
-                                            <constraint firstItem="Wtw-xc-LiR" firstAttribute="centerY" secondItem="gx4-Mv-EGP" secondAttribute="centerY" id="iLS-Bl-vP1"/>
-                                            <constraint firstItem="Wtw-xc-LiR" firstAttribute="top" secondItem="K7B-w8-eRT" secondAttribute="top" id="ral-a8-Psp"/>
-                                            <constraint firstItem="K7B-w8-eRT" firstAttribute="leading" secondItem="Wtw-xc-LiR" secondAttribute="trailing" constant="8" symbolic="YES" id="vYX-UW-8AY"/>
-                                        </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="7eO-XN-gxm">
                                         <rect key="frame" x="0.0" y="424" width="320" height="71"/>
@@ -223,12 +175,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqi-6I-Iqk">
-                                                    <rect key="frame" x="10" y="2" width="300" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="35" id="3t5-Di-pFQ"/>
-                                                        <constraint firstAttribute="width" constant="300" id="iVu-17-kkJ"/>
-                                                    </constraints>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqi-6I-Iqk">
+                                                    <rect key="frame" x="0.0" y="1" width="320" height="35"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Convert To Hex">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -243,10 +191,6 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="aqi-6I-Iqk" firstAttribute="centerY" secondItem="mth-Sj-mJf" secondAttribute="centerY" id="L6X-mc-vsg"/>
-                                            <constraint firstItem="aqi-6I-Iqk" firstAttribute="centerX" secondItem="mth-Sj-mJf" secondAttribute="centerX" id="cHt-zc-KDy"/>
-                                        </constraints>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -259,11 +203,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edt-Qx-lEW">
-                                                    <rect key="frame" x="164" y="-3" width="146" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="146" id="IbL-Ld-ZOY"/>
-                                                    </constraints>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edt-Qx-lEW">
+                                                    <rect key="frame" x="0.0" y="-3" width="320" height="44"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Share/Copy Hex">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -276,45 +217,8 @@
                                                         <action selector="share:" destination="GcO-uV-k4T" eventType="touchUpInside" id="b3d-Ze-liT"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qO-sv-pa0">
-                                                    <rect key="frame" x="10" y="-3" width="146" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="OVR-Tu-4Jg"/>
-                                                        <constraint firstAttribute="width" constant="146" id="ijd-eJ-Oav"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                    <state key="normal" title="Convert To Text">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <state key="highlighted">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="convertBack:" destination="GcO-uV-k4T" eventType="touchUpInside" id="4pn-n4-cmg"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="|" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrC-Fx-55D">
-                                                    <rect key="frame" x="158" y="9" width="5" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="OF0-bR-Juf"/>
-                                                        <constraint firstAttribute="width" constant="5" id="oaR-8g-c0W"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="edt-Qx-lEW" firstAttribute="leading" secondItem="4qO-sv-pa0" secondAttribute="trailing" constant="8" symbolic="YES" id="AUc-Ne-UxU"/>
-                                            <constraint firstItem="4qO-sv-pa0" firstAttribute="bottom" secondItem="edt-Qx-lEW" secondAttribute="bottom" id="Ifs-Lm-oad"/>
-                                            <constraint firstItem="4qO-sv-pa0" firstAttribute="leading" secondItem="o84-1n-Kk4" secondAttribute="leading" constant="10" id="J5L-Zb-MA5"/>
-                                            <constraint firstItem="4qO-sv-pa0" firstAttribute="top" secondItem="edt-Qx-lEW" secondAttribute="top" id="MTG-oK-U6d"/>
-                                            <constraint firstItem="4qO-sv-pa0" firstAttribute="centerY" secondItem="o84-1n-Kk4" secondAttribute="centerY" id="cuz-S0-8iM"/>
-                                            <constraint firstItem="xrC-Fx-55D" firstAttribute="top" secondItem="o84-1n-Kk4" secondAttribute="top" constant="9" id="eSL-uq-IVj"/>
-                                            <constraint firstItem="xrC-Fx-55D" firstAttribute="centerX" secondItem="o84-1n-Kk4" secondAttribute="centerX" id="ugK-Am-Wjv"/>
-                                        </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="dsn-vx-eF6">
                                         <rect key="frame" x="0.0" y="424" width="320" height="71"/>
@@ -504,7 +408,7 @@
         <scene sceneID="Dm0-rG-wFd">
             <objects>
                 <navigationController id="xie-5M-uOq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Binary" image="TextToBin" id="PHn-NV-CDb"/>
+                    <tabBarItem key="tabBarItem" title="Binary" image="TextToBinDeselected" id="PHn-NV-CDb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ShP-cC-Cfm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -524,7 +428,7 @@
         <scene sceneID="4PP-uu-wzs">
             <objects>
                 <navigationController id="Rtc-sP-RLl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Hex" image="TextToHex" id="tag-u6-rM7"/>
+                    <tabBarItem key="tabBarItem" title="Hex" image="TextToHexDeselected" id="tag-u6-rM7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b5o-PN-9t7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -544,7 +448,7 @@
         <scene sceneID="lZC-Se-p6p">
             <objects>
                 <navigationController id="Bad-cR-LUu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Hash" image="Hash" id="88b-dG-CoX"/>
+                    <tabBarItem key="tabBarItem" title="Hash" image="HashDeselected" id="88b-dG-CoX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r5Q-Tf-od0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -564,7 +468,7 @@
         <scene sceneID="7zk-ro-n3q">
             <objects>
                 <navigationController id="7nK-Ks-Zqi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Base64" image="TextToBase64" id="zVO-S8-zwO"/>
+                    <tabBarItem key="tabBarItem" title="Base64" image="TextToBase64Deselected" id="zVO-S8-zwO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="phq-nh-JqT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -614,12 +518,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lah-7C-05g">
-                                                    <rect key="frame" x="10" y="2" width="300" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="35" id="CLi-sb-JHc"/>
-                                                        <constraint firstAttribute="width" constant="300" id="bwA-Da-271"/>
-                                                    </constraints>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lah-7C-05g">
+                                                    <rect key="frame" x="0.0" y="2" width="320" height="35"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Convert To Base64">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -634,10 +534,6 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="Lah-7C-05g" firstAttribute="centerX" secondItem="sTw-MA-h0k" secondAttribute="centerX" id="2Q0-qu-c6o"/>
-                                            <constraint firstItem="Lah-7C-05g" firstAttribute="centerY" secondItem="sTw-MA-h0k" secondAttribute="centerY" id="BqJ-1v-CZN"/>
-                                        </constraints>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -650,11 +546,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrG-jO-6MO">
-                                                    <rect key="frame" x="164" y="-3" width="146" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="146" id="14H-ip-ulD"/>
-                                                    </constraints>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrG-jO-6MO">
+                                                    <rect key="frame" x="0.0" y="-3" width="320" height="44"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Share/Copy Base64">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -667,45 +560,8 @@
                                                         <action selector="share:" destination="BGf-nc-Zys" eventType="touchUpInside" id="Ykf-E5-q20"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s40-ZT-6C4">
-                                                    <rect key="frame" x="10" y="-3" width="146" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="146" id="TTY-mB-l6r"/>
-                                                        <constraint firstAttribute="height" constant="44" id="nj1-5W-7u5"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                    <state key="normal" title="Convert To Text">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <state key="highlighted">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="convertBack:" destination="BGf-nc-Zys" eventType="touchUpInside" id="hn3-RL-SgN"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="|" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmH-ps-c33">
-                                                    <rect key="frame" x="158" y="9" width="5" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="5" id="1LC-3y-HE0"/>
-                                                        <constraint firstAttribute="height" constant="21" id="ohm-s0-auc"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="s40-ZT-6C4" firstAttribute="centerY" secondItem="Y0K-wz-yoG" secondAttribute="centerY" id="DF6-CE-zpJ"/>
-                                            <constraint firstItem="RrG-jO-6MO" firstAttribute="leading" secondItem="s40-ZT-6C4" secondAttribute="trailing" constant="8" symbolic="YES" id="QGM-V0-bKs"/>
-                                            <constraint firstItem="OmH-ps-c33" firstAttribute="centerY" secondItem="RrG-jO-6MO" secondAttribute="centerY" id="RIo-aD-59U"/>
-                                            <constraint firstItem="s40-ZT-6C4" firstAttribute="leading" secondItem="Y0K-wz-yoG" secondAttribute="leading" constant="10" id="Vs3-SW-vhI"/>
-                                            <constraint firstItem="OmH-ps-c33" firstAttribute="centerX" secondItem="Y0K-wz-yoG" secondAttribute="centerX" id="YGN-vR-EU6"/>
-                                            <constraint firstItem="s40-ZT-6C4" firstAttribute="top" secondItem="RrG-jO-6MO" secondAttribute="top" id="ai6-H6-3yQ"/>
-                                            <constraint firstItem="s40-ZT-6C4" firstAttribute="bottom" secondItem="RrG-jO-6MO" secondAttribute="bottom" id="wER-t6-efC"/>
-                                        </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="lAi-Dk-ndb">
                                         <rect key="frame" x="0.0" y="424" width="320" height="71"/>
@@ -745,7 +601,7 @@
         <scene sceneID="y7q-s0-SRp">
             <objects>
                 <navigationController id="C2V-YG-ldl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Decoder" image="Decoder" id="tkP-F9-fW9"/>
+                    <tabBarItem key="tabBarItem" title="Decoder" image="DecoderDeselected" id="tkP-F9-fW9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Atl-sJ-LBz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -864,12 +720,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brb-w2-uuY">
-                                                    <rect key="frame" x="10" y="-3" width="300" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="300" id="W6D-RV-taJ"/>
-                                                        <constraint firstAttribute="height" constant="44" id="byW-dI-uOO"/>
-                                                    </constraints>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brb-w2-uuY">
+                                                    <rect key="frame" x="0.0" y="-3" width="320" height="44"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Share/Copy Decoded Text">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -884,10 +736,6 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="Brb-w2-uuY" firstAttribute="centerY" secondItem="8Kz-sO-S5X" secondAttribute="centerY" id="5hA-sf-NZ6"/>
-                                            <constraint firstItem="Brb-w2-uuY" firstAttribute="centerX" secondItem="8Kz-sO-S5X" secondAttribute="centerX" id="fgA-GM-8yC"/>
-                                        </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="Bid-Sm-oEt">
                                         <rect key="frame" x="0.0" y="424" width="320" height="71"/>
@@ -925,11 +773,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Decoder" width="30" height="30"/>
-        <image name="Hash" width="30" height="30"/>
-        <image name="TextToBase64" width="30" height="30"/>
-        <image name="TextToBin" width="30" height="30"/>
-        <image name="TextToHex" width="30" height="30"/>
+        <image name="DecoderDeselected" width="30" height="30"/>
+        <image name="HashDeselected" width="30" height="30"/>
+        <image name="TextToBase64Deselected" width="30" height="30"/>
+        <image name="TextToBinDeselected" width="30" height="30"/>
+        <image name="TextToHexDeselected" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

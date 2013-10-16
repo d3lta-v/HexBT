@@ -22,7 +22,6 @@
 - (NSString *)base64Decode:(NSString *)base64String;
 
 -(IBAction)convert:(id)sender;
--(IBAction)convertBack:(id)sender;
 -(IBAction)share:(id)sender;
 
 @end

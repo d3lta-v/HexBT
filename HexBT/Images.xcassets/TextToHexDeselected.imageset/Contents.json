@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "Decoder.png"
+      "filename" : "TextToHex.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "Decoder@2x.png"
+      "filename" : "TextToHex@2x.png"
     }
   ],
   "info" : {

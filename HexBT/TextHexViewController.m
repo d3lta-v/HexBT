@@ -203,20 +203,6 @@
     return result;
 }
 
--(IBAction)convertBack:(id)sender
-{
-    if ([hexDisp hasText]) {
-        textToHex.text=[self hexToText:hexDisp.text];
-        [hexDisp resignFirstResponder];
-    }
-    else
-    {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
-        [alert show];
-        [hexDisp resignFirstResponder];
-    }
-}
-
 -(IBAction)share:(id)sender
 {
     if ([hexDisp hasText]) {

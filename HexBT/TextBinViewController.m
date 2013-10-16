@@ -110,25 +110,6 @@
     }
 }
 
--(IBAction)convertBack:(id)sender
-{
-    if ([binaryDisp hasText]) {
-        NSString *converted=[self binToText:binaryDisp.text];
-        textToBinary.text=converted;
-        [binaryDisp resignFirstResponder];
-    }
-    else if (![textToBinary hasText]||![binaryDisp hasText])
-    {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: Invalid or no text!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
-        [alert show];
-        textToBinary.text=@"";
-    }
-    else
-    {
-        [binaryDisp resignFirstResponder];
-    }
-}
-
 -(IBAction)share:(id)sender
 {
     if ([binaryDisp hasText]) {

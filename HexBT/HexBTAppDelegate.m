@@ -24,18 +24,18 @@
     [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabBarPic.png"]];*/
     
     //Set tab bar icons
-    /*self.tabBarController = (UITabBarController*)self.window.rootViewController;
+    self.tabBarController = (UITabBarController*)self.window.rootViewController;
     UITabBar *tabBar = self.tabBarController.tabBar;
     UITabBarItem *item0 = [tabBar.items objectAtIndex:0];
     UITabBarItem *item1 = [tabBar.items objectAtIndex:1];
     UITabBarItem *item2 = [tabBar.items objectAtIndex:2];
     UITabBarItem *item3 = [tabBar.items objectAtIndex:3];
     UITabBarItem *item4 = [tabBar.items objectAtIndex:4];
-    [item0 setFinishedSelectedImage:[UIImage imageNamed:@"TextToBin_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"TextToBin_Deselected"]];
-    [item1 setFinishedSelectedImage:[UIImage imageNamed:@"TextToHex_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"TextToHex_Deselected.png"]];
-    [item2 setFinishedSelectedImage:[UIImage imageNamed:@"TextToBase64_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"TextToBase64_Deselected.png"]];
-    [item3 setFinishedSelectedImage:[UIImage imageNamed:@"Hash_Selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"Hash_Deselected.png"]];
-    [item4 setFinishedSelectedImage:[UIImage imageNamed:@"Info_Button_Selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"Info_Button_Deselected"]];*/
+    item0.selectedImage=[UIImage imageNamed:@"TextToBin"];
+    item1.selectedImage=[UIImage imageNamed:@"TextToHex"];
+    item2.selectedImage=[UIImage imageNamed:@"TextToBase64"];
+    item3.selectedImage=[UIImage imageNamed:@"Hash"];
+    item4.selectedImage=[UIImage imageNamed:@"Decoder"];
     
     return YES;
 }

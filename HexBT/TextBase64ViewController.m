@@ -84,12 +84,6 @@
     return plainText;
 }
 
--(IBAction)convertBack:(id)sender
-{
-    textToBase64.text=[self base64Decode:base64Disp.text];
-    [base64Disp resignFirstResponder];
-}
-
 -(IBAction)share:(id)sender
 {
     if ([base64Disp hasText]) {
