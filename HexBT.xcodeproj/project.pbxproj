@@ -23,15 +23,9 @@
 		2205754417BE6EEE0021626B /* TextToBin_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205753C17BE6EEE0021626B /* TextToBin_Selected.png */; };
 		2205754517BE6EEE0021626B /* TextToBin_Deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205753D17BE6EEE0021626B /* TextToBin_Deselected.png */; };
 		2205754717BE723F0021626B /* tabBarPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205754617BE723F0021626B /* tabBarPic.png */; };
-		2235E04B17C8C50900299566 /* BinaryTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2235E04A17C8C50900299566 /* BinaryTutorialViewController.m */; };
-		2243D1D617CB496600CC5630 /* FirstTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243D1D517CB496600CC5630 /* FirstTutorialViewController.m */; };
-		2243D1DC17CB6F6700CC5630 /* SecondTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243D1DB17CB6F6700CC5630 /* SecondTutorialViewController.m */; };
-		2243D1DF17CB70D200CC5630 /* ThirdTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243D1DE17CB70D200CC5630 /* ThirdTutorialViewController.m */; };
-		2243D1E217CB70DE00CC5630 /* ForthTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243D1E117CB70DE00CC5630 /* ForthTutorialViewController.m */; };
 		2243D1E417CB7DBB00CC5630 /* SSTINC.png in Resources */ = {isa = PBXBuildFile; fileRef = 2243D1E317CB7DBB00CC5630 /* SSTINC.png */; };
 		2243D1E717CB7E2A00CC5630 /* Info_Button_Deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2243D1E517CB7E2A00CC5630 /* Info_Button_Deselected.png */; };
 		2243D1E817CB7E2A00CC5630 /* Info_Button_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2243D1E617CB7E2A00CC5630 /* Info_Button_Selected.png */; };
-		2243D1EB17CB7F8300CC5630 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243D1EA17CB7F8300CC5630 /* AboutViewController.m */; };
 		2243D1EF17CC57BD00CC5630 /* GCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243D1EE17CC57BD00CC5630 /* GCPlaceholderTextView.m */; };
 		224DBEA117BE4EFD00F12E0A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 224DBE9E17BE4EFD00F12E0A /* SVProgressHUD.bundle */; };
 		224DBEA217BE4EFD00F12E0A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 224DBEA017BE4EFD00F12E0A /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated"; }; };
@@ -51,7 +45,6 @@
 		22B31ED917BD00170040EEF8 /* TextBase64ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B31ED817BD00170040EEF8 /* TextBase64ViewController.m */; };
 		22B31EDB17BD0C7C0040EEF8 /* TextToBase64.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B31EDA17BD0C7C0040EEF8 /* TextToBase64.png */; };
 		22BB3BDE180C249000B018B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BB3BDD180C249000B018B3 /* Images.xcassets */; };
-		22BCFE1917DD987D004878F5 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BCFE1817DD987D004878F5 /* FifthViewController.m */; };
 		22D813AE17BA5E970074E008 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813AD17BA5E970074E008 /* iTunesArtwork.png */; };
 		22D813B417BA7E550074E008 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813B317BA7E550074E008 /* iTunesArtwork@2x.png */; };
 		22FF4BB917AFF1AA007DFCEA /* TextBinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF4BB817AFF1AA007DFCEA /* TextBinViewController.m */; };
@@ -77,21 +70,9 @@
 		2205753C17BE6EEE0021626B /* TextToBin_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToBin_Selected.png; sourceTree = "<group>"; };
 		2205753D17BE6EEE0021626B /* TextToBin_Deselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToBin_Deselected.png; sourceTree = "<group>"; };
 		2205754617BE723F0021626B /* tabBarPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBarPic.png; sourceTree = "<group>"; };
-		2235E04917C8C50900299566 /* BinaryTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTutorialViewController.h; sourceTree = "<group>"; };
-		2235E04A17C8C50900299566 /* BinaryTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTutorialViewController.m; sourceTree = "<group>"; };
-		2243D1D417CB496600CC5630 /* FirstTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTutorialViewController.h; sourceTree = "<group>"; };
-		2243D1D517CB496600CC5630 /* FirstTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTutorialViewController.m; sourceTree = "<group>"; };
-		2243D1DA17CB6F6700CC5630 /* SecondTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTutorialViewController.h; sourceTree = "<group>"; };
-		2243D1DB17CB6F6700CC5630 /* SecondTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTutorialViewController.m; sourceTree = "<group>"; };
-		2243D1DD17CB70D200CC5630 /* ThirdTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdTutorialViewController.h; sourceTree = "<group>"; };
-		2243D1DE17CB70D200CC5630 /* ThirdTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdTutorialViewController.m; sourceTree = "<group>"; };
-		2243D1E017CB70DE00CC5630 /* ForthTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthTutorialViewController.h; sourceTree = "<group>"; };
-		2243D1E117CB70DE00CC5630 /* ForthTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthTutorialViewController.m; sourceTree = "<group>"; };
 		2243D1E317CB7DBB00CC5630 /* SSTINC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SSTINC.png; sourceTree = "<group>"; };
 		2243D1E517CB7E2A00CC5630 /* Info_Button_Deselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info_Button_Deselected.png; sourceTree = "<group>"; };
 		2243D1E617CB7E2A00CC5630 /* Info_Button_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info_Button_Selected.png; sourceTree = "<group>"; };
-		2243D1E917CB7F8300CC5630 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
-		2243D1EA17CB7F8300CC5630 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		2243D1ED17CC57BD00CC5630 /* GCPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCPlaceholderTextView.h; sourceTree = "<group>"; };
 		2243D1EE17CC57BD00CC5630 /* GCPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCPlaceholderTextView.m; sourceTree = "<group>"; };
 		224DBE9E17BE4EFD00F12E0A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
@@ -121,8 +102,6 @@
 		22B31ED817BD00170040EEF8 /* TextBase64ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextBase64ViewController.m; sourceTree = "<group>"; };
 		22B31EDA17BD0C7C0040EEF8 /* TextToBase64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToBase64.png; sourceTree = "<group>"; };
 		22BB3BDD180C249000B018B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		22BCFE1717DD987D004878F5 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
-		22BCFE1817DD987D004878F5 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
 		22D813AD17BA5E970074E008 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		22D813B317BA7E550074E008 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		22FF4BB717AFF1AA007DFCEA /* TextBinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBinViewController.h; sourceTree = "<group>"; };
@@ -144,25 +123,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2235E04817C8C4F000299566 /* Tutorial VCs */ = {
-			isa = PBXGroup;
-			children = (
-				2235E04917C8C50900299566 /* BinaryTutorialViewController.h */,
-				2235E04A17C8C50900299566 /* BinaryTutorialViewController.m */,
-				2243D1D417CB496600CC5630 /* FirstTutorialViewController.h */,
-				2243D1D517CB496600CC5630 /* FirstTutorialViewController.m */,
-				2243D1DA17CB6F6700CC5630 /* SecondTutorialViewController.h */,
-				2243D1DB17CB6F6700CC5630 /* SecondTutorialViewController.m */,
-				2243D1DD17CB70D200CC5630 /* ThirdTutorialViewController.h */,
-				2243D1DE17CB70D200CC5630 /* ThirdTutorialViewController.m */,
-				2243D1E017CB70DE00CC5630 /* ForthTutorialViewController.h */,
-				2243D1E117CB70DE00CC5630 /* ForthTutorialViewController.m */,
-				22BCFE1717DD987D004878F5 /* FifthViewController.h */,
-				22BCFE1817DD987D004878F5 /* FifthViewController.m */,
-			);
-			name = "Tutorial VCs";
-			sourceTree = "<group>";
-		};
 		2243D1EC17CC57AF00CC5630 /* CustomTextView */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				2243D1EC17CC57AF00CC5630 /* CustomTextView */,
-				2235E04817C8C4F000299566 /* Tutorial VCs */,
 				224DBE9D17BE4EFD00F12E0A /* SVProgressHUD */,
 				2297CC1917AFD3A200F51E23 /* HexBTAppDelegate.h */,
 				2297CC1A17AFD3A200F51E23 /* HexBTAppDelegate.m */,
@@ -231,8 +190,6 @@
 				2290825917B6671500CC8E1F /* HashSumViewController.m */,
 				2204D2DF17DA21CD006D42DE /* DecodeViewController.h */,
 				2204D2E017DA21CD006D42DE /* DecodeViewController.m */,
-				2243D1E917CB7F8300CC5630 /* AboutViewController.h */,
-				2243D1EA17CB7F8300CC5630 /* AboutViewController.m */,
 				22039F6417B2A23E00551E55 /* MNNSStringWithUnichar.h */,
 				22039F6517B2A23E00551E55 /* MNNSStringWithUnichar.m */,
 				22B31ED417BCFFD80040EEF8 /* NSData+Base64.h */,
@@ -304,6 +261,11 @@
 				CLASSPREFIX = HexBT;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Pan Ziyue";
+				TargetAttributes = {
+					2297CC0617AFD3A200F51E23 = {
+						DevelopmentTeam = 7K6ZTDFM48;
+					};
+				};
 			};
 			buildConfigurationList = 2297CC0217AFD3A200F51E23 /* Build configuration list for PBXProject "HexBT" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -372,15 +334,8 @@
 				22B31ED617BCFFD80040EEF8 /* NSData+Base64.m in Sources */,
 				22B31ED917BD00170040EEF8 /* TextBase64ViewController.m in Sources */,
 				224DBEA217BE4EFD00F12E0A /* SVProgressHUD.m in Sources */,
-				2235E04B17C8C50900299566 /* BinaryTutorialViewController.m in Sources */,
-				2243D1D617CB496600CC5630 /* FirstTutorialViewController.m in Sources */,
-				2243D1DC17CB6F6700CC5630 /* SecondTutorialViewController.m in Sources */,
-				2243D1DF17CB70D200CC5630 /* ThirdTutorialViewController.m in Sources */,
-				2243D1E217CB70DE00CC5630 /* ForthTutorialViewController.m in Sources */,
-				2243D1EB17CB7F8300CC5630 /* AboutViewController.m in Sources */,
 				2243D1EF17CC57BD00CC5630 /* GCPlaceholderTextView.m in Sources */,
 				2204D2E117DA21CD006D42DE /* DecodeViewController.m in Sources */,
-				22BCFE1917DD987D004878F5 /* FifthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +423,7 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ziyue Pan (3DFK5PPTDE)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HexBT/HexBT-Prefix.pch";

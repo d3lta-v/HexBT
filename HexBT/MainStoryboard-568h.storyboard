@@ -651,11 +651,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFi-Dg-neK">
-                                                    <rect key="frame" x="10" y="2" width="153" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="153" id="cu6-fc-OYS"/>
-                                                    </constraints>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFi-Dg-neK">
+                                                    <rect key="frame" x="0.0" y="2" width="153" height="35"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Decode">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -668,22 +665,14 @@
                                                         <action selector="setType:" destination="H5I-bO-V61" eventType="touchUpInside" id="DWP-AA-rGH"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="|" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H84-Ra-4yq">
-                                                    <rect key="frame" x="158" y="9" width="5" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="4HA-2m-Zub"/>
-                                                        <constraint firstAttribute="width" constant="5" id="MKr-Z5-UgJ"/>
-                                                    </constraints>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="|" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H84-Ra-4yq">
+                                                    <rect key="frame" x="148" y="9" width="5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6g-HC-Ml0">
-                                                    <rect key="frame" x="158" y="2" width="153" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="35" id="QFS-Oo-vQM"/>
-                                                        <constraint firstAttribute="width" constant="153" id="wK2-tv-BG3"/>
-                                                    </constraints>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6g-HC-Ml0">
+                                                    <rect key="frame" x="161" y="2" width="153" height="35"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Paste from clipboard">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -699,15 +688,6 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="w6g-HC-Ml0" firstAttribute="leading" secondItem="H84-Ra-4yq" secondAttribute="leading" id="Xgl-wU-9nb"/>
-                                            <constraint firstItem="H84-Ra-4yq" firstAttribute="centerX" secondItem="zA1-xr-ntN" secondAttribute="centerX" id="Ykp-eL-OyL"/>
-                                            <constraint firstItem="w6g-HC-Ml0" firstAttribute="bottom" secondItem="dFi-Dg-neK" secondAttribute="bottom" id="ZAw-BG-tvY"/>
-                                            <constraint firstItem="w6g-HC-Ml0" firstAttribute="top" secondItem="dFi-Dg-neK" secondAttribute="top" id="gDd-yc-Yh4"/>
-                                            <constraint firstItem="H84-Ra-4yq" firstAttribute="centerY" secondItem="dFi-Dg-neK" secondAttribute="centerY" id="gDj-SW-q11"/>
-                                            <constraint firstItem="H84-Ra-4yq" firstAttribute="trailing" secondItem="dFi-Dg-neK" secondAttribute="trailing" id="p63-zo-NZT"/>
-                                            <constraint firstItem="w6g-HC-Ml0" firstAttribute="centerY" secondItem="zA1-xr-ntN" secondAttribute="centerY" id="xun-vN-yde"/>
-                                        </constraints>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>

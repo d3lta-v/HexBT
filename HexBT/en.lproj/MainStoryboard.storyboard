@@ -698,11 +698,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZM-DK-of0">
-                                                    <rect key="frame" x="10" y="2" width="153" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="153" id="quS-Oe-I74"/>
-                                                    </constraints>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZM-DK-of0">
+                                                    <rect key="frame" x="0.0" y="2" width="153" height="35"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Decode">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -715,22 +712,14 @@
                                                         <action selector="setType:" destination="95R-Op-qOS" eventType="touchUpInside" id="6L1-Or-Y9X"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="|" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMK-4w-lu8">
-                                                    <rect key="frame" x="158" y="9" width="5" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="5" id="MYs-OJ-Wml"/>
-                                                        <constraint firstAttribute="height" constant="21" id="sTb-aa-g97"/>
-                                                    </constraints>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="|" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMK-4w-lu8">
+                                                    <rect key="frame" x="148" y="9" width="5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULF-yF-vIS">
-                                                    <rect key="frame" x="158" y="2" width="153" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="35" id="Ehn-3N-KnR"/>
-                                                        <constraint firstAttribute="width" constant="153" id="e4K-VF-V6f"/>
-                                                    </constraints>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULF-yF-vIS">
+                                                    <rect key="frame" x="161" y="2" width="153" height="35"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <state key="normal" title="Paste from clipboard">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -746,15 +735,6 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="UMK-4w-lu8" firstAttribute="centerX" secondItem="ZmK-ZE-y0Y" secondAttribute="centerX" id="8oG-1Z-NS3"/>
-                                            <constraint firstItem="UMK-4w-lu8" firstAttribute="centerY" secondItem="gZM-DK-of0" secondAttribute="centerY" id="Ipd-Sp-suq"/>
-                                            <constraint firstItem="ULF-yF-vIS" firstAttribute="bottom" secondItem="gZM-DK-of0" secondAttribute="bottom" id="ZG3-fA-Gmx"/>
-                                            <constraint firstItem="ULF-yF-vIS" firstAttribute="top" secondItem="gZM-DK-of0" secondAttribute="top" id="c9c-y3-Drn"/>
-                                            <constraint firstItem="ULF-yF-vIS" firstAttribute="centerY" secondItem="ZmK-ZE-y0Y" secondAttribute="centerY" id="mxe-a4-uM3"/>
-                                            <constraint firstItem="ULF-yF-vIS" firstAttribute="leading" secondItem="UMK-4w-lu8" secondAttribute="leading" id="ubc-Vr-u62"/>
-                                            <constraint firstItem="UMK-4w-lu8" firstAttribute="trailing" secondItem="gZM-DK-of0" secondAttribute="trailing" id="vkt-Y1-Jxi"/>
-                                        </constraints>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
