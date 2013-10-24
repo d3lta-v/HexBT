@@ -9,6 +9,7 @@
         <scene sceneID="p7W-mX-xGT">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="YdL-80-W5q" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="kSr-C3-E73">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
