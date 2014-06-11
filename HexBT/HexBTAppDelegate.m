@@ -31,8 +31,6 @@
     item3.selectedImage=[UIImage imageNamed:@"Hash"];
     item4.selectedImage=[UIImage imageNamed:@"Decoder"];
     
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-        
     return YES;
 }
 

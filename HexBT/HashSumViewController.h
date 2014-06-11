@@ -23,6 +23,9 @@
 -(NSString*)sha1:(NSString*)input;
 -(NSString*)md5:(NSString*)input;
 
+-(NSString*)sha1File:(NSData*)input;
+-(NSString*)md5File:(NSData*)input;
+
 -(IBAction)convert:(id)sender;
 -(IBAction)share:(id)sender;
 

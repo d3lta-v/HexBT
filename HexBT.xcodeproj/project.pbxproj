@@ -45,6 +45,7 @@
 		22B31ED917BD00170040EEF8 /* TextBase64ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B31ED817BD00170040EEF8 /* TextBase64ViewController.m */; };
 		22B31EDB17BD0C7C0040EEF8 /* TextToBase64.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B31EDA17BD0C7C0040EEF8 /* TextToBase64.png */; };
 		22BB3BDE180C249000B018B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BB3BDD180C249000B018B3 /* Images.xcassets */; };
+		22C57D3D186323FE00666AB6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22C57D3C186323FD00666AB6 /* Settings.bundle */; };
 		22D813AE17BA5E970074E008 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813AD17BA5E970074E008 /* iTunesArtwork.png */; };
 		22D813B417BA7E550074E008 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813B317BA7E550074E008 /* iTunesArtwork@2x.png */; };
 		22FF4BB917AFF1AA007DFCEA /* TextBinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF4BB817AFF1AA007DFCEA /* TextBinViewController.m */; };
@@ -102,6 +103,7 @@
 		22B31ED817BD00170040EEF8 /* TextBase64ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextBase64ViewController.m; sourceTree = "<group>"; };
 		22B31EDA17BD0C7C0040EEF8 /* TextToBase64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToBase64.png; sourceTree = "<group>"; };
 		22BB3BDD180C249000B018B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		22C57D3C186323FD00666AB6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		22D813AD17BA5E970074E008 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		22D813B317BA7E550074E008 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		22FF4BB717AFF1AA007DFCEA /* TextBinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBinViewController.h; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		2297CC1117AFD3A200F51E23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				22C57D3C186323FD00666AB6 /* Settings.bundle */,
 				2243D1E517CB7E2A00CC5630 /* Info_Button_Deselected.png */,
 				2243D1E617CB7E2A00CC5630 /* Info_Button_Selected.png */,
 				2243D1E317CB7DBB00CC5630 /* SSTINC.png */,
@@ -259,7 +262,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = HexBT;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Pan Ziyue";
 				TargetAttributes = {
 					2297CC0617AFD3A200F51E23 = {
@@ -314,6 +317,7 @@
 				2205754717BE723F0021626B /* tabBarPic.png in Resources */,
 				2243D1E417CB7DBB00CC5630 /* SSTINC.png in Resources */,
 				2243D1E717CB7E2A00CC5630 /* Info_Button_Deselected.png in Resources */,
+				22C57D3D186323FE00666AB6 /* Settings.bundle in Resources */,
 				2243D1E817CB7E2A00CC5630 /* Info_Button_Selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,7 +390,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -410,7 +414,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -420,7 +424,6 @@
 		2297CC2B17AFD3A200F51E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -434,7 +437,7 @@
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "08DDCDF5-3C69-4098-9570-C5E5CF61CF49";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -442,7 +445,6 @@
 		2297CC2C17AFD3A200F51E23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: School of Science and Technology Singapore (7K6ZTDFM48)";
@@ -456,8 +458,8 @@
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "73B46C91-ABB9-4226-AAF5-978693C0CC8D";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "73B46C91-ABB9-4226-AAF5-978693C0CC8D";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
