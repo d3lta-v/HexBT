@@ -10,9 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "SVProgressHUD.h"
 
-#import "TextBase64ViewController.h"
-#import "TextBinViewController.h"
-#import "TextHexViewController.h"
+#import "CommonObjCMethods.h"
 
 @interface DecodeViewController ()
 
@@ -77,16 +75,13 @@
         [alert show];
     }
     else if (type==0) {
-        TextBinViewController *binVC=[[TextBinViewController alloc]init];
-        output.text=[binVC binToText:userInput.text];
+        output.text=[CommonObjCMethods binToText:userInput.text];
     }
     else if (type==1) {
-        TextHexViewController *hexVC=[[TextHexViewController alloc]init];
-        output.text=[hexVC hexToText:userInput.text];
+        output.text=[CommonObjCMethods hexToText:userInput.text];
     }
     else if (type==2) {
-        TextBase64ViewController *baseVC=[[TextBase64ViewController alloc]init];
-        output.text=[baseVC base64Decode:userInput.text];
+        output.text=[CommonObjCMethods base64Decode:userInput.text];
     }
     else {
         UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Error: Invalid input!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];

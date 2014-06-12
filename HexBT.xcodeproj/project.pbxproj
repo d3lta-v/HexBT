@@ -12,7 +12,6 @@
 		22039F6F17B3CE8300551E55 /* TextToBin.png in Resources */ = {isa = PBXBuildFile; fileRef = 22039F6D17B3CE8300551E55 /* TextToBin.png */; };
 		22039F7017B3CE8300551E55 /* TextToHex.png in Resources */ = {isa = PBXBuildFile; fileRef = 22039F6E17B3CE8300551E55 /* TextToHex.png */; };
 		22039F7217B3D0F100551E55 /* MainStoryboard-568h.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22039F7117B3D0F100551E55 /* MainStoryboard-568h.storyboard */; };
-		22039F7917B4057000551E55 /* TextHexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22039F7817B4057000551E55 /* TextHexViewController.m */; };
 		2204D2E117DA21CD006D42DE /* DecodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204D2E017DA21CD006D42DE /* DecodeViewController.m */; };
 		2205753E17BE6EEE0021626B /* Hash_Deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205753617BE6EEE0021626B /* Hash_Deselected.png */; };
 		2205753F17BE6EEE0021626B /* Hash_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205753717BE6EEE0021626B /* Hash_Selected.png */; };
@@ -42,13 +41,15 @@
 		2297CC2117AFD3A200F51E23 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2297CC2017AFD3A200F51E23 /* Default-568h@2x.png */; };
 		2297CC2417AFD3A200F51E23 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2297CC2217AFD3A200F51E23 /* MainStoryboard.storyboard */; };
 		22B31ED617BCFFD80040EEF8 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B31ED517BCFFD80040EEF8 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		22B31ED917BD00170040EEF8 /* TextBase64ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B31ED817BD00170040EEF8 /* TextBase64ViewController.m */; };
 		22B31EDB17BD0C7C0040EEF8 /* TextToBase64.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B31EDA17BD0C7C0040EEF8 /* TextToBase64.png */; };
 		22BB3BDE180C249000B018B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BB3BDD180C249000B018B3 /* Images.xcassets */; };
+		22C4DB3F194867A900A87B36 /* TextBinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C4DB3E194867A900A87B36 /* TextBinViewController.swift */; };
+		22C4DB4119487B2100A87B36 /* TextHexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C4DB4019487B2100A87B36 /* TextHexViewController.swift */; };
+		22C4DB4419487BF700A87B36 /* CommonObjCMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C4DB4319487BF700A87B36 /* CommonObjCMethods.m */; };
+		22C4DB461949D46F00A87B36 /* TextBase64ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C4DB451949D46F00A87B36 /* TextBase64ViewController.swift */; };
 		22C57D3D186323FE00666AB6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22C57D3C186323FD00666AB6 /* Settings.bundle */; };
 		22D813AE17BA5E970074E008 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813AD17BA5E970074E008 /* iTunesArtwork.png */; };
 		22D813B417BA7E550074E008 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813B317BA7E550074E008 /* iTunesArtwork@2x.png */; };
-		22FF4BB917AFF1AA007DFCEA /* TextBinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF4BB817AFF1AA007DFCEA /* TextBinViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,8 +59,6 @@
 		22039F6D17B3CE8300551E55 /* TextToBin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToBin.png; sourceTree = "<group>"; };
 		22039F6E17B3CE8300551E55 /* TextToHex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToHex.png; sourceTree = "<group>"; };
 		22039F7117B3D0F100551E55 /* MainStoryboard-568h.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "MainStoryboard-568h.storyboard"; sourceTree = "<group>"; };
-		22039F7717B4057000551E55 /* TextHexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextHexViewController.h; sourceTree = "<group>"; };
-		22039F7817B4057000551E55 /* TextHexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextHexViewController.m; sourceTree = "<group>"; };
 		2204D2DF17DA21CD006D42DE /* DecodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecodeViewController.h; sourceTree = "<group>"; };
 		2204D2E017DA21CD006D42DE /* DecodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecodeViewController.m; sourceTree = "<group>"; };
 		2205753617BE6EEE0021626B /* Hash_Deselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hash_Deselected.png; sourceTree = "<group>"; };
@@ -99,15 +98,17 @@
 		2297CC4E17AFEC7D00F51E23 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		22B31ED417BCFFD80040EEF8 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		22B31ED517BCFFD80040EEF8 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		22B31ED717BD00170040EEF8 /* TextBase64ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBase64ViewController.h; sourceTree = "<group>"; };
-		22B31ED817BD00170040EEF8 /* TextBase64ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextBase64ViewController.m; sourceTree = "<group>"; };
 		22B31EDA17BD0C7C0040EEF8 /* TextToBase64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToBase64.png; sourceTree = "<group>"; };
 		22BB3BDD180C249000B018B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		22C4DB3D194867A900A87B36 /* HexBT-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HexBT-Bridging-Header.h"; sourceTree = "<group>"; };
+		22C4DB3E194867A900A87B36 /* TextBinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBinViewController.swift; sourceTree = "<group>"; };
+		22C4DB4019487B2100A87B36 /* TextHexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextHexViewController.swift; sourceTree = "<group>"; };
+		22C4DB4219487BF700A87B36 /* CommonObjCMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonObjCMethods.h; sourceTree = "<group>"; };
+		22C4DB4319487BF700A87B36 /* CommonObjCMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonObjCMethods.m; sourceTree = "<group>"; };
+		22C4DB451949D46F00A87B36 /* TextBase64ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBase64ViewController.swift; sourceTree = "<group>"; };
 		22C57D3C186323FD00666AB6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		22D813AD17BA5E970074E008 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		22D813B317BA7E550074E008 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		22FF4BB717AFF1AA007DFCEA /* TextBinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBinViewController.h; sourceTree = "<group>"; };
-		22FF4BB817AFF1AA007DFCEA /* TextBinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextBinViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,22 +183,22 @@
 				2297CC1A17AFD3A200F51E23 /* HexBTAppDelegate.m */,
 				2297CC2217AFD3A200F51E23 /* MainStoryboard.storyboard */,
 				22039F7117B3D0F100551E55 /* MainStoryboard-568h.storyboard */,
-				22FF4BB717AFF1AA007DFCEA /* TextBinViewController.h */,
-				22FF4BB817AFF1AA007DFCEA /* TextBinViewController.m */,
-				22039F7717B4057000551E55 /* TextHexViewController.h */,
-				22039F7817B4057000551E55 /* TextHexViewController.m */,
-				22B31ED717BD00170040EEF8 /* TextBase64ViewController.h */,
-				22B31ED817BD00170040EEF8 /* TextBase64ViewController.m */,
+				22C4DB3E194867A900A87B36 /* TextBinViewController.swift */,
+				22C4DB4019487B2100A87B36 /* TextHexViewController.swift */,
+				22C4DB451949D46F00A87B36 /* TextBase64ViewController.swift */,
 				2290825817B6671500CC8E1F /* HashSumViewController.h */,
 				2290825917B6671500CC8E1F /* HashSumViewController.m */,
 				2204D2DF17DA21CD006D42DE /* DecodeViewController.h */,
 				2204D2E017DA21CD006D42DE /* DecodeViewController.m */,
+				22C4DB4219487BF700A87B36 /* CommonObjCMethods.h */,
+				22C4DB4319487BF700A87B36 /* CommonObjCMethods.m */,
 				22039F6417B2A23E00551E55 /* MNNSStringWithUnichar.h */,
 				22039F6517B2A23E00551E55 /* MNNSStringWithUnichar.m */,
 				22B31ED417BCFFD80040EEF8 /* NSData+Base64.h */,
 				22B31ED517BCFFD80040EEF8 /* NSData+Base64.m */,
 				22BB3BDD180C249000B018B3 /* Images.xcassets */,
 				2297CC1117AFD3A200F51E23 /* Supporting Files */,
+				22C4DB3D194867A900A87B36 /* HexBT-Bridging-Header.h */,
 			);
 			path = HexBT;
 			sourceTree = "<group>";
@@ -330,16 +331,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2297CC1717AFD3A200F51E23 /* main.m in Sources */,
+				22C4DB4419487BF700A87B36 /* CommonObjCMethods.m in Sources */,
 				2297CC1B17AFD3A200F51E23 /* HexBTAppDelegate.m in Sources */,
-				22FF4BB917AFF1AA007DFCEA /* TextBinViewController.m in Sources */,
 				22039F6617B2A23E00551E55 /* MNNSStringWithUnichar.m in Sources */,
-				22039F7917B4057000551E55 /* TextHexViewController.m in Sources */,
 				2290825A17B6671500CC8E1F /* HashSumViewController.m in Sources */,
 				22B31ED617BCFFD80040EEF8 /* NSData+Base64.m in Sources */,
-				22B31ED917BD00170040EEF8 /* TextBase64ViewController.m in Sources */,
+				22C4DB461949D46F00A87B36 /* TextBase64ViewController.swift in Sources */,
+				22C4DB3F194867A900A87B36 /* TextBinViewController.swift in Sources */,
 				224DBEA217BE4EFD00F12E0A /* SVProgressHUD.m in Sources */,
 				2243D1EF17CC57BD00CC5630 /* GCPlaceholderTextView.m in Sources */,
 				2204D2E117DA21CD006D42DE /* DecodeViewController.m in Sources */,
+				22C4DB4119487B2100A87B36 /* TextHexViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,18 +428,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ziyue Pan (3DFK5PPTDE)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HexBT/HexBT-Prefix.pch";
 				INFOPLIST_FILE = "HexBT/HexBT-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HexBT/HexBT-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -447,12 +453,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: School of Science and Technology Singapore (7K6ZTDFM48)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: School of Science and Technology Singapore (7K6ZTDFM48)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HexBT/HexBT-Prefix.pch";
 				INFOPLIST_FILE = "HexBT/HexBT-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
@@ -460,6 +468,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HexBT/HexBT-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
