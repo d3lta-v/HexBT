@@ -53,13 +53,12 @@ class TextBinViewController: UITableViewController {
     @IBAction func convert(sender:AnyObject) {
         if textToBinary.hasText() {
             //Conversion engine CSIMUX (Convertor, aScIi, Mutable Unified X-over Engine)
-            let converted = CommonObjCMethods.textToBin(textToBinary.text)
-            binaryDisp.text = converted;
+            binaryDisp.text = CommonObjCMethods.textToBin(textToBinary.text);
             textToBinary.resignFirstResponder()
         } else if !textToBinary.hasText() || !binaryDisp.hasText() {
-            let alert = UIAlertView(title: "Error: Invalid or no text!", message: nil, delegate: nil, cancelButtonTitle: "Okay")
-            alert.show()
+            SVProgressHUD.showErrorWithStatus("Error: Invalid or no text!")
             binaryDisp.text=""
+            textToBinary.resignFirstResponder()
         } else {
             textToBinary.resignFirstResponder()
         }
@@ -67,18 +66,14 @@ class TextBinViewController: UITableViewController {
     
     @IBAction func share(sender:AnyObject) {
         if binaryDisp.hasText() {
+            let binString : String = binaryDisp.text
             SVProgressHUD.showWithStatus("Loading...")
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(0.1*Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
-                var actViewCtrl = UIActivityViewController(activityItems: [self.binaryDisp.text], applicationActivities: nil)
+                var actViewCtrl = UIActivityViewController(activityItems: [binString], applicationActivities: nil)
                 self.presentViewController(actViewCtrl, animated: true, completion: {SVProgressHUD.dismiss()})
             }
         } else {
-            // Wrong way
-            //var alertView = UIAlertView(title: "Nothing to share!", message: "", delegate: self, cancelButtonTitle: "Back", otherButtonTitles: "", nil)
-            
-            // Correct way
-            let alert = UIAlertView(title: "Nothing to share!", message: nil, delegate: nil, cancelButtonTitle: "Back")
-            alert.show()
+            SVProgressHUD.showErrorWithStatus("Nothing to share!")
         }
     }
     
@@ -87,6 +82,13 @@ class TextBinViewController: UITableViewController {
         binaryDisp.resignFirstResponder()
     }
     
+    func textViewHasText (textView : UITextView) -> (Bool) {
+        if textView.text.utf16count > 0 {
+            return true
+        } else {
+            return false
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

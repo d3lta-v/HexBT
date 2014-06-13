@@ -59,16 +59,41 @@ class TextBase64ViewController: UITableViewController {
         textToBase64.text=@"";
         }
         */
-        
+        if textToBase64.hasText() {
+            base64Disp.text = CommonObjCMethods.base64Encode(textToBase64.text)
+            textToBase64.resignFirstResponder()
+        } else if !base64Disp.hasText() || (!textToBase64.hasText()){
+            SVProgressHUD.showErrorWithStatus("Error: Invalid or no text!")
+            textToBase64.resignFirstResponder()
+        } else {
+            textToBase64.resignFirstResponder()
+        }
     }
     
     @IBAction func share(sender:AnyObject) {
-        
+        if base64Disp.hasText() {
+            let base64String : String = base64Disp.text
+            SVProgressHUD.showWithStatus("Loading...")
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(0.1*Double(NSEC_PER_SEC))), dispatch_get_main_queue(), {
+                let actViewCtrl = UIActivityViewController(activityItems: [base64String], applicationActivities: nil)
+                self.presentViewController(actViewCtrl, animated: true, completion: {SVProgressHUD.dismiss()})
+                })
+        } else {
+            SVProgressHUD.showErrorWithStatus("Nothing to share!")
+        }
     }
     
     func dismissKeyboard() {
         textToBase64.resignFirstResponder()
         base64Disp.resignFirstResponder()
+    }
+    
+    func textViewHasText (textView : UITextView) -> (Bool) {
+        if textView.text.utf16count > 0 {
+            return true
+        } else {
+            return false
+        }
     }
 
     override func didReceiveMemoryWarning() {

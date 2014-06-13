@@ -51,38 +51,43 @@ class TextHexViewController: UITableViewController {
     }
     
     @IBAction func convert(sender:AnyObject) {
-        if textToHex.text.utf16count<1 {
-            let alert = UIAlertView(title: "Error: No text!", message: nil, delegate: nil, cancelButtonTitle: "Okay")
-            hexDisp.text=""
-            textToHex.resignFirstResponder()
-        } else if textToHex.hasText() {
+        if textViewHasText(textToHex) {
             hexDisp.text = CommonObjCMethods.textToHex(textToHex.text)
             textToHex.resignFirstResponder()
-        } else if hexDisp.hasText()||(!textToHex.hasText()) {
-            let alert = UIAlertView(title: "Error: Invalid or no text!", message: nil, delegate: nil, cancelButtonTitle: "Okay")
-            alert.show()
+        } /*else if hexDisp.hasText()||(!textToHex.hasText()) {
+            SVProgressHUD.showErrorWithStatus("Error: Invalid or no text!")
+            hexDisp.text = ""
             textToHex.resignFirstResponder()
-        } else {
+        }*/ else {
+            SVProgressHUD.showErrorWithStatus("Error: Invalid or no text!")
             textToHex.resignFirstResponder()
         }
     }
     
     @IBAction func share(sender:AnyObject) {
-        if hexDisp.hasText() {
+        if textViewHasText(hexDisp) {
+            let hexString : String = hexDisp.text
             SVProgressHUD.showWithStatus("Loading...")
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(0.1*Double(NSEC_PER_SEC))), dispatch_get_main_queue(), {
-                let actViewCtrl = UIActivityViewController(activityItems: [self.hexDisp.text], applicationActivities: nil)
+                var actViewCtrl = UIActivityViewController(activityItems: [hexString], applicationActivities: nil)
                 self.presentViewController(actViewCtrl, animated: true, completion: {SVProgressHUD.dismiss()})
                 })
         } else {
-            let alert = UIAlertView(title: "Nothing to share!", message: nil, delegate: nil, cancelButtonTitle: "Okay")
-            alert.show()
+            SVProgressHUD.showErrorWithStatus("Nothing to share!")
         }
     }
     
     func dismissKeyboard() {
         textToHex.resignFirstResponder()
         hexDisp.resignFirstResponder()
+    }
+    
+    func textViewHasText (textView : UITextView) -> (Bool) {
+        if textView.text.utf16count > 0 {
+            return true
+        } else {
+            return false
+        }
     }
 
     override func didReceiveMemoryWarning() {
