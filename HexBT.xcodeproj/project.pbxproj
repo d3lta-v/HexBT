@@ -12,7 +12,6 @@
 		22039F6F17B3CE8300551E55 /* TextToBin.png in Resources */ = {isa = PBXBuildFile; fileRef = 22039F6D17B3CE8300551E55 /* TextToBin.png */; };
 		22039F7017B3CE8300551E55 /* TextToHex.png in Resources */ = {isa = PBXBuildFile; fileRef = 22039F6E17B3CE8300551E55 /* TextToHex.png */; };
 		22039F7217B3D0F100551E55 /* MainStoryboard-568h.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22039F7117B3D0F100551E55 /* MainStoryboard-568h.storyboard */; };
-		2204D2E117DA21CD006D42DE /* DecodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204D2E017DA21CD006D42DE /* DecodeViewController.m */; };
 		2205753E17BE6EEE0021626B /* Hash_Deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205753617BE6EEE0021626B /* Hash_Deselected.png */; };
 		2205753F17BE6EEE0021626B /* Hash_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205753717BE6EEE0021626B /* Hash_Selected.png */; };
 		2205754017BE6EEE0021626B /* TextToBase64_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2205753817BE6EEE0021626B /* TextToBase64_Selected.png */; };
@@ -28,6 +27,7 @@
 		2243D1EF17CC57BD00CC5630 /* GCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243D1EE17CC57BD00CC5630 /* GCPlaceholderTextView.m */; };
 		224DBEA117BE4EFD00F12E0A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 224DBE9E17BE4EFD00F12E0A /* SVProgressHUD.bundle */; };
 		224DBEA217BE4EFD00F12E0A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 224DBEA017BE4EFD00F12E0A /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated"; }; };
+		227CAAB5194DBEF3008CB429 /* DecodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227CAAB4194DBEF3008CB429 /* DecodeViewController.swift */; };
 		2290826017B681CA00CC8E1F /* Hash.png in Resources */ = {isa = PBXBuildFile; fileRef = 2290825F17B681CA00CC8E1F /* Hash.png */; };
 		2297CC0B17AFD3A200F51E23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297CC0A17AFD3A200F51E23 /* UIKit.framework */; };
 		2297CC0D17AFD3A200F51E23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297CC0C17AFD3A200F51E23 /* Foundation.framework */; };
@@ -59,8 +59,6 @@
 		22039F6D17B3CE8300551E55 /* TextToBin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToBin.png; sourceTree = "<group>"; };
 		22039F6E17B3CE8300551E55 /* TextToHex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToHex.png; sourceTree = "<group>"; };
 		22039F7117B3D0F100551E55 /* MainStoryboard-568h.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "MainStoryboard-568h.storyboard"; sourceTree = "<group>"; };
-		2204D2DF17DA21CD006D42DE /* DecodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecodeViewController.h; sourceTree = "<group>"; };
-		2204D2E017DA21CD006D42DE /* DecodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecodeViewController.m; sourceTree = "<group>"; };
 		2205753617BE6EEE0021626B /* Hash_Deselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hash_Deselected.png; sourceTree = "<group>"; };
 		2205753717BE6EEE0021626B /* Hash_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hash_Selected.png; sourceTree = "<group>"; };
 		2205753817BE6EEE0021626B /* TextToBase64_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextToBase64_Selected.png; sourceTree = "<group>"; };
@@ -78,6 +76,7 @@
 		224DBE9E17BE4EFD00F12E0A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		224DBE9F17BE4EFD00F12E0A /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		224DBEA017BE4EFD00F12E0A /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		227CAAB4194DBEF3008CB429 /* DecodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeViewController.swift; sourceTree = "<group>"; };
 		2290825F17B681CA00CC8E1F /* Hash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hash.png; sourceTree = "<group>"; };
 		2297CC0717AFD3A200F51E23 /* HexBT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexBT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2297CC0A17AFD3A200F51E23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -188,8 +187,7 @@
 				22C4DB4019487B2100A87B36 /* TextHexViewController.swift */,
 				22C4DB451949D46F00A87B36 /* TextBase64ViewController.swift */,
 				22FBFD3E194B3DBC00896086 /* HashSumViewController.swift */,
-				2204D2DF17DA21CD006D42DE /* DecodeViewController.h */,
-				2204D2E017DA21CD006D42DE /* DecodeViewController.m */,
+				227CAAB4194DBEF3008CB429 /* DecodeViewController.swift */,
 				22C4DB4219487BF700A87B36 /* CommonObjCMethods.h */,
 				22C4DB4319487BF700A87B36 /* CommonObjCMethods.m */,
 				22039F6417B2A23E00551E55 /* MNNSStringWithUnichar.h */,
@@ -330,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227CAAB5194DBEF3008CB429 /* DecodeViewController.swift in Sources */,
 				2297CC1717AFD3A200F51E23 /* main.m in Sources */,
 				22C4DB4419487BF700A87B36 /* CommonObjCMethods.m in Sources */,
 				2297CC1B17AFD3A200F51E23 /* HexBTAppDelegate.m in Sources */,
@@ -340,7 +339,6 @@
 				22C4DB3F194867A900A87B36 /* TextBinViewController.swift in Sources */,
 				224DBEA217BE4EFD00F12E0A /* SVProgressHUD.m in Sources */,
 				2243D1EF17CC57BD00CC5630 /* GCPlaceholderTextView.m in Sources */,
-				2204D2E117DA21CD006D42DE /* DecodeViewController.m in Sources */,
 				22C4DB4119487B2100A87B36 /* TextHexViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

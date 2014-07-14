@@ -952,4 +952,76 @@
     return output;
 }
 
+//This is the method to return an NSInteger accordingly
++(NSInteger)detectType:(BOOL)base64 hexadecimal:(BOOL)hex binary:(BOOL)binary
+{
+    //Make sure the checking of characters are in this order!
+    if (binary) {
+        return 0; //Type 0 means binary
+    }
+    else if (hex) {
+        return 1; //Type 1 means hexadecimal
+    }
+    else if (base64) {
+        return 2; //Type 2 means base64
+    }
+    else {
+        return 3; //Type 3 is error/invalid text
+    }
+}
+
+//Checking if an NSString is encoded in Base64
++(BOOL)isBase64Data:(NSString *)input
+{
+    input=[[input componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsJoinedByString:@""];
+    if ([input length] % 4 == 0) {
+        static NSCharacterSet *invertedBase64CharacterSet = nil;
+        if (invertedBase64CharacterSet == nil) {
+            invertedBase64CharacterSet = [[NSCharacterSet
+                                           characterSetWithCharactersInString:
+                                           @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="]
+                                          invertedSet];
+        }
+        return [input rangeOfCharacterFromSet:invertedBase64CharacterSet options:NSLiteralSearch].location == NSNotFound;
+    }
+    return NO;
+}
+
+//Checking if an NSString is encoded in hexadecimal
++(BOOL)isHexadecimal:(NSString *)input
+{
+    NSString *moreText=[input uppercaseString];
+    moreText=[[moreText componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsJoinedByString:@""];
+    NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"1234567890ABCDEF"];
+    set = [set invertedSet];
+    NSRange range = [moreText rangeOfCharacterFromSet:set];
+    
+    if (range.location == NSNotFound&&moreText.length%2==0) //If you don't get any characters that are not in the hex set
+    {
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
+}
+
+//Checking if an NSString is encoded in binary
++(BOOL)isBinary:(NSString *)input
+{
+    input=[[input componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsJoinedByString:@""];
+    NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"01"];
+    set = [set invertedSet];
+    NSRange range = [input rangeOfCharacterFromSet:set];
+    
+    if (range.location == NSNotFound&&input.length%8==0) {
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
+}
+
+
 @end
