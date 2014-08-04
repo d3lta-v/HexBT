@@ -11,8 +11,8 @@ import UIKit
 class DecodeViewController: UITableViewController {
     
     // Variables here
-    @IBOutlet var userInput : GCPlaceholderTextView
-    @IBOutlet var output : GCPlaceholderTextView
+    @IBOutlet var userInput : GCPlaceholderTextView!
+    @IBOutlet var output : GCPlaceholderTextView!
 
     init(style: UITableViewStyle) {
         super.init(style: style)
@@ -47,7 +47,7 @@ class DecodeViewController: UITableViewController {
     }
     
     @IBAction func setType(sender:AnyObject) {
-        if userInput.text.utf16count >= 2 {
+        if userInput.text.bridgeToObjectiveC().length >= 2 {
             let input = detectType(userInput.text)
             switch input {
             case 0:
@@ -100,7 +100,7 @@ class DecodeViewController: UITableViewController {
     }
     
     func textViewHasText (textView : UITextView) -> (Bool) {
-        if textView.text.utf16count > 0 {
+        if textView.text.bridgeToObjectiveC().length > 0 {
             return true
         } else {
             return false

@@ -11,9 +11,9 @@ import UIKit
 class HashSumViewController: UITableViewController {
     
     // Variables here
-    @IBOutlet var textToHash : GCPlaceholderTextView
-    @IBOutlet var md5Disp : UITextView
-    @IBOutlet var sha1Disp : UITextView
+    @IBOutlet var textToHash : GCPlaceholderTextView!
+    @IBOutlet var md5Disp : UITextView!
+    @IBOutlet var sha1Disp : UITextView!
 
     init(style: UITableViewStyle) {
         super.init(style: style)
@@ -84,7 +84,7 @@ class HashSumViewController: UITableViewController {
     }
     
     func textViewHasText (textView : UITextView) -> (Bool) {
-        if textView.text.utf16count > 0 {
+        if textView.text.bridgeToObjectiveC().length > 0 {
             return true
         } else {
             return false

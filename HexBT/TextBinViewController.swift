@@ -11,8 +11,8 @@ import UIKit
 class TextBinViewController: UITableViewController {
     
     // Variables here
-    @IBOutlet var textToBinary : GCPlaceholderTextView
-    @IBOutlet var binaryDisp : GCPlaceholderTextView
+    @IBOutlet var textToBinary : GCPlaceholderTextView!
+    @IBOutlet var binaryDisp : GCPlaceholderTextView!
 
     init(style: UITableViewStyle) {
         super.init(style: style)
@@ -83,7 +83,7 @@ class TextBinViewController: UITableViewController {
     }
     
     func textViewHasText (textView : UITextView) -> (Bool) {
-        if textView.text.utf16count > 0 {
+        if textView.text.bridgeToObjectiveC().length > 0 {
             return true
         } else {
             return false

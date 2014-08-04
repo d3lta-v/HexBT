@@ -11,8 +11,8 @@ import UIKit
 class TextBase64ViewController: UITableViewController {
     
     // Variables here
-    @IBOutlet var textToBase64 : GCPlaceholderTextView
-    @IBOutlet var base64Disp : GCPlaceholderTextView
+    @IBOutlet var textToBase64 : GCPlaceholderTextView!
+    @IBOutlet var base64Disp : GCPlaceholderTextView!
 
     init(style: UITableViewStyle) {
         super.init(style: style)
@@ -89,7 +89,7 @@ class TextBase64ViewController: UITableViewController {
     }
     
     func textViewHasText (textView : UITextView) -> (Bool) {
-        if textView.text.utf16count > 0 {
+        if textView.text.bridgeToObjectiveC().length > 0 {
             return true
         } else {
             return false
