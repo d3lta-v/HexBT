@@ -58,6 +58,15 @@
             [self.window makeKeyAndVisible];
         }
         
+        if (iOSDeviceScreenSize.height == 667)
+        {
+            UIStoryboard *iPhone6Storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_677" bundle:nil];
+            UIViewController *initialViewController = [iPhone6Storyboard instantiateInitialViewController];
+            self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+            self.window.rootViewController  = initialViewController;
+            [self.window makeKeyAndVisible];
+        }
+        
     } else if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
         UIStoryboard *iPhone35Storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
         UIViewController *initialViewController = [iPhone35Storyboard instantiateInitialViewController];

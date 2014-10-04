@@ -14,12 +14,12 @@ class TextBase64ViewController: UITableViewController {
     @IBOutlet var textToBase64 : GCPlaceholderTextView!
     @IBOutlet var base64Disp : GCPlaceholderTextView!
 
-    init(style: UITableViewStyle) {
+    override init(style: UITableViewStyle) {
         super.init(style: style)
         // Custom initialization
     }
     
-    init(coder aDecoder: NSCoder!)
+    required init(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
     }
@@ -59,11 +59,12 @@ class TextBase64ViewController: UITableViewController {
         textToBase64.text=@"";
         }
         */
+        
         if textToBase64.hasText() {
-            base64Disp.text = CommonObjCMethods.base64Encode(textToBase64.text)
+            base64Disp.text = CommonObjCMethods.base64Decode(textToBase64.text)
             textToBase64.resignFirstResponder()
-        } else if !base64Disp.hasText() || (!textToBase64.hasText()){
-            SVProgressHUD.showErrorWithStatus("Error: Invalid or no text!")
+        } else if (!base64Disp.hasText()) || (!textToBase64.hasText()) {
+            SVProgressHUD.showErrorWithStatus("Error: Invalid or no text!");
             textToBase64.resignFirstResponder()
         } else {
             textToBase64.resignFirstResponder()
@@ -89,7 +90,7 @@ class TextBase64ViewController: UITableViewController {
     }
     
     func textViewHasText (textView : UITextView) -> (Bool) {
-        if textView.text.bridgeToObjectiveC().length > 0 {
+        if textView.text.utf16Count > 0 {
             return true
         } else {
             return false

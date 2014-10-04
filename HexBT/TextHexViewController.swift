@@ -14,12 +14,12 @@ class TextHexViewController: UITableViewController {
     @IBOutlet var textToHex : GCPlaceholderTextView!
     @IBOutlet var hexDisp : GCPlaceholderTextView!
 
-    init(style: UITableViewStyle) {
+    override init(style: UITableViewStyle) {
         super.init(style: style)
         // Custom initialization
     }
     
-    init(coder aDecoder: NSCoder!)
+    required init(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
     }
@@ -83,7 +83,7 @@ class TextHexViewController: UITableViewController {
     }
     
     func textViewHasText (textView : UITextView) -> (Bool) {
-        if textView.text.bridgeToObjectiveC().length > 0 {
+        if textView.text.utf16Count > 0 {
             return true
         } else {
             return false

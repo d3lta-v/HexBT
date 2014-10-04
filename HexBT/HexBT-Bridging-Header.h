@@ -6,3 +6,4 @@
 #import "CommonObjCMethods.h"
 #import <QuartzCore/QuartzCore.h>
 #import "SVProgressHUD.h"
+#import <CommonCrypto/CommonCrypto.h>

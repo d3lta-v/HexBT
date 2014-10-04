@@ -15,12 +15,12 @@ class HashSumViewController: UITableViewController {
     @IBOutlet var md5Disp : UITextView!
     @IBOutlet var sha1Disp : UITextView!
 
-    init(style: UITableViewStyle) {
+    override init(style: UITableViewStyle) {
         super.init(style: style)
         // Custom initialization
     }
     
-    init(coder aDecoder: NSCoder!)
+    required init(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
     }
@@ -53,8 +53,8 @@ class HashSumViewController: UITableViewController {
     
     @IBAction func convert(sender:AnyObject) {
         if textViewHasText(textToHash) {
-            md5Disp.text = CommonObjCMethods.md5(textToHash.text)
-            sha1Disp.text = CommonObjCMethods.sha1(textToHash.text)
+            md5Disp.text = textToHash.text.md5
+            sha1Disp.text = textToHash.text.sha1
             textToHash.resignFirstResponder()
         } else {
             SVProgressHUD.showErrorWithStatus("Error: No text!")
@@ -84,7 +84,7 @@ class HashSumViewController: UITableViewController {
     }
     
     func textViewHasText (textView : UITextView) -> (Bool) {
-        if textView.text.bridgeToObjectiveC().length > 0 {
+        if textView.text.utf16Count > 0 {
             return true
         } else {
             return false
@@ -96,4 +96,35 @@ class HashSumViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+
+extension String  {
+    var md5: String! {
+        let str = self.cStringUsingEncoding(NSUTF8StringEncoding)
+            let strLen = CC_LONG(self.lengthOfBytesUsingEncoding(NSUTF8StringEncoding))
+            let digestLen = Int(CC_MD5_DIGEST_LENGTH)
+            let result = UnsafeMutablePointer<CUnsignedChar>.alloc(digestLen)
+            
+            CC_MD5(str!, strLen, result)
+            
+            var hash = NSMutableString()
+            for i in 0..<digestLen {
+                hash.appendFormat("%02x", result[i])
+            }
+            
+            result.destroy()
+            
+            return String(format: hash)
+    }
+    
+    var sha1: String! {
+        let data = self.dataUsingEncoding(NSUTF8StringEncoding)!
+        var digest = [UInt8](count:Int(CC_SHA1_DIGEST_LENGTH), repeatedValue: 0)
+        CC_SHA1(data.bytes, CC_LONG(data.length), &digest)
+        let output = NSMutableString(capacity: Int(CC_SHA1_DIGEST_LENGTH))
+        for byte in digest {
+            output.appendFormat("%02x", byte)
+        }
+        return output
+    }
 }

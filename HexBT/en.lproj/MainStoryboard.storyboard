@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="YdL-80-W5q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="YdL-80-W5q">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -27,18 +28,18 @@
             </objects>
             <point key="canvasLocation" x="-75" y="-23"/>
         </scene>
-        <!--Text Bin View Controller - Text-Binary-->
+        <!--Text-Binary-->
         <scene sceneID="dqD-yS-ZfS">
             <objects>
                 <tableViewController id="Mf9-5q-OL6" customClass="TextBinViewController" customModule="HexBT" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Sxe-RY-rpb">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Sxe-RY-rpb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Text" id="WGD-Xh-S2H">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="94" id="lv0-Oh-SGb">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="94" id="lv0-Oh-SGb">
                                         <rect key="frame" x="0.0" y="119" width="320" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lv0-Oh-SGb" id="5eW-0v-PLN">
@@ -122,7 +123,7 @@
                                             <constraint firstItem="ef3-gw-eEN" firstAttribute="centerX" secondItem="P9o-ZP-xgk" secondAttribute="centerX" id="dR9-7R-0nS"/>
                                         </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="GqH-8L-ikF">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="GqH-8L-ikF">
                                         <rect key="frame" x="0.0" y="339" width="320" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GqH-8L-ikF" id="5dt-nP-iU5">
@@ -156,18 +157,18 @@
             </objects>
             <point key="canvasLocation" x="931" y="-650"/>
         </scene>
-        <!--Text Hex View Controller - Text-Hexadecimal-->
+        <!--Text-Hexadecimal-->
         <scene sceneID="Hzw-yV-GEm">
             <objects>
                 <tableViewController id="ylg-Nl-wV9" customClass="TextHexViewController" customModule="HexBT" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="sMx-2U-v9g">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="sMx-2U-v9g">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Text" id="jCy-bY-ZJX">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="94" id="bEV-e3-wFx">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="94" id="bEV-e3-wFx">
                                         <rect key="frame" x="0.0" y="119" width="320" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bEV-e3-wFx" id="KMb-US-p6S">
@@ -251,7 +252,7 @@
                                             <constraint firstItem="OkH-ua-2fa" firstAttribute="centerX" secondItem="EP5-kK-7LN" secondAttribute="centerX" id="ngy-fP-Prd"/>
                                         </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="xUY-g4-8yf">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="xUY-g4-8yf">
                                         <rect key="frame" x="0.0" y="339" width="320" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xUY-g4-8yf" id="JJx-Hr-NqV">
@@ -285,18 +286,18 @@
             </objects>
             <point key="canvasLocation" x="931" y="-23"/>
         </scene>
-        <!--Hash Sum View Controller - Text-Hash Digest-->
+        <!--Text-Hash Digest-->
         <scene sceneID="PSe-em-p9d">
             <objects>
                 <tableViewController id="ikN-ia-w9r" customClass="HashSumViewController" customModule="HexBT" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="1vi-TT-56k">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="1vi-TT-56k">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Text" id="19j-Yp-aVN">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="94" id="17c-tc-GLw">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="94" id="17c-tc-GLw">
                                         <rect key="frame" x="0.0" y="119" width="320" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="17c-tc-GLw" id="vLj-wn-qaV">
@@ -380,7 +381,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="MD5" id="kwP-Yj-1Ai">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="41" id="naL-by-HqL">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="41" id="naL-by-HqL">
                                         <rect key="frame" x="0.0" y="300" width="320" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="naL-by-HqL" id="97l-2M-130">
@@ -400,7 +401,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="SHA1" id="A2E-rW-jxs">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="41" id="WOF-Sf-GHT">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="41" id="WOF-Sf-GHT">
                                         <rect key="frame" x="0.0" y="389" width="320" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WOF-Sf-GHT" id="B8U-Nt-7kQ">
@@ -410,7 +411,7 @@
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ER1-4J-nSa">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="11.5"/>
+                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -435,18 +436,18 @@
             </objects>
             <point key="canvasLocation" x="931" y="551"/>
         </scene>
-        <!--Text Base64 View Controller - Text-Base64-->
+        <!--Text-Base64-->
         <scene sceneID="gSP-AS-Nvy">
             <objects>
                 <tableViewController id="iWn-Ie-eRH" customClass="TextBase64ViewController" customModule="HexBT" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jGt-hm-a2C">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jGt-hm-a2C">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Text" id="VHB-xo-GgA">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="94" id="0Re-h5-trq">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="94" id="0Re-h5-trq">
                                         <rect key="frame" x="0.0" y="119" width="320" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Re-h5-trq" id="4oi-aN-nTh">
@@ -530,7 +531,7 @@
                                             <constraint firstItem="roR-N7-UkX" firstAttribute="centerY" secondItem="jpF-e4-lpa" secondAttribute="centerY" id="g2F-xj-rBJ"/>
                                         </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="H6H-NL-bIr">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="H6H-NL-bIr">
                                         <rect key="frame" x="0.0" y="339" width="320" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H6H-NL-bIr" id="pKz-KR-tzZ">
@@ -564,7 +565,7 @@
             </objects>
             <point key="canvasLocation" x="931" y="1143"/>
         </scene>
-        <!--Navigation Controller - Binary-->
+        <!--Binary-->
         <scene sceneID="nUi-4Q-mgU">
             <objects>
                 <navigationController id="2Pr-Zz-5xO" sceneMemberID="viewController">
@@ -584,7 +585,7 @@
             </objects>
             <point key="canvasLocation" x="405" y="-650"/>
         </scene>
-        <!--Navigation Controller - Hex-->
+        <!--Hex-->
         <scene sceneID="fbq-6H-pFN">
             <objects>
                 <navigationController id="sDn-zo-5xa" sceneMemberID="viewController">
@@ -604,7 +605,7 @@
             </objects>
             <point key="canvasLocation" x="405" y="-23"/>
         </scene>
-        <!--Navigation Controller - Hash-->
+        <!--Hash-->
         <scene sceneID="umX-wh-irE">
             <objects>
                 <navigationController id="YbR-H7-Ezn" sceneMemberID="viewController">
@@ -624,7 +625,7 @@
             </objects>
             <point key="canvasLocation" x="405" y="551"/>
         </scene>
-        <!--Navigation Controller - Base64-->
+        <!--Base64-->
         <scene sceneID="4Hh-Dh-2BV">
             <objects>
                 <navigationController id="Uo9-BM-Kii" sceneMemberID="viewController">
@@ -644,7 +645,7 @@
             </objects>
             <point key="canvasLocation" x="405" y="1143"/>
         </scene>
-        <!--Navigation Controller - Decoder-->
+        <!--Decoder-->
         <scene sceneID="Hpk-aY-mqN">
             <objects>
                 <navigationController id="ejd-Lv-vMC" sceneMemberID="viewController">
@@ -664,18 +665,18 @@
             </objects>
             <point key="canvasLocation" x="412" y="-1222"/>
         </scene>
-        <!--Decode View Controller - Decoder-->
+        <!--Decoder-->
         <scene sceneID="Ebg-6H-PZC">
             <objects>
                 <tableViewController id="95R-Op-qOS" customClass="DecodeViewController" customModule="HexBT" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Y0d-jv-S94">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Y0d-jv-S94">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Encoded Text" id="EeS-HK-mhn">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="94" id="ZvU-wV-wnN">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="94" id="ZvU-wV-wnN">
                                         <rect key="frame" x="0.0" y="119" width="320" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZvU-wV-wnN" id="tE8-J2-gBw">
@@ -691,7 +692,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" rowHeight="39" id="ZmK-ZE-y0Y">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" rowHeight="39" id="ZmK-ZE-y0Y">
                                         <rect key="frame" x="0.0" y="213" width="320" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZmK-ZE-y0Y" id="VuF-OL-Roa">
@@ -771,7 +772,7 @@
                                             <constraint firstItem="W0p-67-X8P" firstAttribute="centerX" secondItem="ddv-xv-aTD" secondAttribute="centerX" id="JPf-VG-PZR"/>
                                         </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="gcV-CR-lq9">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="gcV-CR-lq9">
                                         <rect key="frame" x="0.0" y="339" width="320" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gcV-CR-lq9" id="n5d-gf-H1O">

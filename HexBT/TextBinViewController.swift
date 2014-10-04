@@ -14,12 +14,12 @@ class TextBinViewController: UITableViewController {
     @IBOutlet var textToBinary : GCPlaceholderTextView!
     @IBOutlet var binaryDisp : GCPlaceholderTextView!
 
-    init(style: UITableViewStyle) {
+    override init(style: UITableViewStyle) {
         super.init(style: style)
         // Custom initialization
     }
     
-    init(coder aDecoder: NSCoder!)
+    required init(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
     }
@@ -65,13 +65,11 @@ class TextBinViewController: UITableViewController {
     }
     
     @IBAction func share(sender:AnyObject) {
-        if binaryDisp.hasText() {
+        if textViewHasText(binaryDisp) {
             let binString : String = binaryDisp.text
             SVProgressHUD.showWithStatus("Loading...")
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(0.1*Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
-                var actViewCtrl = UIActivityViewController(activityItems: [binString], applicationActivities: nil)
-                self.presentViewController(actViewCtrl, animated: true, completion: {SVProgressHUD.dismiss()})
-            }
+            let actionCtrl : UIViewController = UIActivityViewController(activityItems: [binString], applicationActivities: nil)
+            self.presentViewController(actionCtrl, animated: true, completion: {SVProgressHUD.dismiss()})
         } else {
             SVProgressHUD.showErrorWithStatus("Nothing to share!")
         }
@@ -83,7 +81,7 @@ class TextBinViewController: UITableViewController {
     }
     
     func textViewHasText (textView : UITextView) -> (Bool) {
-        if textView.text.bridgeToObjectiveC().length > 0 {
+        if textView.text.utf16Count > 0 {
             return true
         } else {
             return false

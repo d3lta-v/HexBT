@@ -14,12 +14,12 @@ class DecodeViewController: UITableViewController {
     @IBOutlet var userInput : GCPlaceholderTextView!
     @IBOutlet var output : GCPlaceholderTextView!
 
-    init(style: UITableViewStyle) {
+    override init(style: UITableViewStyle) {
         super.init(style: style)
         // Custom initialization
     }
     
-    init(coder aDecoder: NSCoder!)
+    required init(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
     }
@@ -35,8 +35,13 @@ class DecodeViewController: UITableViewController {
         self.tableView.backgroundColor = UIColor.clearColor()
         self.view.backgroundColor = UIColor(white: 0.95, alpha: 1)
         
-        // Setup title label
+        // Set custom title view
         var label = UILabel(frame: CGRectMake(0, 0, 400, 44))
+        label.textAlignment = NSTextAlignment.Center
+        label.textColor = UIColor.whiteColor()
+        label.text = "Decoder"
+        label.font = UIFont(name: "HelveticaNeue-Light", size: 18.0)
+        self.navigationItem.titleView = label;
         
         // Setup gestures
         let tapGesture = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
@@ -47,8 +52,10 @@ class DecodeViewController: UITableViewController {
     }
     
     @IBAction func setType(sender:AnyObject) {
-        if userInput.text.bridgeToObjectiveC().length >= 2 {
-            let input = detectType(userInput.text)
+        if userInput.text.utf16Count >= 2 {
+            let input : Int = detectType(userInput.text)
+            println(input)
+            print(input)
             switch input {
             case 0:
                 output.text = CommonObjCMethods.binToText(userInput.text)
@@ -99,8 +106,13 @@ class DecodeViewController: UITableViewController {
         }
     }
     
+    func isBase64Data (input:String) -> (Bool) {
+        
+        return true;
+    }
+    
     func textViewHasText (textView : UITextView) -> (Bool) {
-        if textView.text.bridgeToObjectiveC().length > 0 {
+        if textView.text.utf16Count > 0 {
             return true
         } else {
             return false
