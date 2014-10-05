@@ -60,10 +60,10 @@ class TextBase64ViewController: UITableViewController {
         }
         */
         
-        if textToBase64.hasText() {
-            base64Disp.text = CommonObjCMethods.base64Decode(textToBase64.text)
+        if textToBase64.text.utf16Count>0 {
+            base64Disp.text = CommonObjCMethods.base64Encode(textToBase64.text)
             textToBase64.resignFirstResponder()
-        } else if (!base64Disp.hasText()) || (!textToBase64.hasText()) {
+        } else if (base64Disp.text.utf16Count==0) || (textToBase64.text.utf16Count==0) {
             SVProgressHUD.showErrorWithStatus("Error: Invalid or no text!");
             textToBase64.resignFirstResponder()
         } else {
@@ -72,7 +72,7 @@ class TextBase64ViewController: UITableViewController {
     }
     
     @IBAction func share(sender:AnyObject) {
-        if base64Disp.hasText() {
+        if base64Disp.text.utf16Count>0 {
             let base64String : String = base64Disp.text
             SVProgressHUD.showWithStatus("Loading...")
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(0.1*Double(NSEC_PER_SEC))), dispatch_get_main_queue(), {

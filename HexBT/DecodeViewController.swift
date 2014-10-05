@@ -55,7 +55,6 @@ class DecodeViewController: UITableViewController {
         if userInput.text.utf16Count >= 2 {
             let input : Int = detectType(userInput.text)
             println(input)
-            print(input)
             switch input {
             case 0:
                 output.text = CommonObjCMethods.binToText(userInput.text)
@@ -74,10 +73,15 @@ class DecodeViewController: UITableViewController {
             SVProgressHUD.showErrorWithStatus("Error: No text")
         }
         dismissKeyboard()
+        
+        // Final layer of error catching
+        if output.text.utf16Count==0 {
+            SVProgressHUD.showErrorWithStatus("Error: Invalid Text!")
+        }
     }
     
     @IBAction func share(sender:AnyObject) {
-        if textViewHasText(output) {
+        if output.text.utf16Count > 0 {
             let sharedText : String = output.text
             SVProgressHUD.showWithStatus("Loading...")
             let activityVC = UIActivityViewController(activityItems: [sharedText], applicationActivities: nil)
@@ -95,27 +99,14 @@ class DecodeViewController: UITableViewController {
     }
     
     func detectType (input:String) -> (Int) {
-        if CommonObjCMethods.isBase64Data(input) {
-            return 2
+        if CommonObjCMethods.isBinary(input) {
+            return 0
         } else if CommonObjCMethods.isHexadecimal(input) {
             return 1
-        } else if CommonObjCMethods.isBinary(input) {
-            return 0
+        } else if CommonObjCMethods.isBase64Data(input) {
+            return 2
         } else {
-            return -1 // error
-        }
-    }
-    
-    func isBase64Data (input:String) -> (Bool) {
-        
-        return true;
-    }
-    
-    func textViewHasText (textView : UITextView) -> (Bool) {
-        if textView.text.utf16Count > 0 {
-            return true
-        } else {
-            return false
+            return -1
         }
     }
     

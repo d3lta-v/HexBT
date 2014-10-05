@@ -51,11 +51,11 @@ class TextBinViewController: UITableViewController {
     }
     
     @IBAction func convert(sender:AnyObject) {
-        if textToBinary.hasText() {
+        if textToBinary.text.utf16Count>0 {
             //Conversion engine CSIMUX (Convertor, aScIi, Mutable Unified X-over Engine)
             binaryDisp.text = CommonObjCMethods.textToBin(textToBinary.text);
             textToBinary.resignFirstResponder()
-        } else if !textToBinary.hasText() || !binaryDisp.hasText() {
+        } else if textToBinary.text.utf16Count==0 || binaryDisp.text.utf16Count==0 {
             SVProgressHUD.showErrorWithStatus("Error: Invalid or no text!")
             binaryDisp.text=""
             textToBinary.resignFirstResponder()

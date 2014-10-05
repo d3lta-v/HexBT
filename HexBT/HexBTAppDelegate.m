@@ -60,7 +60,7 @@
         
         if (iOSDeviceScreenSize.height == 667)
         {
-            UIStoryboard *iPhone6Storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_677" bundle:nil];
+            UIStoryboard *iPhone6Storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_667" bundle:nil];
             UIViewController *initialViewController = [iPhone6Storyboard instantiateInitialViewController];
             self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
             self.window.rootViewController  = initialViewController;

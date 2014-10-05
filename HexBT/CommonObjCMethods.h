@@ -16,7 +16,6 @@
 +(NSString *)hexToText:(NSString *)text;
 +(NSString *)base64Encode:(NSString *)plainText;
 +(NSString *)base64Decode:(NSString *)base64String;
-+(NSInteger)detectType:(BOOL)base64 hexadecimal:(BOOL)hex binary:(BOOL)binary;
 +(BOOL)isBase64Data:(NSString *)input;
 +(BOOL)isHexadecimal:(NSString *)input;
 +(BOOL)isBinary:(NSString *)input;

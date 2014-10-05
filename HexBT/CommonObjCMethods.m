@@ -731,8 +731,8 @@
             else
             {
                 value=@"";
-                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error: Invalid input!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
-                [alert show];
+                //UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error: Invalid input!" message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+                //[alert show];
                 blank=false;
             }
         }
@@ -918,24 +918,6 @@
     NSData *plainTextData = [NSData dataFromBase64String:base64String];
     NSString *plainText = [[NSString alloc] initWithData:plainTextData encoding:NSUTF8StringEncoding];
     return plainText;
-}
-
-//This is the method to return an NSInteger accordingly
-+(NSInteger)detectType:(BOOL)base64 hexadecimal:(BOOL)hex binary:(BOOL)binary
-{
-    //Make sure the checking of characters are in this order!
-    if (binary) {
-        return 0; //Type 0 means binary
-    }
-    else if (hex) {
-        return 1; //Type 1 means hexadecimal
-    }
-    else if (base64) {
-        return 2; //Type 2 means base64
-    }
-    else {
-        return 3; //Type 3 is error/invalid text
-    }
 }
 
 //Checking if an NSString is encoded in Base64
