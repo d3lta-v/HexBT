@@ -54,7 +54,6 @@ class DecodeViewController: UITableViewController {
     @IBAction func setType(sender:AnyObject) {
         if userInput.text.utf16Count >= 2 {
             let input : Int = detectType(userInput.text)
-            println(input)
             switch input {
             case 0:
                 output.text = CommonObjCMethods.binToText(userInput.text)
@@ -96,6 +95,8 @@ class DecodeViewController: UITableViewController {
     @IBAction func pasteToTextView(sender:AnyObject) {
         let pd = UIPasteboard.generalPasteboard()
         userInput.text = pd.string
+        dismissKeyboard()
+        setType(self)
     }
     
     func detectType (input:String) -> (Int) {
