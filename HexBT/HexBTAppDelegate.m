@@ -31,6 +31,8 @@
     item3.selectedImage=[UIImage imageNamed:@"Hash"];
     item4.selectedImage=[UIImage imageNamed:@"Decoder"];
     
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.0f green:(173.0f/255.0f) blue:(101.0f/225.0f) alpha:1]];
+    
     return YES;
 }
 
