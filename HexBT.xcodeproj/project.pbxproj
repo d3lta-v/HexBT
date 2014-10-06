@@ -50,6 +50,7 @@
 		22C57D3D186323FE00666AB6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22C57D3C186323FD00666AB6 /* Settings.bundle */; };
 		22D813AE17BA5E970074E008 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813AD17BA5E970074E008 /* iTunesArtwork.png */; };
 		22D813B417BA7E550074E008 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D813B317BA7E550074E008 /* iTunesArtwork@2x.png */; };
+		22E5B8F519E2599F007C0D24 /* MainStoryboard_1104.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E5B8F419E2599F007C0D24 /* MainStoryboard_1104.storyboard */; };
 		22FBFD3F194B3DBC00896086 /* HashSumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBFD3E194B3DBC00896086 /* HashSumViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,7 @@
 		22C57D3C186323FD00666AB6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		22D813AD17BA5E970074E008 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		22D813B317BA7E550074E008 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		22E5B8F419E2599F007C0D24 /* MainStoryboard_1104.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_1104.storyboard; sourceTree = "<group>"; };
 		22FBFD26194ABA7A00896086 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
 		22FBFD3E194B3DBC00896086 /* HashSumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashSumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,6 +190,7 @@
 				2297CC2217AFD3A200F51E23 /* MainStoryboard.storyboard */,
 				22039F7117B3D0F100551E55 /* MainStoryboard-568h.storyboard */,
 				22074FE019E02A7300344B8C /* MainStoryboard_667.storyboard */,
+				22E5B8F419E2599F007C0D24 /* MainStoryboard_1104.storyboard */,
 				22C4DB3E194867A900A87B36 /* TextBinViewController.swift */,
 				22C4DB4019487B2100A87B36 /* TextHexViewController.swift */,
 				22C4DB451949D46F00A87B36 /* TextBase64ViewController.swift */,
@@ -320,6 +323,7 @@
 				2205754517BE6EEE0021626B /* TextToBin_Deselected.png in Resources */,
 				2205754717BE723F0021626B /* tabBarPic.png in Resources */,
 				2243D1E417CB7DBB00CC5630 /* SSTINC.png in Resources */,
+				22E5B8F519E2599F007C0D24 /* MainStoryboard_1104.storyboard in Resources */,
 				22074FE119E02A7300344B8C /* MainStoryboard_667.storyboard in Resources */,
 				2243D1E717CB7E2A00CC5630 /* Info_Button_Deselected.png in Resources */,
 				22C57D3D186323FE00666AB6 /* Settings.bundle in Resources */,
